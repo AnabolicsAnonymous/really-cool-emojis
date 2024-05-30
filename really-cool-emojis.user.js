@@ -6,6 +6,8 @@
 // @author       dantayy
 // @match        https://blutopia.cc/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=blutopia.cc
+// @downloadURL  https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
+// @updateURL    https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
 // @grant        GM_addStyle
 // @license      GPL-3.0-or-later
 // ==/UserScript==
