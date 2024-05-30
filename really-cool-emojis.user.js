@@ -56,7 +56,15 @@
         "homerLeave": "https://i.ibb.co/8gtN9Vw/homer-Leave.gif",
         "hungy": "https://i.ibb.co/x2Bf14F/hungy.gif",
         "sexo": "https://i.ibb.co/L00Nd6R/sexo.gif",
-        "coffeeTime": "https://i.ibb.co/SKSJrdP/coffee-Time.gif"
+        "coffeeTime": "https://i.ibb.co/SKSJrdP/coffee-Time.gif",
+        "barf": "https://ptpimg.me/is0oh0.gif",
+        "awooga": "https://i.ibb.co/QHQ5r8g/AWOOGA.gif",
+        "hubba": "https://i.ibb.co/x8B5Qms/hubbahubba.gif",
+        "dealwithit": "https://ptpimg.me/321azk.png",
+        "gandi": "https://i.ibb.co/Cbnn4hY/gandi.gif",
+        "poop": "https://ptpimg.me/a8mn3s.png",
+        "lip": "https://i.ibb.co/hVm1ngL/4x.png",
+        "putin": "https://ptpimg.me/0lm04u.png"
     };
 
     let chatboxHeader, chatForm;
