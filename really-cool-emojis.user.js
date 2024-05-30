@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      0.4
+// @version      0.5
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  chatbox emojis and img
 // @author       dantayy
@@ -37,6 +37,10 @@
         "bratwu": "https://i.ibb.co/k834WdR/bratwur.png",
         ":o": "https://i.ibb.co/1Z0sS6J/OO.png",
         "o7": "https://i.ibb.co/5sqKm4Y/o7.png",
+        "boobies": "https://i.ibb.co/SxFdK06/boobies.gif",
+        "dino": "https://i.ibb.co/QXSj9RT/dino.gif",
+        "gamin": "https://i.ibb.co/f0WhLk3/gamin.gif",
+        "popcorn": "https://i.ibb.co/pjJGfkf/popcorn.gif"
     };
 
     let chatboxHeader, chatForm;
@@ -95,6 +99,7 @@
                 z-index: 1;
                 left: 60%;
                 top: 20%;
+                max-height: 500px;
                 overflow: auto;
                 background-color: rgba(0,0,0,0.4);
             }
@@ -104,6 +109,8 @@
                 margin: 15% auto;
                 padding: 20px;
                 max-width: 300px;
+                max-height: 250px;
+                overflow: auto;
                 position: relative;
                 display: flex;
                 flex-wrap: wrap;
