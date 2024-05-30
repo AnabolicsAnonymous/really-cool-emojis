@@ -213,7 +213,7 @@
         chatForm = document.getElementById('chatbox__messages-create');
 
         if (!chatboxHeader || !chatForm) {
-            setTimeout(addEmojiButton, 5000);
+            setTimeout(addEmojiButton, 1000);
             return;
         }
 
