@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      0.6
+// @version      0.8
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  chatbox emojis and img
 // @author       dantayy
@@ -56,15 +56,24 @@
         "homerLeave": "https://i.ibb.co/8gtN9Vw/homer-Leave.gif",
         "hungy": "https://i.ibb.co/x2Bf14F/hungy.gif",
         "sexo": "https://i.ibb.co/L00Nd6R/sexo.gif",
-        "coffeeTime": "https://i.ibb.co/SKSJrdP/coffee-Time.gif",
+        "coffeeTime": "https://i.ibb.co/bbxhc3n/coffee-Time.gif",
         "barf": "https://ptpimg.me/is0oh0.gif",
         "awooga": "https://i.ibb.co/QHQ5r8g/AWOOGA.gif",
-        "hubba": "https://i.ibb.co/x8B5Qms/hubbahubba.gif",
+        "hubba": "https://i.ibb.co/YcgqY7Z/hubbahubba.gif",
         "dealwithit": "https://ptpimg.me/321azk.png",
         "gandi": "https://i.ibb.co/Cbnn4hY/gandi.gif",
         "poop": "https://ptpimg.me/a8mn3s.png",
         "lip": "https://i.ibb.co/hVm1ngL/4x.png",
-        "putin": "https://ptpimg.me/0lm04u.png"
+        "putin": "https://ptpimg.me/0lm04u.png",
+        "sideeye": "https://i.ibb.co/B2k8cX5/sideeye.jpg",
+        "lmaoo": "https://i.ibb.co/VVYHjL0/lmao.png",
+        "D:": "https://i.ibb.co/zs2dHW2/gasp.png",
+        "niceone": "https://i.ibb.co/c8TjJ7T/niceone.gif",
+        "hi5": "https://i.ibb.co/M7Q6L7s/hi5.gif",
+        "angytype": "https://ptpimg.me/c51694.png",
+        "putinwalk": "https://i.ibb.co/C6LT6NP/walkin.gif",
+        "spotted": "https://i.ibb.co/BNh18pp/spotted.gif",
+        "caught": "https://i.ibb.co/JFJxSmX/4k.gif"
     };
 
     let chatboxHeader, chatForm;
