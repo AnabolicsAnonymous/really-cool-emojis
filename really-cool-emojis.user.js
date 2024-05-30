@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      0.5
+// @version      0.6
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  chatbox emojis and img
 // @author       dantayy
@@ -15,6 +15,7 @@
 (function () {
     'use strict';
 
+    // ty sUss, sfa, moon, vaseline
     const emojis = {
         "comedy": "https://ptpimg.me/x0rx70.png",
         "counting": "https://ptpimg.me/59emhk.gif",
@@ -40,8 +41,19 @@
         "boobies": "https://i.ibb.co/SxFdK06/boobies.gif",
         "dino": "https://i.ibb.co/QXSj9RT/dino.gif",
         "gamin": "https://i.ibb.co/f0WhLk3/gamin.gif",
-        "popcorn": "https://i.ibb.co/pjJGfkf/popcorn.gif"
+        "popcorn": "https://i.ibb.co/pjJGfkf/popcorn.gif",
+        "catcorn": "https://i.ibb.co/MZ4Yf7R/catpopcorn.png",
+        "clown": "https://i.ibb.co/R6gGdfX/clown.gif",
+        "ban": "https://i.ibb.co/7kgbVMb/ban.gif",
+        "jusreadin": "https://i.ibb.co/0XfB6gs/reading.gif",
+        "crychattin": "https://i.ibb.co/nCKTC2Z/crychattin.gif",
+        "laught": "https://i.ibb.co/xj0zTCS/haha.jpg"
     };
+
+    
+    
+    
+    
 
     let chatboxHeader, chatForm;
     const emojiMenu = document.createElement("div");
