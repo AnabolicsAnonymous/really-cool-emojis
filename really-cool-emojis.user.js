@@ -47,13 +47,17 @@
         "ban": "https://i.ibb.co/7kgbVMb/ban.gif",
         "jusreadin": "https://i.ibb.co/0XfB6gs/reading.gif",
         "crychattin": "https://i.ibb.co/nCKTC2Z/crychattin.gif",
-        "laught": "https://i.ibb.co/xj0zTCS/haha.jpg"
+        "laught": "https://i.ibb.co/xj0zTCS/haha.jpg",
+        "chad": "https://i.ibb.co/Rb7L1Mk/chad.gif",
+        "empty": "https://i.ibb.co/wStC9f3/empty.png",
+        "dumbo": "https://i.ibb.co/yh05yVs/dumbo.png",
+        "brothers": "https://i.ibb.co/X3KvpHs/brothers.png",
+        "homerArrive": "https://i.ibb.co/Wpnz7Yp/homer-Arrive.gif",
+        "homerLeave": "https://i.ibb.co/8gtN9Vw/homer-Leave.gif",
+        "hungy": "https://i.ibb.co/x2Bf14F/hungy.gif",
+        "sexo": "https://i.ibb.co/L00Nd6R/sexo.gif",
+        "coffeeTime": "https://i.ibb.co/SKSJrdP/coffee-Time.gif"
     };
-
-    
-    
-    
-    
 
     let chatboxHeader, chatForm;
     const emojiMenu = document.createElement("div");
