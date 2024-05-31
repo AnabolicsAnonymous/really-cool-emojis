@@ -5,7 +5,12 @@
 // @description  chatbox emojis and img
 // @author       dantayy
 // @match        https://blutopia.cc/
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=blutopia.cc
+// @match        https://aither.cc/
+// @match        https://reelflix.xyz/
+// @match        https://oldtoons.world/
+// @match        https://fearnopeer.com/
+// @match        https://cinematik.net/
+// @icon         https://ptpimg.me/shqsh5.png
 // @downloadURL  https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
 // @updateURL    https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
 // @grant        GM_addStyle
@@ -73,19 +78,31 @@
         "angytype": "https://ptpimg.me/c51694.png",
         "putinwalk": "https://i.ibb.co/C6LT6NP/walkin.gif",
         "spotted": "https://i.ibb.co/BNh18pp/spotted.gif",
-        "caught": "https://i.ibb.co/JFJxSmX/4k.gif"
+        "caught": "https://i.ibb.co/JFJxSmX/4k.gif",
+        "yoo": "https://i.ibb.co/CBfDMxJ/yoo.gif"
     };
+
+    const cbSelector = '#chatbox_header div'
+    const cfSelector = 'chatbox__messages-create'
 
     let chatboxHeader, chatForm;
     const emojiMenu = document.createElement("div");
     emojiMenu.className = "emoji-content";
+    const showLabel = JSON.parse(localStorage.getItem('showEmojiLabel') || 'false');
 
     for (const [key, value] of Object.entries(emojis)) {
+        const emojiContainer = document.createElement("div");
+        const emojiLabel = document.createElement("p");
+        emojiLabel.innerText = key;
+        emojiLabel.classList.add("emoji-label");
+        emojiLabel.style.display = showLabel ? 'block' : 'none';
         const emojiItem = document.createElement("div");
         emojiItem.classList.add("emoji-item");
         emojiItem.style.backgroundImage = `url(${value})`;
         emojiItem.addEventListener("click", () => onEmojiclick(value));
-        emojiMenu.appendChild(emojiItem);
+        emojiContainer.appendChild(emojiItem);
+        emojiContainer.appendChild(emojiLabel);
+        emojiMenu.appendChild(emojiContainer);
     }
 
     function onEmojiclick(image) {
@@ -148,6 +165,10 @@
                 display: flex;
                 flex-wrap: wrap;
                 gap: 10px;
+            }
+            .emoji-label {
+                font-size: 8px;
+                text-align: center;
             }
             .emoji-item {
                 width: 40px;
@@ -218,12 +239,16 @@
         settingsMenu.innerHTML = `
             <h3>Settings</h3>
             <div class="emoji__config"> 
-            <label for="autofill_cb">Autofill emoji name?</label>
+            <label for="autofill_cb">Autofill emoji name</label>
             <input type="checkbox" id="autofill_cb">
             </div>
             <div class="emoji__config"> 
-            <label for="img_cb">img tag command?</label>
+            <label for="img_cb">Auto img tag</label>
             <input type="checkbox" id="img_cb">
+            </div>
+            <div class="emoji__config"> 
+            <label for="show_label">Show emoji labels</label>
+            <input type="checkbox" id="show_label">
             </div>
         `;
 
@@ -233,6 +258,12 @@
 
         settingsMenu.querySelector('#img_cb').addEventListener('change', (e) => {
             localStorage.setItem('useImgTag', e.target.checked);
+        });
+
+        settingsMenu.querySelector('#show_label').addEventListener('change', (e) => {
+            localStorage.setItem('showEmojiLabel', JSON.stringify(e.target.checked)); // Store as JSON string
+            const labels = document.querySelectorAll('.emoji-label'); // Select elements with class 'emoji-label'
+            labels.forEach(label => label.style.display = e.target.checked ? 'block' : 'none'); // Corrected display logic
         });
 
         modal.appendChild(closeButton);
@@ -247,10 +278,11 @@
     function initializeSettings() {
         document.getElementById('autofill_cb').checked = JSON.parse(localStorage.getItem('autofill') || 'false');
         document.getElementById('img_cb').checked = JSON.parse(localStorage.getItem('useImgTag') || 'false');
+        document.getElementById('show_label').checked = JSON.parse(localStorage.getItem('showEmojiLabel') || 'false');
     }
     function addEmojiButton() {
-        chatboxHeader = document.querySelector('#chatbox_header div');
-        chatForm = document.getElementById('chatbox__messages-create');
+        chatboxHeader = document.querySelector(cbSelector);
+        chatForm = document.getElementById(cfSelector);
 
         if (!chatboxHeader || !chatForm) {
             setTimeout(addEmojiButton, 1000);
