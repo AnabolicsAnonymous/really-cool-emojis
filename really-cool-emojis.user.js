@@ -165,30 +165,87 @@
 
   function handleInputChange(e, autofill, useImgTag) {
     const regex = /^http.*\.(jpg|jpeg|png|gif|bmp|webp)$/i; // regex matches image url
-    const messageParts = e.target.value.trim().split(" ");
-    const lastItem = messageParts[messageParts.length - 1];
-    const secondLastItem =
-      messageParts.length > 1 ? messageParts[messageParts.length - 2] : "";
+    const message = e.target.value;
 
-    if (autofill && emojis[lastItem]) {
-      messageParts[
-        messageParts.length - 1
-      ] = `[img=${defaultSize}]${emojis[lastItem]}[/img]`;
-      chatForm.value = messageParts.join(" ");
+    if (!message) return;
+
+    // Split the message on spaces and newlines, keeping the delimiters
+    const messageParts = message.split(/(\s+|\n)/);
+
+    // Helper function to find the last non-whitespace item
+    const findLastNonWhitespaceIndex = (arr) => {
+      for (let i = arr.length - 1; i >= 0; i--) {
+        if (arr[i].trim() !== "") {
+          return i;
+        }
+      }
+      return -1;
+    };
+
+    const lastItemIndex = findLastNonWhitespaceIndex(messageParts);
+    const lastItem = lastItemIndex >= 0 ? messageParts[lastItemIndex] : "";
+    const secondLastItemIndex = findLastNonWhitespaceIndex(
+      messageParts.slice(0, lastItemIndex)
+    );
+    const secondLastItem =
+      secondLastItemIndex >= 0 ? messageParts[secondLastItemIndex] : "";
+
+    // Helper function to set the chat form value
+    const setChatFormValue = (value) => {
+      chatForm.value = value;
+      chatForm.dispatchEvent(new Event("input", { bubbles: true })); // So preview works on forums.
+    };
+
+    if (autofill && emojis[lastItem.trim()]) {
+      messageParts[lastItemIndex] = `[img=${defaultSize}]${
+        emojis[lastItem.trim()]
+      }[/img]`;
+      setChatFormValue(messageParts.join(""));
       return;
     }
 
-    if (useImgTag && secondLastItem.startsWith("!") && regex.test(lastItem)) {
-      let num = secondLastItem.substring(1);
-      if (parseInt(num)) {
-        messageParts[messageParts.length - 2] = `[img=${num}]${lastItem}[/img]`;
-        messageParts.pop(); // remove the last item
-        chatForm.value = messageParts.join(" ");
+    if (useImgTag && regex.test(lastItem.trim())) {
+      const trimmedLastItem = lastItem.trim();
+
+      // Handle width based commands e.g. !200 image_link l!200 image_link
+      if (secondLastItem.trim().startsWith("!")) {
+        const num = secondLastItem.trim().substring(1);
+        if (parseInt(num)) {
+          messageParts[
+            secondLastItemIndex
+          ] = `[img=${num}]${trimmedLastItem}[/img]`;
+          messageParts.splice(lastItemIndex, 1); // remove the last item
+          setChatFormValue(messageParts.join(""));
+          return;
+        }
+      } else if (secondLastItem.trim().startsWith("l!")) {
+        const num = secondLastItem.trim().substring(2);
+        if (parseInt(num)) {
+          messageParts[
+            secondLastItemIndex
+          ] = `[url=${trimmedLastItem}][img=${num}]${trimmedLastItem}[/img][/url]`;
+          messageParts.splice(lastItemIndex, 1); // remove the last item
+          setChatFormValue(messageParts.join(""));
+          return;
+        }
+      }
+      // Handle commands with no given width.
+      else if (lastItem.startsWith("!")) {
+        const imageURL = lastItem.substring(1).trim();
+        messageParts[lastItemIndex] = `[img]${imageURL}[/img]`;
+        setChatFormValue(messageParts.join(""));
+        return;
+      } else if (lastItem.startsWith("l!")) {
+        const imageURL = lastItem.substring(2).trim();
+        messageParts[
+          lastItemIndex
+        ] = `[url=${imageURL}][img]${imageURL}[/img][/url]`;
+        setChatFormValue(messageParts.join(""));
         return;
       }
     }
   }
-
+  
   function createModal() {
     const existingMenu = document.getElementById("emoji-menu");
     if (existingMenu) {
