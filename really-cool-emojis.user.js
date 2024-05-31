@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      1.2
+// @version      1.3
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -76,7 +76,7 @@
     homerArrive: "https://i.ibb.co/Wpnz7Yp/homer-Arrive.gif",
     homerLeave: "https://i.ibb.co/8gtN9Vw/homer-Leave.gif",
     hungy: "https://i.ibb.co/x2Bf14F/hungy.gif",
-    sexo: "https://i.ibb.co/L00Nd6R/sexo.gif",
+    sexo: "https://i.ibb.co/ykCgkyS/sexo.gif",
     coffeeTime: "https://i.ibb.co/bbxhc3n/coffee-Time.gif",
     barf: "https://ptpimg.me/is0oh0.gif",
     awooga: "https://i.ibb.co/QHQ5r8g/AWOOGA.gif",
@@ -171,7 +171,7 @@
 
   // Handle the commands if enabled in the settings. Autofill + IMG tags.
   function handleInputChange(e, autofill, useImgTag) {
-    const regex = /^http.*\.(jpg|jpeg|png|gif|bmp|webp)$/i; // regex matches image url
+    const regex = /^(?:!?http.*|l!http.*)\.(jpg|jpeg|png|gif|bmp|webp)$/i; // regex matches image url
     const message = e.target.value;
 
     if (!message) return;
