@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      1.1
+// @version      1.2
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -18,6 +18,12 @@
 
 /************************************************************************************************
  * ChangeLog
+ * 1.2
+ *  - Added new commands for img tags.
+ *      - Wrap images without defining a width !https://i.ibb.co/5sqKm4Y/o7.png -> [img]https://i.ibb.co/5sqKm4Y/o7.png[/img]
+ *      - Wrap + link images l!https://i.ibb.co/5sqKm4Y/o7.png -> [url=https://i.ibb.co/5sqKm4Y/o7.png][img]https://i.ibb.co/5sqKm4Y/o7.png[/img][/url]
+ *      - Same thing for width l!200 https://i.ibb.co/5sqKm4Y/o7.png -> [url=https://i.ibb.co/5sqKm4Y/o7.png][img=200]https://i.ibb.co/5sqKm4Y/o7.png[/img][/url]
+ *  - Fixed bug where formatting would be removed on forum posts.
  * 1.1
  *  - Formatted prettier+
  *  - Input commands now work at any point of string
@@ -115,31 +121,31 @@
   const isEditTopic = editTopicRegEX.test(currentURL);
   const isChatbox = currentURL === rootURL ? true : false;
 
-  console.log(isTorrent, isForum, isNewTopic, isEditTopic, isChatbox);
-
   // dynamic DOM selectors for different pages
   const menuQuery = isTorrent
-    ? "h4.panel__heading"
+    ? "h4.panel__heading" // For torrent comments
     : isForum
-    ? "#forum_reply_form"
+    ? "#forum_reply_form" // For forum replies
     : isNewTopic || isEditTopic
-    ? "h2.panel__heading"
-    : "#chatbox_header div";
+    ? "h2.panel__heading" // For New Topic or Editing a topic
+    : "#chatbox_header div"; // Chatbox
 
   const inputQuery = isTorrent
-    ? "new-comment__textarea"
+    ? "new-comment__textarea" // Torrent comment input
     : isForum || isNewTopic || isEditTopic
-    ? "bbcode-content"
-    : "chatbox__messages-create";
+    ? "bbcode-content" // Forums input
+    : "chatbox__messages-create"; // Chatbox input
 
   const defaultSize = isChatbox ? "42" : "84"; // 42 width for chatbox and 84 for everything else
   let menuSelector, chatForm;
+
   const emojiMenu = document.createElement("div");
   emojiMenu.className = "emoji-content";
   const showLabel = JSON.parse(
     localStorage.getItem("showEmojiLabel") || "false"
   );
 
+  // Fill the menu with all the emojis
   for (const [key, value] of Object.entries(emojis)) {
     const emojiContainer = document.createElement("div");
     const emojiLabel = document.createElement("p");
@@ -163,6 +169,7 @@
     chatForm.focus();
   }
 
+  // Handle the commands if enabled in the settings. Autofill + IMG tags.
   function handleInputChange(e, autofill, useImgTag) {
     const regex = /^http.*\.(jpg|jpeg|png|gif|bmp|webp)$/i; // regex matches image url
     const message = e.target.value;
@@ -245,7 +252,7 @@
       }
     }
   }
-  
+
   function createModal() {
     const existingMenu = document.getElementById("emoji-menu");
     if (existingMenu) {
@@ -402,6 +409,7 @@
     initializeSettings();
   }
 
+  // Load the settings into the menu from local storage.
   function initializeSettings() {
     document.getElementById("autofill_cb").checked = JSON.parse(
       localStorage.getItem("autofill") || "false"
@@ -414,6 +422,7 @@
     );
   }
 
+  // Inject the emoji button and run the main script.
   function addEmojiButton() {
     menuSelector = document.querySelector(menuQuery);
     chatForm = document.getElementById(inputQuery);
@@ -458,6 +467,7 @@
     });
   }
 
+  // Only call the script on supported pages.
   if (isChatbox || isForum || isNewTopic || isTorrent || isEditTopic) {
     addEmojiButton();
   }
