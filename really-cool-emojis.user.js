@@ -1,13 +1,12 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      0.8
+// @version      0.9
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  chatbox emojis and img
 // @author       dantayy
 // @match        https://blutopia.cc/
 // @match        https://aither.cc/
 // @match        https://reelflix.xyz/
-// @match        https://oldtoons.world/
 // @match        https://fearnopeer.com/
 // @match        https://cinematik.net/
 // @icon         https://ptpimg.me/shqsh5.png
@@ -81,9 +80,6 @@
         "caught": "https://i.ibb.co/JFJxSmX/4k.gif",
         "yoo": "https://i.ibb.co/CBfDMxJ/yoo.gif"
     };
-
-    const cbSelector = '#chatbox_header div'
-    const cfSelector = 'chatbox__messages-create'
 
     let chatboxHeader, chatForm;
     const emojiMenu = document.createElement("div");
@@ -281,8 +277,8 @@
         document.getElementById('show_label').checked = JSON.parse(localStorage.getItem('showEmojiLabel') || 'false');
     }
     function addEmojiButton() {
-        chatboxHeader = document.querySelector(cbSelector);
-        chatForm = document.getElementById(cfSelector);
+        chatboxHeader = document.querySelector('#chatbox_header div');
+        chatForm = document.getElementById('chatbox__messages-create');
 
         if (!chatboxHeader || !chatForm) {
             setTimeout(addEmojiButton, 1000);
