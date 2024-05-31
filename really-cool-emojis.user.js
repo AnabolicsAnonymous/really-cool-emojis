@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      1.0
+// @version      1.1
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -18,6 +18,9 @@
 
 /************************************************************************************************
  * ChangeLog
+ * 1.1
+ *  - Formatted prettier+
+ *  - Input commands now work at any point of string
  * 1.0
  * - Added support for torrent comments and forums.
  * - Made sure functions only run on supported pages, or if they're enabled (handleInputChange()).
@@ -25,152 +28,179 @@
  ************************************************************************************************/
 
 (function () {
-    'use strict';
+  "use strict";
 
-    // ty sUss, sfa, moon, vaseline
-    const emojis = {
-        "comedy": "https://ptpimg.me/x0rx70.png",
-        "counting": "https://ptpimg.me/59emhk.gif",
-        "feltcute": "https://ptpimg.me/20180i.png",
-        "giggle": "https://ptpimg.me/f9opi2.png",
-        "huh": "https://ptpimg.me/12kx8m.gif",
-        "rage": "https://ptpimg.me/cqu9qr.gif",
-        "reallymad": "https://ptpimg.me/znro3o.png",
-        "reallysad": "https://ptpimg.me/m9f985.png",
-        "slightlymad": "https://ptpimg.me/ut9wv7.png",
-        "ultramad": "https://ptpimg.me/vbg6q3.png",
-        "yawn": "https://ptpimg.me/l4l3r6.png",
-        "whatda": "https://i.ibb.co/YTDbxm1/WHAT.gif",
-        "feet": "https://ptpimg.me/622oxi.png",
-        "sleepy": "https://i.ibb.co/b5Svttf/sleepy.gif",
-        "sadd": "https://i.ibb.co/CV28H5h/sad.gif",
-        "joe": "https://i.ibb.co/JBncpnh/OOOOO.gif",
-        "chatting": "https://i.ibb.co/jTYXKTg/chatting.gif",
-        "ayo": "https://i.ibb.co/Vx9jZB9/ayo.gif",
-        "bratwu": "https://i.ibb.co/k834WdR/bratwur.png",
-        ":o": "https://i.ibb.co/1Z0sS6J/OO.png",
-        "o7": "https://i.ibb.co/5sqKm4Y/o7.png",
-        "boobies": "https://i.ibb.co/SxFdK06/boobies.gif",
-        "dino": "https://i.ibb.co/QXSj9RT/dino.gif",
-        "gamin": "https://i.ibb.co/f0WhLk3/gamin.gif",
-        "popcorn": "https://i.ibb.co/pjJGfkf/popcorn.gif",
-        "catcorn": "https://i.ibb.co/MZ4Yf7R/catpopcorn.png",
-        "clown": "https://i.ibb.co/R6gGdfX/clown.gif",
-        "ban": "https://i.ibb.co/7kgbVMb/ban.gif",
-        "jusreadin": "https://i.ibb.co/0XfB6gs/reading.gif",
-        "crychattin": "https://i.ibb.co/nCKTC2Z/crychattin.gif",
-        "laught": "https://i.ibb.co/xj0zTCS/haha.jpg",
-        "chad": "https://i.ibb.co/Rb7L1Mk/chad.gif",
-        "empty": "https://i.ibb.co/wStC9f3/empty.png",
-        "dumbo": "https://i.ibb.co/yh05yVs/dumbo.png",
-        "brothers": "https://i.ibb.co/X3KvpHs/brothers.png",
-        "homerArrive": "https://i.ibb.co/Wpnz7Yp/homer-Arrive.gif",
-        "homerLeave": "https://i.ibb.co/8gtN9Vw/homer-Leave.gif",
-        "hungy": "https://i.ibb.co/x2Bf14F/hungy.gif",
-        "sexo": "https://i.ibb.co/L00Nd6R/sexo.gif",
-        "coffeeTime": "https://i.ibb.co/bbxhc3n/coffee-Time.gif",
-        "barf": "https://ptpimg.me/is0oh0.gif",
-        "awooga": "https://i.ibb.co/QHQ5r8g/AWOOGA.gif",
-        "hubba": "https://i.ibb.co/YcgqY7Z/hubbahubba.gif",
-        "dealwithit": "https://ptpimg.me/321azk.png",
-        "gandi": "https://i.ibb.co/Cbnn4hY/gandi.gif",
-        "poop": "https://ptpimg.me/a8mn3s.png",
-        "lip": "https://i.ibb.co/hVm1ngL/4x.png",
-        "putin": "https://ptpimg.me/0lm04u.png",
-        "sideeye": "https://i.ibb.co/B2k8cX5/sideeye.jpg",
-        "lmaoo": "https://i.ibb.co/VVYHjL0/lmao.png",
-        "D:": "https://i.ibb.co/zs2dHW2/gasp.png",
-        "niceone": "https://i.ibb.co/c8TjJ7T/niceone.gif",
-        "hi5": "https://i.ibb.co/M7Q6L7s/hi5.gif",
-        "angytype": "https://ptpimg.me/c51694.png",
-        "putinwalk": "https://i.ibb.co/C6LT6NP/walkin.gif",
-        "spotted": "https://i.ibb.co/BNh18pp/spotted.gif",
-        "caught": "https://i.ibb.co/JFJxSmX/4k.gif",
-        "yoo": "https://i.ibb.co/CBfDMxJ/yoo.gif",
-        'smart': 'https://i.ibb.co/nRfYr0H/smart.gif',
-        'reallythinking': 'https://i.ibb.co/Qr0dNwj/reallythinking.gif',
-        'nerdbob': 'https://i.ibb.co/mbndBMC/nerdbob.gif',
-        'nerd': 'https://i.ibb.co/1X6YBwF/nerd.gif',
-        'hmmm': 'https://i.ibb.co/TvtNp9v/hmmm.gif',
-        'actually': 'https://i.ibb.co/4YD9gGK/actually.gif'
-    };
+  // ty sUss, sfa, moon, vaseline
+  const emojis = {
+    comedy: "https://ptpimg.me/x0rx70.png",
+    counting: "https://ptpimg.me/59emhk.gif",
+    feltcute: "https://ptpimg.me/20180i.png",
+    giggle: "https://ptpimg.me/f9opi2.png",
+    huh: "https://ptpimg.me/12kx8m.gif",
+    rage: "https://ptpimg.me/cqu9qr.gif",
+    reallymad: "https://ptpimg.me/znro3o.png",
+    reallysad: "https://ptpimg.me/m9f985.png",
+    slightlymad: "https://ptpimg.me/ut9wv7.png",
+    ultramad: "https://ptpimg.me/vbg6q3.png",
+    yawn: "https://ptpimg.me/l4l3r6.png",
+    whatda: "https://i.ibb.co/YTDbxm1/WHAT.gif",
+    feet: "https://ptpimg.me/622oxi.png",
+    sleepy: "https://i.ibb.co/b5Svttf/sleepy.gif",
+    sadd: "https://i.ibb.co/CV28H5h/sad.gif",
+    joe: "https://i.ibb.co/JBncpnh/OOOOO.gif",
+    chatting: "https://i.ibb.co/jTYXKTg/chatting.gif",
+    ayo: "https://i.ibb.co/Vx9jZB9/ayo.gif",
+    bratwu: "https://i.ibb.co/k834WdR/bratwur.png",
+    ":o": "https://i.ibb.co/1Z0sS6J/OO.png",
+    o7: "https://i.ibb.co/5sqKm4Y/o7.png",
+    boobies: "https://i.ibb.co/SxFdK06/boobies.gif",
+    dino: "https://i.ibb.co/QXSj9RT/dino.gif",
+    gamin: "https://i.ibb.co/f0WhLk3/gamin.gif",
+    popcorn: "https://i.ibb.co/pjJGfkf/popcorn.gif",
+    catcorn: "https://i.ibb.co/MZ4Yf7R/catpopcorn.png",
+    clown: "https://i.ibb.co/R6gGdfX/clown.gif",
+    ban: "https://i.ibb.co/7kgbVMb/ban.gif",
+    jusreadin: "https://i.ibb.co/0XfB6gs/reading.gif",
+    crychattin: "https://i.ibb.co/nCKTC2Z/crychattin.gif",
+    laught: "https://i.ibb.co/xj0zTCS/haha.jpg",
+    chad: "https://i.ibb.co/Rb7L1Mk/chad.gif",
+    empty: "https://i.ibb.co/wStC9f3/empty.png",
+    dumbo: "https://i.ibb.co/yh05yVs/dumbo.png",
+    brothers: "https://i.ibb.co/X3KvpHs/brothers.png",
+    homerArrive: "https://i.ibb.co/Wpnz7Yp/homer-Arrive.gif",
+    homerLeave: "https://i.ibb.co/8gtN9Vw/homer-Leave.gif",
+    hungy: "https://i.ibb.co/x2Bf14F/hungy.gif",
+    sexo: "https://i.ibb.co/L00Nd6R/sexo.gif",
+    coffeeTime: "https://i.ibb.co/bbxhc3n/coffee-Time.gif",
+    barf: "https://ptpimg.me/is0oh0.gif",
+    awooga: "https://i.ibb.co/QHQ5r8g/AWOOGA.gif",
+    hubba: "https://i.ibb.co/YcgqY7Z/hubbahubba.gif",
+    dealwithit: "https://ptpimg.me/321azk.png",
+    gandi: "https://i.ibb.co/Cbnn4hY/gandi.gif",
+    poop: "https://ptpimg.me/a8mn3s.png",
+    lip: "https://i.ibb.co/hVm1ngL/4x.png",
+    putin: "https://ptpimg.me/0lm04u.png",
+    sideeye: "https://i.ibb.co/B2k8cX5/sideeye.jpg",
+    lmaoo: "https://i.ibb.co/VVYHjL0/lmao.png",
+    "D:": "https://i.ibb.co/zs2dHW2/gasp.png",
+    niceone: "https://i.ibb.co/c8TjJ7T/niceone.gif",
+    hi5: "https://i.ibb.co/M7Q6L7s/hi5.gif",
+    angytype: "https://ptpimg.me/c51694.png",
+    putinwalk: "https://i.ibb.co/C6LT6NP/walkin.gif",
+    spotted: "https://i.ibb.co/BNh18pp/spotted.gif",
+    caught: "https://i.ibb.co/JFJxSmX/4k.gif",
+    yoo: "https://i.ibb.co/CBfDMxJ/yoo.gif",
+    smart: "https://i.ibb.co/nRfYr0H/smart.gif",
+    reallythinking: "https://i.ibb.co/Qr0dNwj/reallythinking.gif",
+    nerdbob: "https://i.ibb.co/mbndBMC/nerdbob.gif",
+    nerd: "https://i.ibb.co/1X6YBwF/nerd.gif",
+    hmmm: "https://i.ibb.co/TvtNp9v/hmmm.gif",
+    actually: "https://i.ibb.co/4YD9gGK/actually.gif",
+    shy: "https://ptpimg.me/olw327.png",
+    ascared: "https://ptpimg.me/qbf200.png",
+  };
 
-    const currentURL = window.location.href;
-    const currURL = new URL(window.location.href);
-    const rootURL = currURL.origin + "/";
-    const torrentRegEX = /.*\/torrents\/\d+/
-    const forumRegEX = /.*\/forums\/topics\/\d+/
-    const newTopicRegEX = /.\/topics\/forum\/\d+\/create/
+  const currentURL = window.location.href;
+  const currURL = new URL(window.location.href);
+  const rootURL = currURL.origin + "/";
+  const torrentRegEX = /.*\/torrents\/\d+/;
+  const forumRegEX = /.*\/forums\/topics\/\d+/;
+  const newTopicRegEX = /.\/topics\/forum\/\d+\/create/;
+  const editTopicRegEX = /.*\/forums\/posts\/\d+\/edit/;
 
-    // set supported pages
-    const isTorrent = torrentRegEX.test(currentURL);
-    const isForum = forumRegEX.test(currentURL);
-    const isNewTopic = newTopicRegEX.test(currentURL);
-    const isChatbox = currentURL === rootURL ? true : false
+  // set supported pages
+  const isTorrent = torrentRegEX.test(currentURL);
+  const isForum = forumRegEX.test(currentURL);
+  const isNewTopic = newTopicRegEX.test(currentURL);
+  const isEditTopic = editTopicRegEX.test(currentURL);
+  const isChatbox = currentURL === rootURL ? true : false;
 
-    // dynamic DOM selectors for different pages
-    const menuQuery = isTorrent ? "h4.panel__heading" : isForum ? "#forum_reply_form" : isNewTopic ? "h2.panel__heading" : '#chatbox_header div'
-    const inputQuery = isTorrent ? "new-comment__textarea" : isForum || isNewTopic ? "bbcode-content" : 'chatbox__messages-create'
+  console.log(isTorrent, isForum, isNewTopic, isEditTopic, isChatbox);
 
-    const defaultSize = isChatbox ? "42" : "84" // 42 width for chatbox and 84 for everything else
-    let menuSelector, chatForm;
-    const emojiMenu = document.createElement("div");
-    emojiMenu.className = "emoji-content";
-    const showLabel = JSON.parse(localStorage.getItem('showEmojiLabel') || 'false');
+  // dynamic DOM selectors for different pages
+  const menuQuery = isTorrent
+    ? "h4.panel__heading"
+    : isForum
+    ? "#forum_reply_form"
+    : isNewTopic || isEditTopic
+    ? "h2.panel__heading"
+    : "#chatbox_header div";
 
-    for (const [key, value] of Object.entries(emojis)) {
-        const emojiContainer = document.createElement("div");
-        const emojiLabel = document.createElement("p");
-        emojiLabel.innerText = key;
-        emojiLabel.classList.add("emoji-label");
-        emojiLabel.style.display = showLabel ? 'block' : 'none';
-        const emojiItem = document.createElement("div");
-        emojiItem.classList.add("emoji-item");
-        emojiItem.style.backgroundImage = `url(${value})`;
-        emojiItem.addEventListener("click", () => onEmojiclick(value));
-        emojiContainer.appendChild(emojiItem);
-        emojiContainer.appendChild(emojiLabel);
-        emojiMenu.appendChild(emojiContainer);
+  const inputQuery = isTorrent
+    ? "new-comment__textarea"
+    : isForum || isNewTopic || isEditTopic
+    ? "bbcode-content"
+    : "chatbox__messages-create";
+
+  const defaultSize = isChatbox ? "42" : "84"; // 42 width for chatbox and 84 for everything else
+  let menuSelector, chatForm;
+  const emojiMenu = document.createElement("div");
+  emojiMenu.className = "emoji-content";
+  const showLabel = JSON.parse(
+    localStorage.getItem("showEmojiLabel") || "false"
+  );
+
+  for (const [key, value] of Object.entries(emojis)) {
+    const emojiContainer = document.createElement("div");
+    const emojiLabel = document.createElement("p");
+    emojiLabel.innerText = key;
+    emojiLabel.classList.add("emoji-label");
+    emojiLabel.style.display = showLabel ? "block" : "none";
+    const emojiItem = document.createElement("div");
+    emojiItem.classList.add("emoji-item");
+    emojiItem.style.backgroundImage = `url(${value})`;
+    emojiItem.addEventListener("click", () => onEmojiclick(value));
+    emojiContainer.appendChild(emojiItem);
+    emojiContainer.appendChild(emojiLabel);
+    emojiMenu.appendChild(emojiContainer);
+  }
+
+  function onEmojiclick(image) {
+    const emoji = `[img=${defaultSize}]${image}[/img]`;
+    chatForm.value = chatForm.value
+      ? `${chatForm.value.trim()} ${emoji}`
+      : emoji;
+    chatForm.focus();
+  }
+
+  function handleInputChange(e, autofill, useImgTag) {
+    const regex = /^http.*\.(jpg|jpeg|png|gif|bmp|webp)$/i; // regex matches image url
+    const messageParts = e.target.value.trim().split(" ");
+    const lastItem = messageParts[messageParts.length - 1];
+    const secondLastItem =
+      messageParts.length > 1 ? messageParts[messageParts.length - 2] : "";
+
+    if (autofill && emojis[lastItem]) {
+      messageParts[
+        messageParts.length - 1
+      ] = `[img=${defaultSize}]${emojis[lastItem]}[/img]`;
+      chatForm.value = messageParts.join(" ");
+      return;
     }
 
-    function onEmojiclick(image) {
-        const emoji = `[img=${defaultSize}]${image}[/img]`;
-        chatForm.value = chatForm.value ? `${chatForm.value.trim()} ${emoji}` : emoji;
-        chatForm.focus()
+    if (useImgTag && secondLastItem.startsWith("!") && regex.test(lastItem)) {
+      let num = secondLastItem.substring(1);
+      if (parseInt(num)) {
+        messageParts[messageParts.length - 2] = `[img=${num}]${lastItem}[/img]`;
+        messageParts.pop(); // remove the last item
+        chatForm.value = messageParts.join(" ");
+        return;
+      }
+    }
+  }
+
+  function createModal() {
+    const existingMenu = document.getElementById("emoji-menu");
+    if (existingMenu) {
+      existingMenu.style.display =
+        existingMenu.style.display === "none" ? "block" : "none";
+      return;
     }
 
-    function handleInputChange(e, autofill, useImgTag) {
-        const regex = /^http.*\.(jpg|jpeg|png|gif|bmp|webp)$/i; // regex matches image url
-        const message = e.target.value.trim();
-
-        if (autofill && emojis[message]) {
-            chatForm.value = `[img=${defaultSize}]${emojis[message]}[/img]`;
-            return;
-        }
-
-        if (useImgTag && message.startsWith('!') && message.includes('http')) {
-            let m = message.split(' ');
-            let num = m[0].substring(1);
-            let url = m[1].trim();
-            if (!regex.test(url)) return;
-            if (parseInt(num)) {
-                chatForm.value = `[img=${num}]${m[1]}[/img]`;
-                return;
-            }
-        }
-    }
-
-    function createModal() {
-        const existingMenu = document.getElementById('emoji-menu');
-        if (existingMenu) {
-            existingMenu.style.display = existingMenu.style.display === 'none' ? 'block' : 'none';
-            return;
-        }
-
-        // Attempt to style the modal dynamically. Not great, but it works.
-        const menuLeft = isChatbox || isNewTopic ? '60%' : '20%';
-        const menuTop = isNewTopic ? '10%' : '20%';
-        const modalStyler = `
+    // Attempt to style the modal dynamically. Not great, but it works.
+    const menuLeft = isChatbox || isNewTopic ? "60%" : "20%";
+    const menuTop = isNewTopic ? "10%" : "20%";
+    const modalStyler = `
             .emoji-menu {
                 position: fixed;
                 border-radius: 5px;
@@ -246,26 +276,28 @@
             }
         `;
 
-        GM_addStyle(modalStyler);
+    GM_addStyle(modalStyler);
 
-        const modal = document.createElement("div");
-        modal.className = "emoji-menu";
-        modal.id = "emoji-menu";
+    const modal = document.createElement("div");
+    modal.className = "emoji-menu";
+    modal.id = "emoji-menu";
 
-        const closeButton = document.createElement("button");
-        closeButton.className = "menu-close";
-        closeButton.textContent = "Close";
-        closeButton.onclick = () => modal.style.display = "none";
+    const closeButton = document.createElement("button");
+    closeButton.className = "menu-close";
+    closeButton.textContent = "Close";
+    closeButton.onclick = () => (modal.style.display = "none");
 
-        const settingsButton = document.createElement("button");
-        settingsButton.className = "menu-settings";
-        settingsButton.textContent = "⚙️";
-        settingsButton.onclick = () => settingsMenu.style.display = settingsMenu.style.display === "none" ? "block" : "none";
+    const settingsButton = document.createElement("button");
+    settingsButton.className = "menu-settings";
+    settingsButton.textContent = "⚙️";
+    settingsButton.onclick = () =>
+      (settingsMenu.style.display =
+        settingsMenu.style.display === "none" ? "block" : "none");
 
-        const settingsMenu = document.createElement("div");
-        settingsMenu.className = "settings-menu";
-        settingsMenu.style.display = "none";
-        settingsMenu.innerHTML = `
+    const settingsMenu = document.createElement("div");
+    settingsMenu.className = "settings-menu";
+    settingsMenu.style.display = "none";
+    settingsMenu.innerHTML = `
             <h3>Settings</h3>
             <div class="emoji__config"> 
             <label for="autofill_cb">Autofill emoji name</label>
@@ -281,45 +313,60 @@
             </div>
         `;
 
-        settingsMenu.querySelector('#autofill_cb').addEventListener('change', (e) => {
-            localStorage.setItem('autofill', e.target.checked);
-        });
+    settingsMenu
+      .querySelector("#autofill_cb")
+      .addEventListener("change", (e) => {
+        localStorage.setItem("autofill", e.target.checked);
+      });
 
-        settingsMenu.querySelector('#img_cb').addEventListener('change', (e) => {
-            localStorage.setItem('useImgTag', e.target.checked);
-        });
+    settingsMenu.querySelector("#img_cb").addEventListener("change", (e) => {
+      localStorage.setItem("useImgTag", e.target.checked);
+    });
 
-        settingsMenu.querySelector('#show_label').addEventListener('change', (e) => {
-            localStorage.setItem('showEmojiLabel', JSON.stringify(e.target.checked)); // Store as JSON string
-            const labels = document.querySelectorAll('.emoji-label'); // Select elements with class 'emoji-label'
-            labels.forEach(label => label.style.display = e.target.checked ? 'block' : 'none'); // Corrected display logic
-        });
+    settingsMenu
+      .querySelector("#show_label")
+      .addEventListener("change", (e) => {
+        localStorage.setItem(
+          "showEmojiLabel",
+          JSON.stringify(e.target.checked)
+        ); // Store as JSON string
+        const labels = document.querySelectorAll(".emoji-label"); // Select elements with class 'emoji-label'
+        labels.forEach(
+          (label) => (label.style.display = e.target.checked ? "block" : "none")
+        ); // Corrected display logic
+      });
 
-        modal.appendChild(closeButton);
-        modal.appendChild(settingsButton);
-        modal.appendChild(settingsMenu);
-        modal.appendChild(emojiMenu);
-        document.body.appendChild(modal);
+    modal.appendChild(closeButton);
+    modal.appendChild(settingsButton);
+    modal.appendChild(settingsMenu);
+    modal.appendChild(emojiMenu);
+    document.body.appendChild(modal);
 
-        initializeSettings();
+    initializeSettings();
+  }
+
+  function initializeSettings() {
+    document.getElementById("autofill_cb").checked = JSON.parse(
+      localStorage.getItem("autofill") || "false"
+    );
+    document.getElementById("img_cb").checked = JSON.parse(
+      localStorage.getItem("useImgTag") || "false"
+    );
+    document.getElementById("show_label").checked = JSON.parse(
+      localStorage.getItem("showEmojiLabel") || "false"
+    );
+  }
+
+  function addEmojiButton() {
+    menuSelector = document.querySelector(menuQuery);
+    chatForm = document.getElementById(inputQuery);
+
+    if (!menuSelector || !chatForm) {
+      setTimeout(addEmojiButton, 1000);
+      return;
     }
 
-    function initializeSettings() {
-        document.getElementById('autofill_cb').checked = JSON.parse(localStorage.getItem('autofill') || 'false');
-        document.getElementById('img_cb').checked = JSON.parse(localStorage.getItem('useImgTag') || 'false');
-        document.getElementById('show_label').checked = JSON.parse(localStorage.getItem('showEmojiLabel') || 'false');
-    }
-
-    function addEmojiButton() {
-        menuSelector = document.querySelector(menuQuery);
-        chatForm = document.getElementById(inputQuery);
-
-        if (!menuSelector || !chatForm) {
-            setTimeout(addEmojiButton, 1000);
-            return;
-        }
-
-        const emojiButtonStyler = `
+    const emojiButtonStyler = `
             .emoji-button {
                 cursor: pointer;
                 font-size: 24px;
@@ -327,33 +374,34 @@
             }
         `;
 
-        GM_addStyle(emojiButtonStyler);
+    GM_addStyle(emojiButtonStyler);
 
-        const emojiButton = document.createElement('span');
-        emojiButton.classList.add('emoji-button');
-        emojiButton.innerHTML = '😂';
-        emojiButton.addEventListener('click', createModal);
+    const emojiButton = document.createElement("span");
+    emojiButton.classList.add("emoji-button");
+    emojiButton.innerHTML = "😂";
+    emojiButton.addEventListener("click", createModal);
 
-        if (isChatbox || isForum) {
-            menuSelector.prepend(emojiButton);
-        } else {
-            menuSelector.append(emojiButton);
-        }
-
-        chatForm.addEventListener('input', (e) => {
-            
-            // get settings from local storage
-            const autofill = JSON.parse(localStorage.getItem('autofill') || 'false');
-            const useImgTag = JSON.parse(localStorage.getItem('useImgTag') || 'false');
-
-            // only handle input changes if the user has these settings enabled
-            if (autofill || useImgTag) {
-                handleInputChange(e, autofill, useImgTag);
-            }
-        });
+    if (isChatbox || isForum) {
+      menuSelector.prepend(emojiButton);
+    } else {
+      menuSelector.append(emojiButton);
     }
 
-    if (isChatbox || isForum || isNewTopic || isTorrent) {
-        addEmojiButton();
-    }
+    chatForm.addEventListener("input", (e) => {
+      // get settings from local storage
+      const autofill = JSON.parse(localStorage.getItem("autofill") || "false");
+      const useImgTag = JSON.parse(
+        localStorage.getItem("useImgTag") || "false"
+      );
+
+      // only handle input changes if the user has these settings enabled
+      if (autofill || useImgTag) {
+        handleInputChange(e, autofill, useImgTag);
+      }
+    });
+  }
+
+  if (isChatbox || isForum || isNewTopic || isTorrent || isEditTopic) {
+    addEmojiButton();
+  }
 })();
