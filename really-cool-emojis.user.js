@@ -1,20 +1,28 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      0.9
+// @version      1.0
 // @namespace    https://github.com/frenchcutgreenbean/
-// @description  chatbox emojis and img
+// @description  emojis and img for UNIT3D trackers
 // @author       dantayy
-// @match        https://blutopia.cc/
-// @match        https://aither.cc/
-// @match        https://reelflix.xyz/
-// @match        https://fearnopeer.com/
-// @match        https://cinematik.net/
+// @match        https://blutopia.cc/*
+// @match        https://aither.cc/*
+// @match        https://reelflix.xyz/*
+// @match        https://fearnopeer.com/*
+// @match        https://cinematik.net/*
 // @icon         https://ptpimg.me/shqsh5.png
 // @downloadURL  https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
 // @updateURL    https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
 // @grant        GM_addStyle
 // @license      GPL-3.0-or-later
 // ==/UserScript==
+
+/************************************************************************************************
+ * ChangeLog
+ * 1.0
+ * - Added support for torrent comments and forums.
+ * - Made sure functions only run on supported pages, or if they're enabled (handleInputChange()).
+ * - Some dynamic styling
+ ************************************************************************************************/
 
 (function () {
     'use strict';
@@ -78,10 +86,34 @@
         "putinwalk": "https://i.ibb.co/C6LT6NP/walkin.gif",
         "spotted": "https://i.ibb.co/BNh18pp/spotted.gif",
         "caught": "https://i.ibb.co/JFJxSmX/4k.gif",
-        "yoo": "https://i.ibb.co/CBfDMxJ/yoo.gif"
+        "yoo": "https://i.ibb.co/CBfDMxJ/yoo.gif",
+        'smart': 'https://i.ibb.co/nRfYr0H/smart.gif',
+        'reallythinking': 'https://i.ibb.co/Qr0dNwj/reallythinking.gif',
+        'nerdbob': 'https://i.ibb.co/mbndBMC/nerdbob.gif',
+        'nerd': 'https://i.ibb.co/1X6YBwF/nerd.gif',
+        'hmmm': 'https://i.ibb.co/TvtNp9v/hmmm.gif',
+        'actually': 'https://i.ibb.co/4YD9gGK/actually.gif'
     };
 
-    let chatboxHeader, chatForm;
+    const currentURL = window.location.href;
+    const currURL = new URL(window.location.href);
+    const rootURL = currURL.origin + "/";
+    const torrentRegEX = /.*\/torrents\/\d+/
+    const forumRegEX = /.*\/forums\/topics\/\d+/
+    const newTopicRegEX = /.\/topics\/forum\/\d+\/create/
+
+    // set supported pages
+    const isTorrent = torrentRegEX.test(currentURL);
+    const isForum = forumRegEX.test(currentURL);
+    const isNewTopic = newTopicRegEX.test(currentURL);
+    const isChatbox = currentURL === rootURL ? true : false
+
+    // dynamic DOM selectors for different pages
+    const menuQuery = isTorrent ? "h4.panel__heading" : isForum ? "#forum_reply_form" : isNewTopic ? "h2.panel__heading" : '#chatbox_header div'
+    const inputQuery = isTorrent ? "new-comment__textarea" : isForum || isNewTopic ? "bbcode-content" : 'chatbox__messages-create'
+
+    const defaultSize = isChatbox ? "42" : "84" // 42 width for chatbox and 84 for everything else
+    let menuSelector, chatForm;
     const emojiMenu = document.createElement("div");
     emojiMenu.className = "emoji-content";
     const showLabel = JSON.parse(localStorage.getItem('showEmojiLabel') || 'false');
@@ -102,20 +134,17 @@
     }
 
     function onEmojiclick(image) {
-        const emoji = `[img=42]${image}[/img]`;
+        const emoji = `[img=${defaultSize}]${image}[/img]`;
         chatForm.value = chatForm.value ? `${chatForm.value.trim()} ${emoji}` : emoji;
         chatForm.focus()
     }
 
-    function handleInputChange(e) {
-        const regex = /^http.*\.(jpg|jpeg|png|gif|bmp|webp)$/i;
+    function handleInputChange(e, autofill, useImgTag) {
+        const regex = /^http.*\.(jpg|jpeg|png|gif|bmp|webp)$/i; // regex matches image url
         const message = e.target.value.trim();
 
-        const autofill = JSON.parse(localStorage.getItem('autofill') || 'false');
-        const useImgTag = JSON.parse(localStorage.getItem('useImgTag') || 'false');
-
         if (autofill && emojis[message]) {
-            chatForm.value = `[img=42]${emojis[message]}[/img]`;
+            chatForm.value = `[img=${defaultSize}]${emojis[message]}[/img]`;
             return;
         }
 
@@ -138,16 +167,19 @@
             return;
         }
 
+        // Attempt to style the modal dynamically. Not great, but it works.
+        const menuLeft = isChatbox || isNewTopic ? '60%' : '20%';
+        const menuTop = isNewTopic ? '10%' : '20%';
         const modalStyler = `
             .emoji-menu {
                 position: fixed;
                 border-radius: 5px;
                 z-index: 1;
-                left: 60%;
-                top: 20%;
+                left: ${menuLeft};
+                top: ${menuTop};
                 max-height: 500px;
                 overflow: auto;
-                background-color: rgba(0,0,0,0.4);
+                background-color: rgba(0,0,0,0.8);
             }
             .emoji-content {
                 background-color: #1C1C1C;
@@ -163,6 +195,7 @@
                 gap: 10px;
             }
             .emoji-label {
+                max-width: 40px;
                 font-size: 8px;
                 text-align: center;
             }
@@ -276,11 +309,12 @@
         document.getElementById('img_cb').checked = JSON.parse(localStorage.getItem('useImgTag') || 'false');
         document.getElementById('show_label').checked = JSON.parse(localStorage.getItem('showEmojiLabel') || 'false');
     }
-    function addEmojiButton() {
-        chatboxHeader = document.querySelector('#chatbox_header div');
-        chatForm = document.getElementById('chatbox__messages-create');
 
-        if (!chatboxHeader || !chatForm) {
+    function addEmojiButton() {
+        menuSelector = document.querySelector(menuQuery);
+        chatForm = document.getElementById(inputQuery);
+
+        if (!menuSelector || !chatForm) {
             setTimeout(addEmojiButton, 1000);
             return;
         }
@@ -289,9 +323,10 @@
             .emoji-button {
                 cursor: pointer;
                 font-size: 24px;
-                margin-left: 10px;
+                margin-left: 0;
             }
         `;
+
         GM_addStyle(emojiButtonStyler);
 
         const emojiButton = document.createElement('span');
@@ -299,9 +334,26 @@
         emojiButton.innerHTML = '😂';
         emojiButton.addEventListener('click', createModal);
 
-        chatboxHeader.prepend(emojiButton);
-        chatForm.addEventListener('input', handleInputChange);
+        if (isChatbox || isForum) {
+            menuSelector.prepend(emojiButton);
+        } else {
+            menuSelector.append(emojiButton);
+        }
+
+        chatForm.addEventListener('input', (e) => {
+            
+            // get settings from local storage
+            const autofill = JSON.parse(localStorage.getItem('autofill') || 'false');
+            const useImgTag = JSON.parse(localStorage.getItem('useImgTag') || 'false');
+
+            // only handle input changes if the user has these settings enabled
+            if (autofill || useImgTag) {
+                handleInputChange(e, autofill, useImgTag);
+            }
+        });
     }
 
-    addEmojiButton();
+    if (isChatbox || isForum || isNewTopic || isTorrent) {
+        addEmojiButton();
+    }
 })();
