@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      1.4
+// @version      1.5
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -114,6 +114,7 @@
     prideFlag: "https://i.ibb.co/72bZMp6/image.gif",
     parrot: "https://i.ibb.co/yB4fCfp/parrot.gif",
     tham: "https://i.ibb.co/Rz5QB5Y/tham.gif",
+    "2tham": "https://i.ibb.co/yB0DHgx/2tham.gif",
   };
 
   const currentURL = window.location.href;
@@ -172,7 +173,11 @@
   }
 
   function onEmojiclick(image) {
-    const emoji = `[img=${defaultSize}]${image}[/img]`;
+    let size = defaultSize;
+    if (image.includes("tham")) {
+      size = 128;
+    }
+    const emoji = `[img=${size}]${image}[/img]`;
     chatForm.value = chatForm.value
       ? `${chatForm.value.trim()} ${emoji}`
       : emoji;
