@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      1.3
+// @version      1.4
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -104,6 +104,16 @@
     actually: "https://i.ibb.co/4YD9gGK/actually.gif",
     shy: "https://ptpimg.me/olw327.png",
     ascared: "https://ptpimg.me/qbf200.png",
+    gnite: "https://i.ibb.co/rp5zSBF/gnite.gif",
+    modCheck: "https://i.ibb.co/fn2BxN6/modCheck.gif",
+    thinking: "https://i.ibb.co/WfrH9db/thinking.gif",
+    reallyshocked: "https://i.ibb.co/qmrdfk2/reallyshocked.gif",
+    caughtme: "https://i.ibb.co/2KhYFs3/caughtme.gif",
+    dead: "https://i.ibb.co/q1vQxxs/dead.gif",
+    whereTho: "https://i.ibb.co/Zft4RCV/whereTho.gif",
+    prideFlag: "https://i.ibb.co/72bZMp6/image.gif",
+    parrot: "https://i.ibb.co/yB4fCfp/parrot.gif",
+    tham: "https://i.ibb.co/Rz5QB5Y/tham.gif",
   };
 
   const currentURL = window.location.href;
