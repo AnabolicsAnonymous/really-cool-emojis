@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      1.5
+// @version      1.6
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -115,6 +115,11 @@
     parrot: "https://i.ibb.co/yB4fCfp/parrot.gif",
     tham: "https://i.ibb.co/Rz5QB5Y/tham.gif",
     "2tham": "https://i.ibb.co/yB0DHgx/2tham.gif",
+    ionkno: "https://i.ibb.co/Khpw97t/ionkno.png",
+    Erm: "https://i.ibb.co/TbJypyv/Erm.gif",
+    noted: "https://i.ibb.co/qn0w6N5/noted.gif",
+    killua: "https://i.ibb.co/98g7bxb/killua.gif",
+    brainhurt: "https://i.ibb.co/bL7hLm7/brainhurt.gif",
   };
 
   const currentURL = window.location.href;
