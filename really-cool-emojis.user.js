@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      1.6
+// @version      1.7
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -120,6 +120,12 @@
     noted: "https://i.ibb.co/qn0w6N5/noted.gif",
     killua: "https://i.ibb.co/98g7bxb/killua.gif",
     brainhurt: "https://i.ibb.co/bL7hLm7/brainhurt.gif",
+    fbi: "https://i.ibb.co/fr64Fn6/fbi.png",
+    catpunch: "https://i.ibb.co/CzmzYM6/4x.gif",
+    xdd: "https://i.ibb.co/0jJS1jg/xdd.gif",
+    mamamia: "https://i.ibb.co/CmZR8p7/mamamia.gif",
+    HARAM: "https://i.ibb.co/KLy10rQ/HARAM.gif",
+    ayoh: "https://i.ibb.co/3v22m5B/ayoh.gif",
   };
 
   const currentURL = window.location.href;
