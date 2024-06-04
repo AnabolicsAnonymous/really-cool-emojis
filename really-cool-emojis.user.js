@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      1.7
+// @version      1.8
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -13,11 +13,16 @@
 // @downloadURL  https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
 // @updateURL    https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
 // @grant        GM_addStyle
+// @grant        GM_xmlhttpRequest
 // @license      GPL-3.0-or-later
 // ==/UserScript==
 
 /************************************************************************************************
  * ChangeLog
+ * 1.8
+ *  - Added Check Update button in the settings menu.
+ *  - Some styling changes for the menu.
+ *  - More emojis.
  * 1.2
  *  - Added new commands for img tags.
  *      - Wrap images without defining a width !https://i.ibb.co/5sqKm4Y/o7.png -> [img]https://i.ibb.co/5sqKm4Y/o7.png[/img]
@@ -126,6 +131,12 @@
     mamamia: "https://i.ibb.co/CmZR8p7/mamamia.gif",
     HARAM: "https://i.ibb.co/KLy10rQ/HARAM.gif",
     ayoh: "https://i.ibb.co/3v22m5B/ayoh.gif",
+    loopy: "https://ptpimg.me/vmq38q.png",
+    excellent: "https://i.ibb.co/P98kJ53/excellent.gif",
+    innocent: "https://i.ibb.co/2dtCYGW/innocent.gif",
+    catsmirk: "https://i.ibb.co/wRRV5ns/catsmirk.gif",
+    saythatagain: "https://i.ibb.co/HTTgfcB/saythatagain.gif",
+    reallycool: "https://i.ibb.co/6vrY0km/reallycool.gif",
   };
 
   const currentURL = window.location.href;
@@ -353,7 +364,7 @@
             .settings-menu {
                 background-color: #2C2C2C;
                 color: #CCCCCC;
-                padding: 20px;
+                padding: 5px 20px;
                 border-radius: 5px;
                 position: absolute;
                 top: 50px;
@@ -364,6 +375,18 @@
             .emoji__config {
                 margin-bottom: 10px;
             }
+            #img_cb , #autofill_cb, #show_label{
+                cursor: pointer !important;
+            }
+            .check__update {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+              }
+            .update__btn {
+                cursor: pointer;
+                color: #4F8C3C;
+              }
         `;
 
     GM_addStyle(modalStyler);
@@ -400,6 +423,8 @@
             <div class="emoji__config"> 
             <label for="show_label">Show emoji labels</label>
             <input type="checkbox" id="show_label">
+            <div class="check__update">
+            <span class="update__btn">Check for updates</span></div>
             </div>
         `;
 
@@ -446,6 +471,48 @@
     document.getElementById("show_label").checked = JSON.parse(
       localStorage.getItem("showEmojiLabel") || "false"
     );
+
+    const updateBtn = document.querySelector(".update__btn");
+    updateBtn.addEventListener("click", checkUpdate);
+  }
+
+  // Check for updates.
+  function checkUpdate() {
+    GM_xmlhttpRequest({
+      method: "GET",
+      url:
+        "https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js",
+      onload: function (response) {
+        const updateDiv = document.querySelector(".check__update");
+        const responseText = response.responseText;
+
+        // Extract version from response text
+        const versionMatch = responseText.match(/\/\/\s*@version\s+([^\s]+)/);
+        if (versionMatch) {
+          const onlineVersion = versionMatch[1];
+          const currentVersion = GM_info.script.version;
+
+          if (onlineVersion !== currentVersion) {
+            const updateLink = document.createElement("a");
+            updateLink.href =
+              "https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js";
+            updateLink.target = "_blank";
+            updateLink.textContent = "Update";
+            updateLink.style.marginTop = "10px";
+            updateDiv.appendChild(updateLink);
+          } else {
+            const updateInfo = document.createElement("span");
+            updateInfo.textContent = "You are up to date!";
+            updateInfo.style.marginTop = "10px";
+            updateDiv.appendChild(updateInfo);
+          }
+        } else {
+          console.error(
+            "Unable to determine the latest version of the script."
+          );
+        }
+      },
+    });
   }
 
   // Inject the emoji button and run the main script.
