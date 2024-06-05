@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      1.8
+// @version      1.9
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -137,6 +137,16 @@
     catsmirk: "https://i.ibb.co/wRRV5ns/catsmirk.gif",
     saythatagain: "https://i.ibb.co/HTTgfcB/saythatagain.gif",
     reallycool: "https://i.ibb.co/6vrY0km/reallycool.gif",
+    robbery: "https://i.ibb.co/cYqqtbc/robbery.png",
+    cronch: "https://i.ibb.co/y84jjsz/cronch.gif",
+    stanced: "https://i.ibb.co/yBJCBGY/stanced.gif",
+    sittin: "https://i.ibb.co/YcMxQTZ/sittin.gif",
+    ohno: "https://i.ibb.co/SKPHp6c/ohno.gif",
+    monkeat: "https://i.ibb.co/MBLgt2R/monkeat.gif",
+    monkE: "https://i.ibb.co/48wZByc/monkE.gif",
+    aussie: "https://i.ibb.co/QvWGHww/aussie.gif",
+    yoooo: "https://i.ibb.co/s3NDTct/yoooo.gif",
+    dafuq: "https://i.ibb.co/m6M0h46/dafuq.gif",
   };
 
   const currentURL = window.location.href;
