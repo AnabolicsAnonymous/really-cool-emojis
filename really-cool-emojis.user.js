@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      1.9
+// @version      2.0
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -12,13 +12,15 @@
 // @icon         https://ptpimg.me/shqsh5.png
 // @downloadURL  https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
 // @updateURL    https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
-// @grant        GM_addStyle
+// @grant        GM.addStyle
 // @grant        GM_xmlhttpRequest
 // @license      GPL-3.0-or-later
 // ==/UserScript==
 
 /************************************************************************************************
  * ChangeLog
+ * 2.0 
+ *  - GM_addStyle -> GM.addStyle for more browser support thanks HDVinnie!
  * 1.8
  *  - Added Check Update button in the settings menu.
  *  - Some styling changes for the menu.
@@ -145,7 +147,7 @@
     monkeat: "https://i.ibb.co/MBLgt2R/monkeat.gif",
     monkE: "https://i.ibb.co/48wZByc/monkE.gif",
     aussie: "https://i.ibb.co/QvWGHww/aussie.gif",
-    yoooo: "https://i.ibb.co/s3NDTct/yoooo.gif",
+    YOO: "https://i.ibb.co/s3NDTct/yoooo.gif",
     dafuq: "https://i.ibb.co/m6M0h46/dafuq.gif",
   };
 
@@ -399,7 +401,7 @@
               }
         `;
 
-    GM_addStyle(modalStyler);
+    GM.addStyle(modalStyler);
 
     const modal = document.createElement("div");
     modal.className = "emoji-menu";
@@ -543,7 +545,7 @@
             }
         `;
 
-    GM_addStyle(emojiButtonStyler);
+    GM.addStyle(emojiButtonStyler);
 
     const emojiButton = document.createElement("span");
     emojiButton.classList.add("emoji-button");
