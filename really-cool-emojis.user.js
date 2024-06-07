@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      2.4
+// @version      2.5
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -178,6 +178,11 @@
     skatin: "https://i.ibb.co/QFGB0Rp/skatin.gif",
     sfa: "https://i.ibb.co/Htbgx17/sfa.gif",
     putinSquat: "https://i.ibb.co/qMZJRBD/putinsquat.png",
+    putinAttack: "https://i.ibb.co/4S2yh9h/putin-Attack.png",
+    youRang: "https://i.ibb.co/JQWPZM5/youRang.gif",
+    whatido: "https://i.ibb.co/CK1zY7k/whatido.gif",
+    fucku: "https://i.ibb.co/V3PwZbm/fucku.gif",
+    weebHi: "https://i.ibb.co/BCDxRgs/image.gif",
   };
 
   const currentURL = window.location.href;
