@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      2.3
+// @version      2.4
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -177,6 +177,7 @@
     STFU: "https://i.ibb.co/nR9yQTJ/STFU.gif",
     skatin: "https://i.ibb.co/QFGB0Rp/skatin.gif",
     sfa: "https://i.ibb.co/Htbgx17/sfa.gif",
+    putinSquat: "https://i.ibb.co/qMZJRBD/putinsquat.png",
   };
 
   const currentURL = window.location.href;
