@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      2.0
+// @version      2.1
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -19,7 +19,9 @@
 
 /************************************************************************************************
  * ChangeLog
- * 2.0 
+ * 2.1
+ *  - Switch the way autofill emojis work. Must start with !{emoji_name} so it doesn't interfere with regular chatting.
+ * 2.0
  *  - GM_addStyle -> GM.addStyle for more browser support thanks HDVinnie!
  * 1.8
  *  - Added Check Update button in the settings menu.
@@ -120,8 +122,8 @@
     whereTho: "https://i.ibb.co/Zft4RCV/whereTho.gif",
     prideFlag: "https://i.ibb.co/72bZMp6/image.gif",
     parrot: "https://i.ibb.co/yB4fCfp/parrot.gif",
-    tham: "https://i.ibb.co/Rz5QB5Y/tham.gif",
-    "2tham": "https://i.ibb.co/yB0DHgx/2tham.gif",
+    munn: "https://i.ibb.co/Rz5QB5Y/tham.gif",
+    "2munn": "https://i.ibb.co/yB0DHgx/2tham.gif",
     ionkno: "https://i.ibb.co/Khpw97t/ionkno.png",
     Erm: "https://i.ibb.co/TbJypyv/Erm.gif",
     noted: "https://i.ibb.co/qn0w6N5/noted.gif",
@@ -149,6 +151,17 @@
     aussie: "https://i.ibb.co/QvWGHww/aussie.gif",
     YOO: "https://i.ibb.co/s3NDTct/yoooo.gif",
     dafuq: "https://i.ibb.co/m6M0h46/dafuq.gif",
+    stonecold: "https://i.ibb.co/N96Z2Bp/stonecold.gif",
+    shyboi: "https://i.ibb.co/HHYvzX4/shyboi.gif",
+    pikahey: "https://i.ibb.co/2WnDK5C/pikahey.gif",
+    mikeW: "https://i.ibb.co/QPh8DFq/mikeW.gif",
+    hasbullahi: "https://i.ibb.co/XLbB1hF/hasbullahi.gif",
+    BIGMONEY: "https://i.ibb.co/DL2zLYr/BIGMONEY.gif",
+    ALRIGHT: "https://i.ibb.co/c82Tz05/ALRIGHT.gif",
+    dogWTF: "https://i.ibb.co/dm3ZfS4/out.png",
+    watchit: "https://i.ibb.co/99nnv04/watchit.gif",
+    trash: "https://i.ibb.co/G2Wx8WL/trash.gif",
+    STRESSED: "https://i.ibb.co/Lg3GhnL/STRESSED.gif",
   };
 
   const currentURL = window.location.href;
@@ -220,83 +233,91 @@
 
   // Handle the commands if enabled in the settings. Autofill + IMG tags.
   function handleInputChange(e, autofill, useImgTag) {
-    const regex = /^(?:!?http.*|l!http.*)\.(jpg|jpeg|png|gif|bmp|webp)$/i; // regex matches image url
+    const regex = /^(?:!?http.*|l!http.*)\.(jpg|jpeg|png|gif|bmp|webp)$/i;
     const message = e.target.value;
 
     if (!message) return;
 
-    // Split the message on spaces and newlines, keeping the delimiters
     const messageParts = message.split(/(\s+|\n)/);
 
-    // Helper function to find the last non-whitespace item
     const findLastNonWhitespaceIndex = (arr) => {
       for (let i = arr.length - 1; i >= 0; i--) {
-        if (arr[i].trim() !== "") {
-          return i;
-        }
+        if (arr[i].trim() !== "") return i;
       }
       return -1;
     };
 
     const lastItemIndex = findLastNonWhitespaceIndex(messageParts);
-    const lastItem = lastItemIndex >= 0 ? messageParts[lastItemIndex] : "";
+    const lastItem =
+      lastItemIndex >= 0 ? messageParts[lastItemIndex].trim() : "";
     const secondLastItemIndex = findLastNonWhitespaceIndex(
       messageParts.slice(0, lastItemIndex)
     );
     const secondLastItem =
-      secondLastItemIndex >= 0 ? messageParts[secondLastItemIndex] : "";
+      secondLastItemIndex >= 0 ? messageParts[secondLastItemIndex].trim() : "";
 
-    // Helper function to set the chat form value
     const setChatFormValue = (value) => {
       chatForm.value = value;
-      chatForm.dispatchEvent(new Event("input", { bubbles: true })); // So preview works on forums.
+      chatForm.dispatchEvent(new Event("input", { bubbles: true }));
     };
 
-    if (autofill && emojis[lastItem.trim()]) {
-      messageParts[lastItemIndex] = `[img=${defaultSize}]${
-        emojis[lastItem.trim()]
-      }[/img]`;
+    const emojiCheck = lastItem.slice(1);
+
+    if (
+      !lastItem.startsWith("!") &&
+      !lastItem.startsWith("l") &&
+      !secondLastItem.startsWith("!") &&
+      !secondLastItem.startsWith("l")
+    ) {
+      return;
+    }
+
+    if (autofill && emojis[emojiCheck]) {
+      messageParts[
+        lastItemIndex
+      ] = `[img=${defaultSize}]${emojis[emojiCheck]}[/img]`;
       setChatFormValue(messageParts.join(""));
       return;
     }
 
-    if (useImgTag && regex.test(lastItem.trim())) {
-      const trimmedLastItem = lastItem.trim();
+    if (useImgTag && regex.test(lastItem)) {
+      const applyImgTag = (index, tag) => {
+        messageParts[index] = tag;
+        messageParts.splice(lastItemIndex, 1);
+        setChatFormValue(messageParts.join(""));
+      };
 
-      // Handle width based commands e.g. !200 image_link l!200 image_link
-      if (secondLastItem.trim().startsWith("!")) {
-        const num = secondLastItem.trim().substring(1);
-        if (parseInt(num)) {
-          messageParts[
-            secondLastItemIndex
-          ] = `[img=${num}]${trimmedLastItem}[/img]`;
-          messageParts.splice(lastItemIndex, 1); // remove the last item
-          setChatFormValue(messageParts.join(""));
-          return;
-        }
-      } else if (secondLastItem.trim().startsWith("l!")) {
-        const num = secondLastItem.trim().substring(2);
-        if (parseInt(num)) {
-          messageParts[
-            secondLastItemIndex
-          ] = `[url=${trimmedLastItem}][img=${num}]${trimmedLastItem}[/img][/url]`;
-          messageParts.splice(lastItemIndex, 1); // remove the last item
-          setChatFormValue(messageParts.join(""));
-          return;
-        }
-      }
-      // Handle commands with no given width.
-      else if (lastItem.startsWith("!")) {
-        const imageURL = lastItem.substring(1).trim();
-        messageParts[lastItemIndex] = `[img]${imageURL}[/img]`;
-        setChatFormValue(messageParts.join(""));
+      if (secondLastItem.startsWith("!") && parseInt(secondLastItem.slice(1))) {
+        applyImgTag(
+          secondLastItemIndex,
+          `[img=${secondLastItem.slice(1)}]${lastItem}[/img]`
+        );
         return;
-      } else if (lastItem.startsWith("l!")) {
-        const imageURL = lastItem.substring(2).trim();
-        messageParts[
-          lastItemIndex
-        ] = `[url=${imageURL}][img]${imageURL}[/img][/url]`;
-        setChatFormValue(messageParts.join(""));
+      }
+
+      if (
+        secondLastItem.startsWith("l!") &&
+        parseInt(secondLastItem.slice(2))
+      ) {
+        applyImgTag(
+          secondLastItemIndex,
+          `[url=${lastItem}][img=${secondLastItem.slice(
+            2
+          )}]${lastItem}[/img][/url]`
+        );
+        return;
+      }
+
+      if (lastItem.startsWith("!")) {
+        applyImgTag(lastItemIndex, `[img]${lastItem.slice(1)}[/img]`);
+        return;
+      }
+
+      if (lastItem.startsWith("l!")) {
+        applyImgTag(
+          lastItemIndex,
+          `[url=${lastItem.slice(2)}][img]${lastItem.slice(2)}[/img][/url]`
+        );
         return;
       }
     }
