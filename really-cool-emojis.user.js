@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      2.1
+// @version      2.2
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -162,6 +162,12 @@
     watchit: "https://i.ibb.co/99nnv04/watchit.gif",
     trash: "https://i.ibb.co/G2Wx8WL/trash.gif",
     STRESSED: "https://i.ibb.co/Lg3GhnL/STRESSED.gif",
+    hasbullaFight: "https://i.ibb.co/2kmsP8b/Hasbulla-Fight.gif",
+    marinFlushed: "https://i.ibb.co/JkbCdd4/marin-Flush.gif",
+    squareUp: "https://i.ibb.co/drw3sfk/Iwill-Beat-Yo-Ass.gif",
+    shookt: "https://i.ibb.co/R6R3Dcm/shookt.gif",
+    hahaso: "https://i.ibb.co/4SF12vP/hahaso.gif",
+    kek: "https://i.ibb.co/3v9GfYD/kekW.gif",
   };
 
   const currentURL = window.location.href;
