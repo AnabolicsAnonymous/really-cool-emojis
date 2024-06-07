@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      2.2
+// @version      2.3
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -168,6 +168,15 @@
     shookt: "https://i.ibb.co/R6R3Dcm/shookt.gif",
     hahaso: "https://i.ibb.co/4SF12vP/hahaso.gif",
     kek: "https://i.ibb.co/3v9GfYD/kekW.gif",
+    putinApprove: "https://i.ibb.co/VJ2HYDR/putin-Approve.gif",
+    NOPERS: "https://i.ibb.co/wYZTNfy/NOPERS.gif",
+    MOMMY: "https://i.ibb.co/xMJTSL0/MOMMY.gif",
+    kidgokuEat: "https://i.ibb.co/tb7X9T4/kidgoku-Eat.gif",
+    HEH: "https://i.ibb.co/wdbC1HV/HEH.gif",
+    gokueat: "https://i.ibb.co/CPd53LC/gokueat.gif",
+    STFU: "https://i.ibb.co/nR9yQTJ/STFU.gif",
+    skatin: "https://i.ibb.co/QFGB0Rp/skatin.gif",
+    sfa: "https://i.ibb.co/Htbgx17/sfa.gif",
   };
 
   const currentURL = window.location.href;
@@ -314,16 +323,15 @@
         return;
       }
 
-      if (lastItem.startsWith("!")) {
-        applyImgTag(lastItemIndex, `[img]${lastItem.slice(1)}[/img]`);
+      if (lastItem.startsWith("!") && !emojis[emojiCheck]) {
+        messageParts[lastItemIndex] = `[img]${lastItem.slice(1)}[/img]`;
+        setChatFormValue(messageParts.join(""));
         return;
       }
 
       if (lastItem.startsWith("l!")) {
-        applyImgTag(
-          lastItemIndex,
-          `[url=${lastItem.slice(2)}][img]${lastItem.slice(2)}[/img][/url]`
-        );
+        messageParts[lastItemIndex] = `[img]${lastItem.slice(2)}[/img]`;
+        setChatFormValue(messageParts.join(""));
         return;
       }
     }
