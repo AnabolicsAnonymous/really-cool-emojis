@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      2.5
+// @version      2.6
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -183,6 +183,7 @@
     whatido: "https://i.ibb.co/CK1zY7k/whatido.gif",
     fucku: "https://i.ibb.co/V3PwZbm/fucku.gif",
     weebHi: "https://i.ibb.co/BCDxRgs/image.gif",
+    mmkay: "https://i.ibb.co/3NnYDyt/out.png",
   };
 
   const currentURL = window.location.href;
