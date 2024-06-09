@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      2.6
+// @version      2.7
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -184,6 +184,18 @@
     fucku: "https://i.ibb.co/V3PwZbm/fucku.gif",
     weebHi: "https://i.ibb.co/BCDxRgs/image.gif",
     mmkay: "https://i.ibb.co/3NnYDyt/out.png",
+    Risenocular: "https://i.ibb.co/XLLg8w9/risenoculars.gif",
+    wuh: "https://i.ibb.co/mDW4G97/wuh.gif",
+    SNACKING: "https://i.ibb.co/5n1S9Sq/SNACKING.gif",
+    shitlookgood: "https://i.ibb.co/ZT4vbBH/shitlookgood.gif",
+    PLEASE: "https://i.ibb.co/c1B3XSH/PLEASE.gif",
+    NOHORNY: "https://i.ibb.co/4ZSn3gh/NOHORNY.gif",
+    LETHIMCOOK: "https://i.ibb.co/NWC2108/LETHIMCOOK.gif",
+    kok: "https://i.ibb.co/nLpSJnt/kok.gif",
+    sus: "https://i.ibb.co/VVJqBLS/huhh.gif",
+    ":d": "https://i.ibb.co/PgPmFzP/DD.gif",
+    buh: "https://i.ibb.co/pvVghfM/buh.gif",
+    rockhuh: "https://i.ibb.co/CH8mY0w/huh.gif",
   };
 
   const currentURL = window.location.href;
