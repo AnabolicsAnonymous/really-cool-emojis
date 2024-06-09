@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      2.7
+// @version      2.8
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -196,6 +196,7 @@
     ":d": "https://i.ibb.co/PgPmFzP/DD.gif",
     buh: "https://i.ibb.co/pvVghfM/buh.gif",
     rockhuh: "https://i.ibb.co/CH8mY0w/huh.gif",
+    ':c': "https://i.ibb.co/ys4xbY5/image.gif"
   };
 
   const currentURL = window.location.href;
