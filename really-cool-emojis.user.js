@@ -196,7 +196,9 @@
     ":d": "https://i.ibb.co/PgPmFzP/DD.gif",
     buh: "https://i.ibb.co/pvVghfM/buh.gif",
     rockhuh: "https://i.ibb.co/CH8mY0w/huh.gif",
-    ':c': "https://i.ibb.co/8rYWwgH/grump.gif"
+    ":c": "https://i.ibb.co/8rYWwgH/grump.gif",
+    batemanArrive: "https://i.ibb.co/7zsLddv/bateman-Arrive.gif",
+    chimpE : "https://i.ibb.co/55HNy0X/monkE.gif"
   };
 
   const currentURL = window.location.href;
