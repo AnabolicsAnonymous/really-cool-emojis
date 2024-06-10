@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      3.0
+// @version      3.1
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -12,13 +12,15 @@
 // @icon         https://ptpimg.me/shqsh5.png
 // @downloadURL  https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
 // @updateURL    https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
-// @grant        GM.addStyle
 // @grant        GM_xmlhttpRequest
 // @license      GPL-3.0-or-later
 // ==/UserScript==
 
 /************************************************************************************************
  * ChangeLog
+ * 3.1
+ *  - Support for PMs and changes to DOM Selectors and page type logic.
+ *  - Move away from GM.addStyle for better compatibility.
  * 2.1
  *  - Switch the way autofill emojis work. Must start with !{emoji_name} so it doesn't interfere with regular chatting.
  * 2.0
@@ -44,6 +46,13 @@
 
 (function () {
   "use strict";
+
+  // Helper function to addStyle instead of using GM.addStyle, for compatibility.
+  function addStyle(css) {
+    const style = document.createElement("style");
+    style.textContent = css;
+    document.head.appendChild(style);
+  }
 
   // ty sUss, sfa, moon, vaseline
   const emojis = {
@@ -198,41 +207,91 @@
     rockhuh: "https://i.ibb.co/CH8mY0w/huh.gif",
     ":c": "https://i.ibb.co/8rYWwgH/grump.gif",
     batemanArrive: "https://i.ibb.co/7zsLddv/bateman-Arrive.gif",
-    chimpE : "https://i.ibb.co/55HNy0X/monkE.gif"
+    chimpE: "https://i.ibb.co/55HNy0X/monkE.gif",
   };
 
   const currentURL = window.location.href;
-  const currURL = new URL(window.location.href);
-  const rootURL = currURL.origin + "/";
-  const torrentRegEX = /.*\/torrents\/\d+/;
-  const forumRegEX = /.*\/forums\/topics\/\d+/;
-  const newTopicRegEX = /.\/topics\/forum\/\d+\/create/;
-  const editTopicRegEX = /.*\/forums\/posts\/\d+\/edit/;
+  const currURL = new URL(currentURL);
+  const rootURL = `${currURL.origin}/`;
 
-  // set supported pages
-  const isTorrent = torrentRegEX.test(currentURL);
-  const isForum = forumRegEX.test(currentURL);
-  const isNewTopic = newTopicRegEX.test(currentURL);
-  const isEditTopic = editTopicRegEX.test(currentURL);
-  const isChatbox = currentURL === rootURL ? true : false;
+  const urlPatterns = [
+    { regex: /.*\/torrents\/\d+/, key: "isTorrent" },
+    { regex: /.*\/forums\/topics\/\d+/, key: "isForum" },
+    { regex: /.\/topics\/forum\/\d+\/create/, key: "isNewTopic" },
+    { regex: /.*\/forums\/posts\/\d+\/edit/, key: "isEditTopic" },
+    { regex: /.*\/outbox\/create/, key: "isPM" },
+    { regex: /.*\/inbox\/\d+/, key: "isReply" },
+  ];
 
-  // dynamic DOM selectors for different pages
-  const menuQuery = isTorrent
-    ? "h4.panel__heading" // For torrent comments
-    : isForum
-    ? "#forum_reply_form" // For forum replies
-    : isNewTopic || isEditTopic
-    ? "h2.panel__heading" // For New Topic or Editing a topic
-    : "#chatbox_header div"; // Chatbox
+  const pageFlags = urlPatterns.reduce((acc, pattern) => {
+    acc[pattern.key] = pattern.regex.test(currentURL);
+    return acc;
+  }, {});
 
-  const inputQuery = isTorrent
-    ? "new-comment__textarea" // Torrent comment input
-    : isForum || isNewTopic || isEditTopic
-    ? "bbcode-content" // Forums input
-    : "chatbox__messages-create"; // Chatbox input
+  pageFlags.isChatbox = currentURL === rootURL;
 
-  const defaultSize = isChatbox ? "42" : "84"; // 42 width for chatbox and 84 for everything else
+  const menuQuery = {
+    h4Heading: "h4.panel__heading",
+    forumReply: "#forum_reply_form",
+    h2Heading: "h2.panel__heading",
+    chatboxMenu: "#chatbox_header div",
+  };
+
+  const inputQuery = {
+    newComment: "new-comment__textarea",
+    bbcodeForum: "bbcode-content",
+    chatboxInput: "chatbox__messages-create",
+    bbcodePM: "bbcode-message",
+  };
+
   let menuSelector, chatForm;
+
+  function getDOMSelectors() {
+    const { h4Heading, forumReply, h2Heading, chatboxMenu } = menuQuery;
+    const { newComment, bbcodeForum, chatboxInput, bbcodePM } = inputQuery;
+
+    const selectors = [
+      {
+        condition: pageFlags.isReply,
+        menu: h2Heading,
+        input: bbcodePM,
+        extraCheck: (el) => el.innerText.toLowerCase().includes("reply"),
+      },
+      {
+        condition:
+          pageFlags.isNewTopic || pageFlags.isPM || pageFlags.isEditTopic,
+        menu: h2Heading,
+        input: pageFlags.isPM ? bbcodePM : bbcodeForum,
+      },
+      { condition: pageFlags.isTorrent, menu: h4Heading, input: newComment },
+      { condition: pageFlags.isForum, menu: forumReply, input: bbcodeForum },
+      {
+        condition: pageFlags.isChatbox,
+        menu: chatboxMenu,
+        input: chatboxInput,
+      },
+    ];
+
+    for (let selector of selectors) {
+      if (selector.condition) {
+        if (selector.extraCheck) {
+          const headings = document.querySelectorAll(selector.menu);
+          for (let el of headings) {
+            if (selector.extraCheck(el)) {
+              menuSelector = el;
+              break;
+            }
+          }
+        } else {
+          menuSelector = document.querySelector(selector.menu);
+        }
+        chatForm = document.getElementById(selector.input);
+        break;
+      }
+    }
+  }
+
+  const defaultSize = pageFlags.isChatbox ? "42" : "84"; // 42 width for chatbox and 84 for everything else
 
   const emojiMenu = document.createElement("div");
   emojiMenu.className = "emoji-content";
@@ -258,9 +317,6 @@
 
   function onEmojiclick(image) {
     let size = defaultSize;
-    if (image.includes("tham")) {
-      size = 128;
-    }
     const emoji = `[img=${size}]${image}[/img]`;
     chatForm.value = chatForm.value
       ? `${chatForm.value.trim()} ${emoji}`
@@ -368,8 +424,9 @@
     }
 
     // Attempt to style the modal dynamically. Not great, but it works.
-    const menuLeft = isChatbox || isNewTopic ? "60%" : "20%";
-    const menuTop = isNewTopic ? "10%" : "20%";
+    const menuLeft =
+      pageFlags.isChatbox || pageFlags.isNewTopic ? "60%" : "20%";
+    const menuTop = pageFlags.isNewTopic ? "10%" : "20%";
     const modalStyler = `
             .emoji-menu {
                 position: fixed;
@@ -458,7 +515,7 @@
               }
         `;
 
-    GM.addStyle(modalStyler);
+    addStyle(modalStyler);
 
     const modal = document.createElement("div");
     modal.className = "emoji-menu";
@@ -586,8 +643,7 @@
 
   // Inject the emoji button and run the main script.
   function addEmojiButton() {
-    menuSelector = document.querySelector(menuQuery);
-    chatForm = document.getElementById(inputQuery);
+    getDOMSelectors();
 
     if (!menuSelector || !chatForm) {
       setTimeout(addEmojiButton, 1000);
@@ -602,14 +658,14 @@
             }
         `;
 
-    GM.addStyle(emojiButtonStyler);
+    addStyle(emojiButtonStyler);
 
     const emojiButton = document.createElement("span");
     emojiButton.classList.add("emoji-button");
     emojiButton.innerHTML = "😂";
     emojiButton.addEventListener("click", createModal);
 
-    if (isChatbox || isForum) {
+    if (pageFlags.isChatbox || pageFlags.isForum) {
       menuSelector.prepend(emojiButton);
     } else {
       menuSelector.append(emojiButton);
@@ -630,7 +686,7 @@
   }
 
   // Only call the script on supported pages.
-  if (isChatbox || isForum || isNewTopic || isTorrent || isEditTopic) {
+  if (Object.values(pageFlags).some((flag) => flag)) {
     addEmojiButton();
   }
 })();
