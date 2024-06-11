@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      3.1
+// @version      3.2
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -18,6 +18,8 @@
 
 /************************************************************************************************
  * ChangeLog
+ * 3.2
+ *  - Some dynamic sizing for wide emotes.
  * 3.1
  *  - Support for PMs and changes to DOM Selectors and page type logic.
  *  - Move away from GM.addStyle for better compatibility.
@@ -103,7 +105,7 @@
     gandi: "https://i.ibb.co/Cbnn4hY/gandi.gif",
     poop: "https://ptpimg.me/a8mn3s.png",
     lip: "https://i.ibb.co/hVm1ngL/4x.png",
-    putin: "https://ptpimg.me/0lm04u.png",
+    putinDance: "https://ptpimg.me/0lm04u.png",
     sideeye: "https://i.ibb.co/B2k8cX5/sideeye.jpg",
     lmaoo: "https://i.ibb.co/VVYHjL0/lmao.png",
     "D:": "https://i.ibb.co/zs2dHW2/gasp.png",
@@ -210,6 +212,11 @@
     chimpE: "https://i.ibb.co/55HNy0X/monkE.gif",
   };
 
+  const wide = [
+    "https://i.ibb.co/4ZSn3gh/NOHORNY.gif",
+    "https://i.ibb.co/QHQ5r8g/AWOOGA.gif",
+    "https://i.ibb.co/C6LT6NP/walkin.gif",
+  ];
   const currentURL = window.location.href;
   const currURL = new URL(currentURL);
   const rootURL = `${currURL.origin}/`;
@@ -291,7 +298,7 @@
     }
   }
 
-  const defaultSize = pageFlags.isChatbox ? "42" : "84"; // 42 width for chatbox and 84 for everything else
+  let defaultSize = pageFlags.isChatbox ? "42" : "84"; // 42 width for chatbox and 84 for everything else
 
   const emojiMenu = document.createElement("div");
   emojiMenu.className = "emoji-content";
@@ -316,8 +323,10 @@
   }
 
   function onEmojiclick(image) {
-    let size = defaultSize;
-    const emoji = `[img=${size}]${image}[/img]`;
+    if (pageFlags.isChatbox && wide.includes(image)) {
+      defaultSize = "82";
+    }
+    const emoji = `[img=${defaultSize}]${image}[/img]`;
     chatForm.value = chatForm.value
       ? `${chatForm.value.trim()} ${emoji}`
       : emoji;
@@ -366,6 +375,9 @@
     }
 
     if (autofill && emojis[emojiCheck]) {
+      if (pageFlags.isChatbox && wide.includes(emojis[emojiCheck])) {
+        defaultSize = "82";
+      }
       messageParts[
         lastItemIndex
       ] = `[img=${defaultSize}]${emojis[emojiCheck]}[/img]`;
