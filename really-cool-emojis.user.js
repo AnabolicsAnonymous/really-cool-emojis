@@ -18,6 +18,8 @@
 
 /************************************************************************************************
  * ChangeLog
+ * 3.3
+ *  - Added setting for default sizings.
  * 3.2
  *  - Some dynamic sizing for wide emotes.
  * 3.1
@@ -298,7 +300,15 @@
     }
   }
 
-  let defaultSize = pageFlags.isChatbox ? "42" : "84"; // 42 width for chatbox and 84 for everything else
+  let defaultSize = [42, 82]; // 42 width for chatbox and 84 for everything else
+
+  if (localStorage.getItem("defaultCb")) {
+    defaultSize[0] = localStorage.getItem("defaultCb");
+  }
+
+  if (localStorage.getItem("defaultForums")) {
+    defaultSize[1] = localStorage.getItem("defaultForums");
+  }
 
   const emojiMenu = document.createElement("div");
   emojiMenu.className = "emoji-content";
@@ -322,11 +332,20 @@
     emojiMenu.appendChild(emojiContainer);
   }
 
+  // Helper function to return size
+  function setSize() {
+    const isCB = pageFlags.isChatbox;
+    let size = isCB ? defaultSize[0] : defaultSize[1];
+    return size;
+  }
+
   function onEmojiclick(image) {
-    if (pageFlags.isChatbox && wide.includes(image)) {
-      defaultSize = "82";
+    let size = setSize();
+    const isCB = pageFlags.isChatbox;
+    if (isCB && wide.includes(image)) {
+      size = size + 20;
     }
-    const emoji = `[img=${defaultSize}]${image}[/img]`;
+    const emoji = `[img=${size}]${image}[/img]`;
     chatForm.value = chatForm.value
       ? `${chatForm.value.trim()} ${emoji}`
       : emoji;
@@ -337,7 +356,8 @@
   function handleInputChange(e, autofill, useImgTag) {
     const regex = /^(?:!?http.*|l!http.*)\.(jpg|jpeg|png|gif|bmp|webp)$/i;
     const message = e.target.value;
-
+    let size = setSize();
+    const isCB = pageFlags.isChatbox;
     if (!message) return;
 
     const messageParts = message.split(/(\s+|\n)/);
@@ -375,12 +395,10 @@
     }
 
     if (autofill && emojis[emojiCheck]) {
-      if (pageFlags.isChatbox && wide.includes(emojis[emojiCheck])) {
-        defaultSize = "82";
+      if (isCB && wide.includes(emojis[emojiCheck])) {
+        size += 20;
       }
-      messageParts[
-        lastItemIndex
-      ] = `[img=${defaultSize}]${emojis[emojiCheck]}[/img]`;
+      messageParts[lastItemIndex] = `[img=${size}]${emojis[emojiCheck]}[/img]`;
       setChatFormValue(messageParts.join(""));
       return;
     }
@@ -508,20 +526,24 @@
                 top: 50px;
                 right: 10px;
                 z-index: 2;
+                max-height: 250px;
+                overflow: auto;
+                width: 200px;
+                flex-direction: column;
+                justify-content: center;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             }
-            .emoji__config {
-                margin-bottom: 10px;
+            .settings-menu>div{
+            margin: 5px 0 !important;
             }
             #img_cb , #autofill_cb, #show_label{
                 cursor: pointer !important;
             }
             .check__update {
-                margin-top: 10px;
                 display: flex;
                 flex-direction: column;
               }
-            .update__btn {
+            #update__btn {
                 cursor: pointer;
                 color: #4F8C3C;
               }
@@ -543,27 +565,41 @@
     settingsButton.textContent = "⚙️";
     settingsButton.onclick = () =>
       (settingsMenu.style.display =
-        settingsMenu.style.display === "none" ? "block" : "none");
+        settingsMenu.style.display === "none" ? "flex" : "none");
 
     const settingsMenu = document.createElement("div");
     settingsMenu.className = "settings-menu";
     settingsMenu.style.display = "none";
     settingsMenu.innerHTML = `
             <h3>Settings</h3>
+
             <div class="emoji__config"> 
             <label for="autofill_cb">Autofill emoji name</label>
             <input type="checkbox" id="autofill_cb">
             </div>
+
             <div class="emoji__config"> 
             <label for="img_cb">Auto img tag</label>
             <input type="checkbox" id="img_cb">
             </div>
+
             <div class="emoji__config"> 
             <label for="show_label">Show emoji labels</label>
             <input type="checkbox" id="show_label">
-            <div class="check__update">
-            <span class="update__btn">Check for updates</span></div>
             </div>
+
+            <div class="emoji__config">
+            <label for="default__width_cb">Default chatbox width</label>
+            <input type="number" id="default__width_cb" placeholder="${defaultSize[0]}">
+            </div>
+
+            <div class="emoji__config">
+            <label for="default__width_forums">Default Forums width</label>
+            <input type="number" id="default__width_forums" placeholder="${defaultSize[1]}">
+            </div>
+
+            <div class="check__update">
+            <span id="update__btn">Check for updates</span></div>
         `;
 
     settingsMenu
@@ -610,8 +646,33 @@
       localStorage.getItem("showEmojiLabel") || "false"
     );
 
-    const updateBtn = document.querySelector(".update__btn");
+    const defaultChatboxWidth = document.getElementById("default__width_cb");
+    const defaultForumsWidth = document.getElementById("default__width_forums");
+    defaultChatboxWidth.addEventListener("input", (e) =>
+      handleWidthChange(e, "cb")
+    );
+    defaultForumsWidth.addEventListener("input", (e) =>
+      handleWidthChange(e, "forums")
+    );
+    const updateBtn = document.getElementById("update__btn");
     updateBtn.addEventListener("click", checkUpdate);
+  }
+
+  function handleWidthChange(e, target) {
+    let width;
+    if (e.target.value) {
+      // prevent decimals
+      width = Math.round(e.target.value);
+      console.log(width);
+    }
+    if (target === "cb") {
+      defaultSize[0] = width;
+      localStorage.setItem("defaultCb", width);
+    }
+    if (target === "forums") {
+      defaultSize[1] = width;
+      localStorage.setItem("defaultForums", width);
+    }
   }
 
   // Check for updates.
