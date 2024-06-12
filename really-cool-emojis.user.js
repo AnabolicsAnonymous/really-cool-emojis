@@ -347,7 +347,6 @@
       size = size.toString();
     }
     
-    console.log(size);
     const emoji = `[img=${size}]${image}[/img]`;
     chatForm.value = chatForm.value
       ? `${chatForm.value.trim()} ${emoji}`
@@ -667,7 +666,6 @@
     if (e.target.value) {
       // prevent decimals
       width = Math.round(e.target.value);
-      console.log(width);
     }
     if (target === "cb") {
       defaultSize[0] = width;
