@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      3.3
+// @version      3.4
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -343,8 +343,11 @@
     let size = setSize();
     const isCB = pageFlags.isChatbox;
     if (isCB && wide.includes(image)) {
-      size = size + 20;
+      size = parseInt(size) + 20;
+      size = size.toString();
     }
+    
+    console.log(size);
     const emoji = `[img=${size}]${image}[/img]`;
     chatForm.value = chatForm.value
       ? `${chatForm.value.trim()} ${emoji}`
@@ -396,7 +399,8 @@
 
     if (autofill && emojis[emojiCheck]) {
       if (isCB && wide.includes(emojis[emojiCheck])) {
-        size += 20;
+        size = parseInt(size) + 20;
+        size = size.toString();
       }
       messageParts[lastItemIndex] = `[img=${size}]${emojis[emojiCheck]}[/img]`;
       setChatFormValue(messageParts.join(""));
