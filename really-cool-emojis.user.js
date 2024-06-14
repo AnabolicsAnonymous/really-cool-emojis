@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      3.4
+// @version      3.5
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -121,7 +121,7 @@
     smart: "https://i.ibb.co/nRfYr0H/smart.gif",
     reallythinking: "https://i.ibb.co/Qr0dNwj/reallythinking.gif",
     nerdbob: "https://i.ibb.co/mbndBMC/nerdbob.gif",
-    nerd: "https://i.ibb.co/1X6YBwF/nerd.gif",
+    nerD: "https://i.ibb.co/1X6YBwF/nerd.gif",
     hmmm: "https://i.ibb.co/TvtNp9v/hmmm.gif",
     actually: "https://i.ibb.co/4YD9gGK/actually.gif",
     shy: "https://ptpimg.me/olw327.png",
@@ -212,6 +212,10 @@
     ":c": "https://i.ibb.co/8rYWwgH/grump.gif",
     batemanArrive: "https://i.ibb.co/7zsLddv/bateman-Arrive.gif",
     chimpE: "https://i.ibb.co/55HNy0X/monkE.gif",
+    demontime: "https://i.ibb.co/19M9Z9q/demontime.gif",
+    mhm: "https://i.ibb.co/KX1yjks/mhm.gif",
+    meow: "https://i.ibb.co/Tcrt2c3/meow.gif",
+    EmiruYuck: "https://i.ibb.co/88LRNrP/Emiru-Yuck.gif",
   };
 
   const wide = [
@@ -346,7 +350,7 @@
       size = parseInt(size) + 20;
       size = size.toString();
     }
-    
+
     const emoji = `[img=${size}]${image}[/img]`;
     chatForm.value = chatForm.value
       ? `${chatForm.value.trim()} ${emoji}`
