@@ -736,7 +736,7 @@
             .emoji-button {
                 cursor: pointer;
                 font-size: 24px;
-                margin-left: 0;
+                margin-left: 20px;
             }
         `;
 
