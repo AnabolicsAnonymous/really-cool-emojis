@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      3.5
+// @version      3.6
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -18,6 +18,8 @@
 
 /************************************************************************************************
  * ChangeLog
+ * 3.6
+ *  - Fix event dispatch so preview works.
  * 3.3
  *  - Added setting for default sizings.
  * 3.2
@@ -356,6 +358,7 @@
       ? `${chatForm.value.trim()} ${emoji}`
       : emoji;
     chatForm.focus();
+    chatForm.dispatchEvent(new Event("input", { bubbles: true }));
   }
 
   // Handle the commands if enabled in the settings. Autofill + IMG tags.
