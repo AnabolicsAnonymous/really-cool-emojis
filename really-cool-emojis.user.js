@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      3.6
+// @version      3.7
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -18,6 +18,8 @@
 
 /************************************************************************************************
  * ChangeLog
+ * 3.7
+ *  - fix l!{image url} command to actually wrap in url tag
  * 3.6
  *  - Fix event dispatch so preview works.
  * 3.3
@@ -218,6 +220,7 @@
     mhm: "https://i.ibb.co/KX1yjks/mhm.gif",
     meow: "https://i.ibb.co/Tcrt2c3/meow.gif",
     EmiruYuck: "https://i.ibb.co/88LRNrP/Emiru-Yuck.gif",
+    jacksaw: "https://i.ibb.co/KqqwT8w/random.jpg"
   };
 
   const wide = [
@@ -448,7 +451,7 @@
       }
 
       if (lastItem.startsWith("l!")) {
-        messageParts[lastItemIndex] = `[img]${lastItem.slice(2)}[/img]`;
+        messageParts[lastItemIndex] = `[url=${lastItem.slice(2)}][img]${lastItem.slice(2)}[/img][/url]`;
         setChatFormValue(messageParts.join(""));
         return;
       }
