@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      3.9
+// @version      4.0
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -99,8 +99,9 @@
     spongeBye: "https://i.ibb.co/4W6VWPz/sponge-Bye.gif",
     ByeBye: "https://i.ibb.co/hDd3n4Y/ByeBye.gif",
     imout: "https://i.ibb.co/4Nw7MYg/imout.gif",
-    
+
     // congrats
+    stingUp: "https://ptpimg.me/ze6c85.gif",
     hi5: "https://i.ibb.co/M7Q6L7s/hi5.gif",
     congratulations: "https://i.ibb.co/Z8CG4kY/congratulations.gif",
     congrats: "https://i.ibb.co/nwbHvcj/congrats.gif",
@@ -600,15 +601,15 @@
             .settings-menu {
                 background-color: #2C2C2C;
                 color: #CCCCCC;
-                padding: 5px 20px;
                 border-radius: 5px;
                 position: absolute;
                 top: 50px;
                 right: 10px;
                 z-index: 2;
-                max-height: 250px;
+                max-height: 260px;
+                padding: 20px !important;
                 overflow: auto;
-                width: 200px;
+                width: 240px;
                 flex-direction: column;
                 justify-content: center;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -651,8 +652,6 @@
     settingsMenu.className = "settings-menu";
     settingsMenu.style.display = "none";
     settingsMenu.innerHTML = `
-            <h3>Settings</h3>
-
             <div class="emoji__config"> 
             <label for="autofill_cb">Autofill emoji name</label>
             <input type="checkbox" id="autofill_cb">
