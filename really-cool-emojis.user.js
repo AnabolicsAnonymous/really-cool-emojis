@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      4.0
+// @version      4.1
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -18,6 +18,8 @@
 
 /************************************************************************************************
  * ChangeLog
+ * 4.1
+ *  - Fix new pm urls
  * 3.8
  *  - Reorganized emotes into groups.
  * 3.7
@@ -213,6 +215,7 @@
 
     // putin
     sfa: "https://i.ibb.co/Htbgx17/sfa.gif",
+    chadmirPutin: "https://i.ibb.co/x1fMKMG/chadmirputin.png",
     surething: "https://i.ibb.co/P9jtn5K/surething.gif",
     putinApprove: "https://i.ibb.co/VJ2HYDR/putin-Approve.gif",
     putinwalk: "https://i.ibb.co/C6LT6NP/walkin.gif",
@@ -303,8 +306,8 @@
     { regex: /.*\/forums\/topics\/\d+/, key: "isForum" },
     { regex: /.\/topics\/forum\/\d+\/create/, key: "isNewTopic" },
     { regex: /.*\/forums\/posts\/\d+\/edit/, key: "isEditTopic" },
-    { regex: /.*\/outbox\/create/, key: "isPM" },
-    { regex: /.*\/inbox\/\d+/, key: "isReply" },
+    { regex: /.*\/conversations\/create/, key: "isPM" },
+    { regex: /.*\/conversations\/\d+/, key: "isReply" },
   ];
 
   const pageFlags = urlPatterns.reduce((acc, pattern) => {
