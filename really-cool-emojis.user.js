@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      4.1
+// @version      4.20
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -116,6 +116,13 @@
     youRang: "https://i.ibb.co/JQWPZM5/youRang.gif",
 
     // moneys
+    prayge: "https://i.ibb.co/CWC39HT/prayge.gif",
+    standPrayge: "https://i.ibb.co/Tkk0q3s/stand-Prayge.gif",
+    pikaBless: "https://i.ibb.co/j6JPs3j/pika-Bless.gif",
+    blessRNG: "https://i.ibb.co/YcFSpfW/blessRNG.gif",
+    GAMBA: "https://i.ibb.co/9hkjbCp/GAMBA.gif",
+    stonksUp: "https://i.ibb.co/DpP0PxD/stonksup.gif",
+    stonksdown: "https://i.ibb.co/x84x9np/stonksdown.gif",
     reallyRich: "https://i.ibb.co/ZMf1YQ6/really-Rich.gif",
     counting: "https://ptpimg.me/59emhk.gif",
     moneyTime: "https://i.ibb.co/Df5nZDR/money-Time.gif",
