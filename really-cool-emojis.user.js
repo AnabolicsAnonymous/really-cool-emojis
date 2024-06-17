@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      3.8
+// @version      3.9
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -92,7 +92,6 @@
 
     // greetings
     pikahey: "https://i.ibb.co/2WnDK5C/pikahey.gif",
-    hi5: "https://i.ibb.co/M7Q6L7s/hi5.gif",
     YOO: "https://i.ibb.co/s3NDTct/yoooo.gif",
     yoo: "https://i.ibb.co/CBfDMxJ/yoo.gif",
     weebHi: "https://i.ibb.co/BCDxRgs/image.gif",
@@ -100,6 +99,12 @@
     spongeBye: "https://i.ibb.co/4W6VWPz/sponge-Bye.gif",
     ByeBye: "https://i.ibb.co/hDd3n4Y/ByeBye.gif",
     imout: "https://i.ibb.co/4Nw7MYg/imout.gif",
+    
+    // congrats
+    hi5: "https://i.ibb.co/M7Q6L7s/hi5.gif",
+    congratulations: "https://i.ibb.co/Z8CG4kY/congratulations.gif",
+    congrats: "https://i.ibb.co/nwbHvcj/congrats.gif",
+    confetti: "https://i.ibb.co/zHh0c2W/confetti.gif",
 
     // arrive
     batemanArrive: "https://i.ibb.co/7zsLddv/bateman-Arrive.gif",
