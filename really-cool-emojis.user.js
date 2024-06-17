@@ -303,6 +303,8 @@
     "https://i.ibb.co/QHQ5r8g/AWOOGA.gif",
     "https://i.ibb.co/C6LT6NP/walkin.gif",
     "https://i.ibb.co/bLnTKWL/KANE.gif",
+    "https://i.ibb.co/QftjRBj/slammed.gif",
+    "https://i.ibb.co/nR9yQTJ/STFU.gif",
   ];
   const currentURL = window.location.href;
   const currURL = new URL(currentURL);
