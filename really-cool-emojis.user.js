@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      4.20
+// @version      4.21
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -66,7 +66,7 @@
     document.head.appendChild(style);
   }
 
-  // ty sUss, sfa, moon, vaseline
+  // ty sUss, sfa, moon, vaseline, KatSu
   const emojis = {
     //animal
     concernedApe: "https://i.ibb.co/w7K0bTf/concerned-Ape.gif",
@@ -123,6 +123,7 @@
     GAMBA: "https://i.ibb.co/9hkjbCp/GAMBA.gif",
     stonksUp: "https://i.ibb.co/DpP0PxD/stonksup.gif",
     stonksdown: "https://i.ibb.co/x84x9np/stonksdown.gif",
+    stackin: "https://ptpimg.me/616o42.png",
     reallyRich: "https://i.ibb.co/ZMf1YQ6/really-Rich.gif",
     counting: "https://ptpimg.me/59emhk.gif",
     moneyTime: "https://i.ibb.co/Df5nZDR/money-Time.gif",
@@ -168,8 +169,10 @@
     hahaso: "https://i.ibb.co/4SF12vP/hahaso.gif",
     kek: "https://i.ibb.co/3v9GfYD/kekW.gif",
     HEH: "https://i.ibb.co/wdbC1HV/HEH.gif",
+    imdead: "https://i.ibb.co/ByPq8s5/imdead.gif",
 
     // shocking
+    dead: "https://i.ibb.co/q1vQxxs/dead.gif",
     shockedmonkey: "https://i.ibb.co/qCFdGh4/shockedmonkey.gif",
     shookt: "https://i.ibb.co/R6R3Dcm/shookt.gif",
     ohno: "https://i.ibb.co/SKPHp6c/ohno.gif",
@@ -178,7 +181,6 @@
     ":o": "https://i.ibb.co/1Z0sS6J/OO.png",
     "D:": "https://i.ibb.co/zs2dHW2/gasp.png",
     reallyshocked: "https://i.ibb.co/qmrdfk2/reallyshocked.gif",
-    dead: "https://i.ibb.co/q1vQxxs/dead.gif",
     dogWTF: "https://i.ibb.co/dm3ZfS4/out.png",
 
     // tired
@@ -222,6 +224,7 @@
 
     // putin
     sfa: "https://i.ibb.co/Htbgx17/sfa.gif",
+    putinRide: "https://i.ibb.co/1MqSc3N/putin-Ride.png",
     chadmirPutin: "https://i.ibb.co/x1fMKMG/chadmirputin.png",
     surething: "https://i.ibb.co/P9jtn5K/surething.gif",
     putinApprove: "https://i.ibb.co/VJ2HYDR/putin-Approve.gif",
@@ -249,7 +252,7 @@
     EmiruYuck: "https://i.ibb.co/88LRNrP/Emiru-Yuck.gif",
     barf: "https://ptpimg.me/is0oh0.gif",
 
-    // other stff
+    // other stuff
     watchit: "https://i.ibb.co/99nnv04/watchit.gif",
     trash: "https://i.ibb.co/G2Wx8WL/trash.gif",
     STRESSED: "https://i.ibb.co/Lg3GhnL/STRESSED.gif",
@@ -271,6 +274,7 @@
     ayoh: "https://i.ibb.co/3v22m5B/ayoh.gif",
     loopy: "https://ptpimg.me/vmq38q.png",
     excellent: "https://i.ibb.co/P98kJ53/excellent.gif",
+    plottin: "https://ptpimg.me/df30z2.gif",
     empty: "https://i.ibb.co/wStC9f3/empty.png",
     dumbo: "https://i.ibb.co/yh05yVs/dumbo.png",
     brothers: "https://i.ibb.co/X3KvpHs/brothers.png",
@@ -296,6 +300,7 @@
     clown: "https://i.ibb.co/R6gGdfX/clown.gif",
     ban: "https://i.ibb.co/7kgbVMb/ban.gif",
     sexo: "https://i.ibb.co/ykCgkyS/sexo.gif",
+    classic: "https://i.ibb.co/kytwYGd/classic.gif",
   };
 
   const wide = [
