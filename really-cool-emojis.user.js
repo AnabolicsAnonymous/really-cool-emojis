@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      4.3
+// @version      4.4
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -286,7 +286,7 @@
     mmkay: "https://i.ibb.co/3NnYDyt/out.png",
     Risenocular: "https://i.ibb.co/XLLg8w9/risenoculars.gif",
     LETHIMCOOK: "https://i.ibb.co/NWC2108/LETHIMCOOK.gif",
-    jacksaw: "https://i.ibb.co/KqqwT8w/random.jpg",
+    jacksaw: "https://i.ibb.co/tcrVyy8/0-575.png",
     KANE: "https://i.ibb.co/bLnTKWL/KANE.gif",
     chatting: "https://i.ibb.co/jTYXKTg/chatting.gif",
     bratwu: "https://i.ibb.co/k834WdR/bratwur.png",
