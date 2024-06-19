@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      4.4
+// @version      4.5
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -286,7 +286,7 @@
     mmkay: "https://i.ibb.co/3NnYDyt/out.png",
     Risenocular: "https://i.ibb.co/XLLg8w9/risenoculars.gif",
     LETHIMCOOK: "https://i.ibb.co/NWC2108/LETHIMCOOK.gif",
-    jacksaw: "https://i.ibb.co/tcrVyy8/0-575.png",
+    jacksaw: "https://i.ibb.co/hcBRQkD/jacksaw.png",
     KANE: "https://i.ibb.co/bLnTKWL/KANE.gif",
     chatting: "https://i.ibb.co/jTYXKTg/chatting.gif",
     bratwu: "https://i.ibb.co/k834WdR/bratwur.png",
@@ -300,7 +300,7 @@
     popcorn: "https://i.ibb.co/pjJGfkf/popcorn.gif",
     catcorn: "https://i.ibb.co/MZ4Yf7R/catpopcorn.png",
     clown: "https://i.ibb.co/R6gGdfX/clown.gif",
-    ban: "https://i.ibb.co/7kgbVMb/ban.gif",
+    ban: "https://i.ibb.co/CwvHRhd/4x.gif",
     sexo: "https://i.ibb.co/ykCgkyS/sexo.gif",
     classic: "https://i.ibb.co/kytwYGd/classic.gif",
   };
