@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      4.21
+// @version      4.22
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -293,6 +293,7 @@
     innocent: "https://i.ibb.co/2dtCYGW/innocent.gif",
     reallycool: "https://i.ibb.co/6vrY0km/reallycool.gif",
     fbi: "https://i.ibb.co/fr64Fn6/fbi.png",
+    ho7: "https://i.ibb.co/5BD98yj/ho7.png",
     o7: "https://i.ibb.co/5sqKm4Y/o7.png",
     gamin: "https://i.ibb.co/f0WhLk3/gamin.gif",
     popcorn: "https://i.ibb.co/pjJGfkf/popcorn.gif",
@@ -304,6 +305,14 @@
   };
 
   const wide = [
+    "https://i.ibb.co/0jJS1jg/xdd.gif",
+    "https://i.ibb.co/jw54JGh/despair.gif",
+    "https://ptpimg.me/df30z2.gif",
+    "https://ptpimg.me/ze6c85.gif",
+    "https://i.ibb.co/P9jtn5K/surething.gif",
+    "https://i.ibb.co/1MqSc3N/putin-Ride.png",
+    "https://i.ibb.co/5BD98yj/ho7.png",
+    "https://i.ibb.co/fr64Fn6/fbi.png",
     "https://i.ibb.co/4ZSn3gh/NOHORNY.gif",
     "https://i.ibb.co/QHQ5r8g/AWOOGA.gif",
     "https://i.ibb.co/C6LT6NP/walkin.gif",
