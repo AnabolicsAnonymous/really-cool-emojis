@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      4.22
+// @version      4.3
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -105,7 +105,7 @@
     // congrats
     stingUp: "https://ptpimg.me/ze6c85.gif",
     hi5: "https://i.ibb.co/M7Q6L7s/hi5.gif",
-    congratulations: "https://i.ibb.co/Z8CG4kY/congratulations.gif",
+    tyronegz: "https://i.ibb.co/Z8CG4kY/congratulations.gif",
     congrats: "https://i.ibb.co/nwbHvcj/congrats.gif",
     confetti: "https://i.ibb.co/zHh0c2W/confetti.gif",
 
@@ -226,7 +226,8 @@
     sfa: "https://i.ibb.co/Htbgx17/sfa.gif",
     putinRide: "https://i.ibb.co/1MqSc3N/putin-Ride.png",
     chadmirPutin: "https://i.ibb.co/x1fMKMG/chadmirputin.png",
-    surething: "https://i.ibb.co/P9jtn5K/surething.gif",
+    putinLaugh: "https://i.ibb.co/c83XfBT/putin-Laugh.gif",
+    surething: "https://i.ibb.co/pWkmzSL/surething.gif",
     putinApprove: "https://i.ibb.co/VJ2HYDR/putin-Approve.gif",
     putinwalk: "https://i.ibb.co/C6LT6NP/walkin.gif",
     putinDance: "https://ptpimg.me/0lm04u.png",
@@ -305,6 +306,9 @@
   };
 
   const wide = [
+    "https://i.ibb.co/nwbHvcj/congrats.gif",
+    "https://i.ibb.co/pWkmzSL/surething.gif",
+    "https://i.ibb.co/c83XfBT/putin-Laugh.gif",
     "https://i.ibb.co/0jJS1jg/xdd.gif",
     "https://i.ibb.co/jw54JGh/despair.gif",
     "https://ptpimg.me/df30z2.gif",
