@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      4.6
+// @version      4.7
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -262,6 +262,7 @@
     barf: "https://ptpimg.me/is0oh0.gif",
 
     // other stuff
+    tf: "https://ptpimg.me/44b994.png",
     watchit: "https://i.ibb.co/99nnv04/watchit.gif",
     trash: "https://i.ibb.co/G2Wx8WL/trash.gif",
     STRESSED: "https://i.ibb.co/Lg3GhnL/STRESSED.gif",
