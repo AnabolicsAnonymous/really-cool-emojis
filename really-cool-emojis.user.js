@@ -109,6 +109,14 @@
     congrats: "https://i.ibb.co/nwbHvcj/congrats.gif",
     confetti: "https://i.ibb.co/zHh0c2W/confetti.gif",
 
+    // thanks + loves
+    thanksbro: "https://i.ibb.co/FV8pDNm/thanksbro.gif",
+    spongeLove: "https://i.ibb.co/c1Rtd9G/sponge-Love.gif",
+    ohstop: "https://i.ibb.co/tDzrrB1/ohstop.gif",
+    gothKiss: "https://i.ibb.co/4j4f6t3/gothKiss.gif",
+    catLove: "https://i.ibb.co/k3q56BW/catLove.gif",
+    bearHug: "https://i.ibb.co/tZ454LT/bearHug.gif",
+
     // arrive
     batemanArrive: "https://i.ibb.co/7zsLddv/bateman-Arrive.gif",
     homerArrive: "https://i.ibb.co/Wpnz7Yp/homer-Arrive.gif",
