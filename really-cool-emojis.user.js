@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      4.7
+// @version      4.8
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -225,6 +225,8 @@
     munn: "https://i.ibb.co/Rz5QB5Y/tham.gif",
     "2munn": "https://i.ibb.co/yB0DHgx/2tham.gif",
     MOMMY: "https://i.ibb.co/xMJTSL0/MOMMY.gif",
+    Sussy: "https://i.ibb.co/12h70YT/Sussy.gif",
+    mcqSus: "https://i.ibb.co/gzMx7NM/mcqSus.gif",
 
     // times
     coffeeTime: "https://i.ibb.co/bbxhc3n/coffee-Time.gif",
@@ -315,6 +317,7 @@
   };
 
   const wide = [
+    "https://i.ibb.co/gzMx7NM/mcqSus.gif",
     "https://i.ibb.co/nwbHvcj/congrats.gif",
     "https://i.ibb.co/pWkmzSL/surething.gif",
     "https://i.ibb.co/c83XfBT/putin-Laugh.gif",
