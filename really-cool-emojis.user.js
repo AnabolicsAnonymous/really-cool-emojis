@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      4.8
+// @version      4.9
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -314,9 +314,11 @@
     ban: "https://i.ibb.co/CwvHRhd/4x.gif",
     sexo: "https://i.ibb.co/ykCgkyS/sexo.gif",
     classic: "https://i.ibb.co/kytwYGd/classic.gif",
+    cowDance: "https://i.ibb.co/ZcWgWVT/qwe.gif"
   };
 
   const wide = [
+    "https://i.ibb.co/ZcWgWVT/qwe.gif",
     "https://i.ibb.co/gzMx7NM/mcqSus.gif",
     "https://i.ibb.co/nwbHvcj/congrats.gif",
     "https://i.ibb.co/pWkmzSL/surething.gif",
