@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      4.9
+// @version      5.0
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -211,6 +211,7 @@
     brainhurt: "https://i.ibb.co/bL7hLm7/brainhurt.gif",
 
     // horny
+    princessK: "https://i.ibb.co/ncXFzLk/princess-K.png",
     feltcute: "https://ptpimg.me/20180i.png",
     NOHORNY: "https://i.ibb.co/4ZSn3gh/NOHORNY.gif",
     kok: "https://i.ibb.co/nLpSJnt/kok.gif",
