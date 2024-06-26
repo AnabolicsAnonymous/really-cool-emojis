@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      5.1
+// @version      5.2
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -209,6 +209,7 @@
     ionkno: "https://i.ibb.co/Khpw97t/ionkno.png",
     Erm: "https://i.ibb.co/TbJypyv/Erm.gif",
     noted: "https://i.ibb.co/qn0w6N5/noted.gif",
+    anyaNoted: "https://i.ibb.co/7RRwKsW/Anya-Noted.gif",
     brainhurt: "https://i.ibb.co/bL7hLm7/brainhurt.gif",
 
     // horny
@@ -265,6 +266,13 @@
     EmiruYuck: "https://i.ibb.co/88LRNrP/Emiru-Yuck.gif",
     barf: "https://ptpimg.me/is0oh0.gif",
 
+    // patience
+    waiting: "https://i.ibb.co/3BSDnmb/waiting.gif",
+    spongeWait: "https://i.ibb.co/wCNSGsJ/SpongeWait.gif",
+    pabloWait: "https://i.ibb.co/w7Dk3bv/pablo-Wait.gif",
+    monkWait: "https://i.ibb.co/M7z1yXJ/monkwait.gif",
+    sealWait: "https://i.ibb.co/Cm9fy29/seal-Waiting.gif",
+
     // other stuff
     tf: "https://ptpimg.me/44b994.png",
     watchit: "https://i.ibb.co/99nnv04/watchit.gif",
@@ -317,9 +325,11 @@
     sexo: "https://i.ibb.co/ykCgkyS/sexo.gif",
     classic: "https://i.ibb.co/kytwYGd/classic.gif",
     cowDance: "https://i.ibb.co/ZcWgWVT/qwe.gif",
+    CT: "https://i.ibb.co/7yMn3Zw/CT.gif",
   };
 
   const wide = [
+    "https://i.ibb.co/w7Dk3bv/pablo-Wait.gif",
     "https://i.ibb.co/ZcWgWVT/qwe.gif",
     "https://i.ibb.co/gzMx7NM/mcqSus.gif",
     "https://i.ibb.co/nwbHvcj/congrats.gif",
@@ -340,6 +350,7 @@
     "https://i.ibb.co/QftjRBj/slammed.gif",
     "https://i.ibb.co/nR9yQTJ/STFU.gif",
     "https://i.ibb.co/DLTw1Fh/cgoat.png",
+    "https://i.ibb.co/7yMn3Zw/CT.gif",
   ];
   const currentURL = window.location.href;
   const currURL = new URL(currentURL);
