@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      5.2
+// @version      5.3
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -18,6 +18,8 @@
 
 /************************************************************************************************
  * ChangeLog
+ * 5.3
+ *  - Fix labels
  * 4.1
  *  - Fix new pm urls
  * 3.8
@@ -230,6 +232,7 @@
     MOMMY: "https://i.ibb.co/xMJTSL0/MOMMY.gif",
     Sussy: "https://i.ibb.co/12h70YT/Sussy.gif",
     mcqSus: "https://i.ibb.co/gzMx7NM/mcqSus.gif",
+    selen98: "https://i.ibb.co/9gqPFdM/jackdad.gif",
 
     // times
     coffeeTime: "https://i.ibb.co/bbxhc3n/coffee-Time.gif",
@@ -452,6 +455,7 @@
   // Fill the menu with all the emojis
   for (const [key, value] of Object.entries(emojis)) {
     const emojiContainer = document.createElement("div");
+    emojiContainer.classList.add("emoji-container");
     const emojiLabel = document.createElement("p");
     emojiLabel.innerText = key;
     emojiLabel.classList.add("emoji-label");
@@ -622,8 +626,19 @@
             }
             .emoji-label {
                 max-width: 40px;
+                width: 40px;
                 font-size: 8px;
                 text-align: center;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .emoji-label:hover{
+                position: absolute;
+                overflow: visible;
+                z-index: 9999;
+            }
+            .emoji-container {
+                max-width: 50px;
             }
             .emoji-item {
                 width: 40px;
