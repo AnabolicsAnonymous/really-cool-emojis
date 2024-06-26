@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      5.0
+// @version      5.1
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -86,6 +86,7 @@
     catsmirk: "https://i.ibb.co/wRRV5ns/catsmirk.gif",
     cronch: "https://i.ibb.co/y84jjsz/cronch.gif",
     duckass: "https://i.ibb.co/VqG2BVV/duckass.gif",
+    sfagoat: "https://i.ibb.co/DLTw1Fh/cgoat.png",
 
     //hungy
     kidgokuEat: "https://i.ibb.co/tb7X9T4/kidgoku-Eat.gif",
@@ -315,7 +316,7 @@
     ban: "https://i.ibb.co/CwvHRhd/4x.gif",
     sexo: "https://i.ibb.co/ykCgkyS/sexo.gif",
     classic: "https://i.ibb.co/kytwYGd/classic.gif",
-    cowDance: "https://i.ibb.co/ZcWgWVT/qwe.gif"
+    cowDance: "https://i.ibb.co/ZcWgWVT/qwe.gif",
   };
 
   const wide = [
@@ -338,6 +339,7 @@
     "https://i.ibb.co/bLnTKWL/KANE.gif",
     "https://i.ibb.co/QftjRBj/slammed.gif",
     "https://i.ibb.co/nR9yQTJ/STFU.gif",
+    "https://i.ibb.co/DLTw1Fh/cgoat.png",
   ];
   const currentURL = window.location.href;
   const currURL = new URL(currentURL);
