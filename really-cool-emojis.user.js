@@ -343,6 +343,8 @@
   };
 
   const wide = [
+    'https://i.ibb.co/rxqYcrx/moneyRun.gif',
+    "https://i.ibb.co/DRzxN9q/monke-Drive.gif",
     "https://i.ibb.co/w7Dk3bv/pablo-Wait.gif",
     "https://i.ibb.co/ZcWgWVT/qwe.gif",
     "https://i.ibb.co/gzMx7NM/mcqSus.gif",
