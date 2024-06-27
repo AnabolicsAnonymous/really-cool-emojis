@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      5.3
+// @version      5.4
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -89,6 +89,15 @@
     cronch: "https://i.ibb.co/y84jjsz/cronch.gif",
     duckass: "https://i.ibb.co/VqG2BVV/duckass.gif",
     sfagoat: "https://i.ibb.co/DLTw1Fh/cgoat.png",
+    BANANY: "https://i.ibb.co/TwpDXHj/BANANY.gif",
+    monkeySpin: "https://i.ibb.co/28PpJVY/monkey-Spin.gif",
+    monkeySip: "https://i.ibb.co/LdsgPyM/monkey-Sip.gif",
+    monkeTea: "https://i.ibb.co/S7vBZp2/monkeTea.gif",
+    monkeLeave: "https://i.ibb.co/52p18F2/monke-Leave.gif",
+    monkeKiss: "https://i.ibb.co/xFQfqXf/monke-Kiss.gif",
+    monkeDrive: "https://i.ibb.co/DRzxN9q/monke-Drive.gif",
+    monkeArrive: "https://i.ibb.co/RNtfGCn/monke-Arrive.gif",
+    Monke: "https://i.ibb.co/PzFstJH/Monke.gif",
 
     //hungy
     kidgokuEat: "https://i.ibb.co/tb7X9T4/kidgoku-Eat.gif",
@@ -140,6 +149,8 @@
     moneyTime: "https://i.ibb.co/Df5nZDR/money-Time.gif",
     BIGMONEY: "https://i.ibb.co/DL2zLYr/BIGMONEY.gif",
     robbery: "https://i.ibb.co/cYqqtbc/robbery.png",
+    moneyRun: "https://i.ibb.co/rxqYcrx/moneyRun.gif",
+    RICH: "https://i.ibb.co/BsYqy7Q/RICH.gif",
 
     // huh?
     rockhuh: "https://i.ibb.co/CH8mY0w/huh.gif",
