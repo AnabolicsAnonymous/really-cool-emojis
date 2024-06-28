@@ -1,0 +1,395 @@
+{
+    "concernedApe": {
+        "url": "https://i.ibb.co/w7K0bTf/concerned-Ape.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "monkey",
+            "ape",
+            "gorilla",
+            "worried",
+            "concerned"
+        ]
+    },
+    "stanced": {
+        "url": "https://i.ibb.co/yBJCBGY/stanced.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "cat",
+            "standing"
+        ]
+    },
+    "sittin": {
+        "url": "https://i.ibb.co/YcMxQTZ/sittin.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "chillin",
+            "seal"
+        ]
+    },
+    "monkeat": {
+        "url": "https://i.ibb.co/MBLgt2R/monkeat.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "eating",
+            "gorilla",
+            "ape"
+        ]
+    },
+    "monkE": {
+        "url": "https://i.ibb.co/48wZByc/monkE.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "monkey",
+            "ape",
+            "gorilla",
+            "worried",
+            "concerned",
+            "lurk"
+        ]
+    },
+    "aussie": {
+        "url": "https://i.ibb.co/QvWGHww/aussie.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "kangaroo",
+            "australia",
+            "eating"
+        ]
+    },
+    "wuh": {
+        "url": "https://i.ibb.co/mDW4G97/wuh.gif",
+        "default_width": 42,
+        "width": 176,
+        "height": 128,
+        "tags": [
+            "cat",
+            "buh"
+        ]
+    },
+    "shitlookgood": {
+        "url": "https://i.ibb.co/ZT4vbBH/shitlookgood.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "cow",
+            "hungry"
+        ]
+    },
+    "SNACKING": {
+        "url": "https://i.ibb.co/5n1S9Sq/SNACKING.gif",
+        "default_width": 62,
+        "width": 208,
+        "height": 128,
+        "tags": [
+            "eating",
+            "groundhog"
+        ]
+    },
+    "PLEASE": {
+        "url": "https://i.ibb.co/c1B3XSH/PLEASE.gif",
+        "default_width": 42,
+        "width": 132,
+        "height": 128,
+        "tags": [
+            "cat",
+            "beg"
+        ]
+    },
+    ":d": {
+        "url": "https://i.ibb.co/PgPmFzP/DD.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "cat",
+            "happy"
+        ]
+    },
+    "buh": {
+        "url": "https://i.ibb.co/pvVghfM/buh.gif",
+        "default_width": 62,
+        "width": 180,
+        "height": 128,
+        "tags": [
+            "cat",
+            "buh",
+            "concerned"
+        ]
+    },
+    "chimpE": {
+        "url": "https://i.ibb.co/55HNy0X/monkE.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "monkey",
+            "angry",
+            "rage"
+        ]
+    },
+    "meow": {
+        "url": "https://i.ibb.co/Tcrt2c3/meow.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "cat"
+        ]
+    },
+    "catsmirk": {
+        "url": "https://i.ibb.co/wRRV5ns/catsmirk.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "cat"
+        ]
+    },
+    "cronch": {
+        "url": "https://i.ibb.co/y84jjsz/cronch.gif",
+        "default_width": 62,
+        "width": 192,
+        "height": 128,
+        "tags": [
+            "eating",
+            "cat"
+        ]
+    },
+    "duckass": {
+        "url": "https://i.ibb.co/VqG2BVV/duckass.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "twerk"
+        ]
+    },
+    "sfagoat": {
+        "url": "https://i.ibb.co/DLTw1Fh/cgoat.png",
+        "default_width": 42,
+        "width": 400,
+        "height": 461,
+        "tags": []
+    },
+    "BANANY": {
+        "url": "https://i.ibb.co/TwpDXHj/BANANY.gif",
+        "default_width": 42,
+        "width": 144,
+        "height": 128,
+        "tags": [
+            "eating",
+            "cat"
+        ]
+    },
+    "monkeSpin": {
+        "url": "https://i.ibb.co/28PpJVY/monkey-Spin.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "monkey"
+        ]
+    },
+    "monkeSip": {
+        "url": "https://i.ibb.co/LdsgPyM/monkey-Sip.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "chillin"
+        ]
+    },
+    "monkeTea": {
+        "url": "https://i.ibb.co/S7vBZp2/monkeTea.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "morning",
+            "monkey"
+        ]
+    },
+    "monkeLeave": {
+        "url": "https://i.ibb.co/52p18F2/monke-Leave.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "leaving",
+            "monkey"
+        ]
+    },
+    "monkeKiss": {
+        "url": "https://i.ibb.co/xFQfqXf/monke-Kiss.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "kiss",
+            "horny",
+            "thanks"
+        ]
+    },
+    "monkeDrive": {
+        "url": "https://i.ibb.co/DRzxN9q/monke-Drive.gif",
+        "default_width": 62,
+        "width": 232,
+        "height": 128,
+        "tags": [
+            "monkey"
+        ]
+    },
+    "monkeArrive": {
+        "url": "https://i.ibb.co/RNtfGCn/monke-Arrive.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "arrive",
+            "monkey"
+        ]
+    },
+    "Monke": {
+        "url": "https://i.ibb.co/PzFstJH/Monke.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "monkey"
+        ]
+    },
+    "fishy": {
+        "url": "https://i.ibb.co/gTDk7Bt/fish.gif",
+        "default_width": 42,
+        "width": 60,
+        "height": 25,
+        "tags": []
+    },
+    "kidgokuEat": {
+        "url": "https://i.ibb.co/tb7X9T4/kidgoku-Eat.gif",
+        "default_width": 42,
+        "width": 172,
+        "height": 128,
+        "tags": [
+            "eat",
+            "hungry"
+        ]
+    },
+    "gokueat": {
+        "url": "https://i.ibb.co/CPd53LC/gokueat.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "eat",
+            "hungry"
+        ]
+    },
+    "hungy": {
+        "url": "https://i.ibb.co/x2Bf14F/hungy.gif",
+        "default_width": 42,
+        "width": 172,
+        "height": 128,
+        "tags": [
+            "eat",
+            "hungry"
+        ]
+    },
+    "helloo": {
+        "url": "https://i.ibb.co/p27w380/helloo.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "hi",
+            "yo",
+            "hey"
+        ]
+    },
+    "pikahey": {
+        "url": "https://i.ibb.co/2WnDK5C/pikahey.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "hi",
+            "yo",
+            "hey"
+        ]
+    },
+    "YOO": {
+        "url": "https://i.ibb.co/s3NDTct/yoooo.gif",
+        "default_width": 62,
+        "width": 180,
+        "height": 128,
+        "tags": [
+            "hi",
+            "yo",
+            "hey"
+        ]
+    },
+    "yoo": {
+        "url": "https://i.ibb.co/CBfDMxJ/yoo.gif",
+        "default_width": 62,
+        "width": 180,
+        "height": 128,
+        "tags": [
+            "hi",
+            "yo",
+            "hey"
+        ]
+    },
+    "weebHi": {
+        "url": "https://i.ibb.co/BCDxRgs/image.gif",
+        "default_width": 42,
+        "width": 173,
+        "height": 200,
+        "tags": [
+            "hi",
+            "yo",
+            "hey"
+        ]
+    },
+    "hasbullahi": {
+        "url": "https://i.ibb.co/XLbB1hF/hasbullahi.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "hi",
+            "yo",
+            "hey"
+        ]
+    },
+    "spongeBye": {
+        "url": "https://i.ibb.co/4W6VWPz/sponge-Bye.gif",
+        "default_width": 42,
+        "width": 136,
+        "height": 128,
+        "tags": [
+            "bye"
+        ]
+    },
+    "ByeBye": {
+        "url": "https://i.ibb.co/hDd3n4Y/ByeBye.gif",
+        "default_width": 42,
+        "width": 172,
+        "height": 128,
+        "tags": [
+            "bye"
+        ]
+    }
+}

@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      5.4
+// @version      5.5
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -98,6 +98,7 @@
     monkeDrive: "https://i.ibb.co/DRzxN9q/monke-Drive.gif",
     monkeArrive: "https://i.ibb.co/RNtfGCn/monke-Arrive.gif",
     Monke: "https://i.ibb.co/PzFstJH/Monke.gif",
+    fishy: "https://i.ibb.co/gTDk7Bt/fish.gif",
 
     //hungy
     kidgokuEat: "https://i.ibb.co/tb7X9T4/kidgoku-Eat.gif",
@@ -105,6 +106,7 @@
     hungy: "https://i.ibb.co/x2Bf14F/hungy.gif",
 
     // greetings
+    helloo: "https://i.ibb.co/p27w380/helloo.gif",
     pikahey: "https://i.ibb.co/2WnDK5C/pikahey.gif",
     YOO: "https://i.ibb.co/s3NDTct/yoooo.gif",
     yoo: "https://i.ibb.co/CBfDMxJ/yoo.gif",
@@ -343,7 +345,8 @@
   };
 
   const wide = [
-    'https://i.ibb.co/rxqYcrx/moneyRun.gif',
+    "https://i.ibb.co/gTDk7Bt/fish.gif",
+    "https://i.ibb.co/rxqYcrx/moneyRun.gif",
     "https://i.ibb.co/DRzxN9q/monke-Drive.gif",
     "https://i.ibb.co/w7Dk3bv/pablo-Wait.gif",
     "https://i.ibb.co/ZcWgWVT/qwe.gif",
