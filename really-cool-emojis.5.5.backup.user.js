@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         really-cool-emojis
-// @version      5.5
+// @name         really-cool-emojis-old
+// @version      5.6
 // @namespace    https://github.com/frenchcutgreenbean/
-// @description  emojis and img for UNIT3D trackers
+// @description  backup of old version
 // @author       dantayy
 // @match        https://blutopia.cc/*
 // @match        https://aither.cc/*
@@ -10,8 +10,8 @@
 // @match        https://fearnopeer.com/*
 // @match        https://cinematik.net/*
 // @icon         https://ptpimg.me/shqsh5.png
-// @downloadURL  https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
-// @updateURL    https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
+// @downloadURL  https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.5.5.backup.user.js
+// @updateURL    https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.5.5.backup.user.js
 // @grant        GM_xmlhttpRequest
 // @license      GPL-3.0-or-later
 // ==/UserScript==
@@ -847,7 +847,7 @@
     GM_xmlhttpRequest({
       method: "GET",
       url:
-        "https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js",
+        "https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.5.5.backup.user.js",
       onload: function (response) {
         const updateDiv = document.querySelector(".check__update");
         const responseText = response.responseText;
@@ -861,7 +861,7 @@
           if (onlineVersion !== currentVersion) {
             const updateLink = document.createElement("a");
             updateLink.href =
-              "https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js";
+              "https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.5.5.backup.user.js";
             updateLink.target = "_blank";
             updateLink.textContent = "Update";
             updateLink.style.marginTop = "10px";
