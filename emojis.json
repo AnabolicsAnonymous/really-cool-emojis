@@ -2352,5 +2352,54 @@
         "width": 355,
         "height": 379,
         "tags": []
+    },
+    "sbKick": {
+        "url": "https://ptpimg.me/nuvrb8.gif",
+        "default_width": 42,
+        "width": 80,
+        "height": 118,
+        "tags": [
+            "fight",
+            "strongbad"
+        ]
+    },
+    "sbKO": {
+        "url": "https://ptpimg.me/ny9vi9.gif",
+        "default_width": 42,
+        "width": 80,
+        "height": 118,
+        "tags": [
+            "fight",
+            "strongbad"
+        ]
+    },
+    "sbSpin": {
+        "url": "https://ptpimg.me/x9s0d0.gif",
+        "default_width": 42,
+        "width": 80,
+        "height": 118,
+        "tags": [
+            "thumbup",
+            "strongbad"
+        ]
+    },
+    "sbLunch": {
+        "url": "https://ptpimg.me/9j3e8p.gif",
+        "default_width": 42,
+        "width": 80,
+        "height": 118,
+        "tags": [
+            "strongbad"
+        ]
+    },
+    "sbSmash": {
+        "url": "https://ptpimg.me/9g9lh7.gif",
+        "default_width": 42,
+        "width": 140,
+        "height": 116,
+        "tags": [
+            "strongbad",
+            "fight"
+        ]
     }
 }
