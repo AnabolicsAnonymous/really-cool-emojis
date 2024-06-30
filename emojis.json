@@ -1701,7 +1701,8 @@
         "tags": [
             "russian",
             "ruski",
-            "putin"
+            "putin",
+            "dance"
         ]
     },
     "putinSquat": {
@@ -1955,7 +1956,10 @@
         "default_width": 62,
         "width": 228,
         "height": 128,
-        "tags": []
+        "tags": [
+            "boys",
+            "theboys"
+        ]
     },
     "shy": {
         "url": "https://ptpimg.me/olw327.png",
@@ -1980,7 +1984,10 @@
         "default_width": 62,
         "width": 244,
         "height": 128,
-        "tags": []
+        "tags": [
+            "really",
+            "mm"
+        ]
     },
     "spotted": {
         "url": "https://i.ibb.co/BNh18pp/spotted.gif",
@@ -2174,7 +2181,9 @@
         "default_width": 42,
         "width": 168,
         "height": 128,
-        "tags": []
+        "tags": [
+            "spotted"
+        ]
     },
     "LETHIMCOOK": {
         "url": "https://i.ibb.co/NWC2108/LETHIMCOOK.gif",
@@ -2344,14 +2353,18 @@
         "default_width": 62,
         "width": 456,
         "height": 362,
-        "tags": []
+        "tags": [
+            "dance"
+        ]
     },
     "CT": {
         "url": "https://i.ibb.co/7yMn3Zw/CT.gif",
         "default_width": 42,
         "width": 355,
         "height": 379,
-        "tags": []
+        "tags": [
+            "praying"
+        ]
     },
     "sbKick": {
         "url": "https://ptpimg.me/nuvrb8.gif",
@@ -2400,6 +2413,17 @@
         "tags": [
             "strongbad",
             "fight"
+        ]
+    },
+    "kdotsmash": {
+        "url": "https://i.ibb.co/W5KKjcZ/zxc.gif",
+        "default_width": 62,
+        "width": 256,
+        "height": 192,
+        "tags": [
+            "fight",
+            "kendrick",
+            "punch"
         ]
     }
 }
