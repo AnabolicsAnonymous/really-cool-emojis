@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis-old
-// @version      5.6
+// @version      5.5
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  backup of old version
 // @author       dantayy
