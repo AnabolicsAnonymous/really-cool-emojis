@@ -115,7 +115,7 @@
     if (sizePref === "default") return emote.default_width;
     if (sizePref === "large") return emote.default_width + 10;
     if (sizePref === "small") return emote.default_width - 10;
-    if (sizePref === "sfa") return Math.min(emote.width, 250);
+    if (sizePref === "sfa") return Math.min(emote.width, 150);
   }
 
   let sizePref = "default";
