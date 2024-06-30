@@ -442,14 +442,6 @@
     #img_cb, #autofill_cb, #show_label {
       cursor: pointer !important;
     }
-    .check__update {
-      display: flex;
-      flex-direction: column;
-    }
-    #update__btn {
-      cursor: pointer;
-      color: #4F8C3C;
-    }
   `;
 
     addStyle(modalStyler);
@@ -494,9 +486,6 @@
             <option value="small">Small</option>
             <option value="sfa">SFA</option>
         </select>
-    </div>
-    <div class="check__update">
-      <span id="update__btn">Check for updates</span>
     </div>
   `;
 
