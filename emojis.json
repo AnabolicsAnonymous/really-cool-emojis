@@ -2447,5 +2447,62 @@
             "old",
             "angry"
         ]
+    },
+    "junesOver": {
+        "url": "https://i.ibb.co/Cmwb0BG/junes-Over.png",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "gay",
+            "homophobic",
+            "dog"
+        ]
+    },
+    "NotTooFond": {
+        "url": "https://i.ibb.co/ZTttJgC/Not-Too-Fond.png",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "gay",
+            "homophobic",
+            "dog"
+        ]
+    },
+    "angryDog": {
+        "url": "https://i.ibb.co/1J29sGP/angryDog.png",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "angry",
+            "dog",
+            "rage",
+            "mad"
+        ]
+    },
+    "Capping": {
+        "url": "https://i.ibb.co/dDSCD8p/Capping.png",
+        "default_width": 42,
+        "width": 148,
+        "height": 128,
+        "tags": [
+            "sus",
+            "capping",
+            "dog",
+            "imontoyou"
+        ]
+    },
+    "SnackTime": {
+        "url": "https://i.ibb.co/37PvZnv/Snack-Time.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "horny",
+            "dog",
+            "hungry"
+        ]
     }
 }
