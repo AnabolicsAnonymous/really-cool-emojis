@@ -406,7 +406,7 @@
     },
     "stingUp": {
         "url": "https://ptpimg.me/ze6c85.gif",
-        "default_width": 42,
+        "default_width": 52,
         "width": 256,
         "height": 256,
         "tags": [
@@ -1212,7 +1212,7 @@
     },
     "D:": {
         "url": "https://i.ibb.co/zs2dHW2/gasp.png",
-        "default_width": 42,
+        "default_width": 32,
         "width": 128,
         "height": 128,
         "tags": [
@@ -1510,7 +1510,7 @@
     },
     "lip": {
         "url": "https://i.ibb.co/hVm1ngL/4x.png",
-        "default_width": 42,
+        "default_width": 32,
         "width": 128,
         "height": 128,
         "tags": [
