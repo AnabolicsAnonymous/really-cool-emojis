@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      6.9.2
+// @version      6.9.3
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -115,7 +115,7 @@
     if (sizePref === "default") return emote.default_width;
     if (sizePref === "large") return emote.default_width + 10;
     if (sizePref === "small") return emote.default_width - 10;
-    if (sizePref === "sfa") return emote.default_width + 23;
+    if (sizePref === "sfa") return Math.min(emote.default_width + 28, 70);
   }
 
   let sizePref = "default";
