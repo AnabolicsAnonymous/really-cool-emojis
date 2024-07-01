@@ -2425,5 +2425,27 @@
             "kendrick",
             "punch"
         ]
+    },
+    "offToWork": {
+        "url": "https://i.ibb.co/jgRZZb8/off-To-Work.gif",
+        "default_width": 62,
+        "width": 174,
+        "height": 222,
+        "tags": [
+            "penguin",
+            "working",
+            "leaving"
+        ]
+    },
+    "RaynMan": {
+        "url": "https://i.ibb.co/3WTFqFZ/RaynMan.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "boomer",
+            "old",
+            "angry"
+        ]
     }
 }
