@@ -1759,6 +1759,7 @@
         "width": 228,
         "height": 128,
         "tags": [
+            "wwe",
             "fight",
             "stfu"
         ]
@@ -1949,7 +1950,10 @@
         "default_width": 42,
         "width": 172,
         "height": 128,
-        "tags": []
+        "tags": [
+            "wwe",
+            "beer"
+        ]
     },
     "ALRIGHT": {
         "url": "https://i.ibb.co/c82Tz05/ALRIGHT.gif",
@@ -2513,6 +2517,60 @@
         "tags": [
             "horny",
             "pepe"
+        ]
+    },
+    "beerTime": {
+        "url": "https://i.ibb.co/FJKwxFG/beerTime.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "beer",
+            "thirsty",
+            "time"
+        ]
+    },
+    "reallyThirsty": {
+        "url": "https://i.ibb.co/wzQZxkr/really-Thirsty.gif",
+        "default_width": 42,
+        "width": 168,
+        "height": 128,
+        "tags": [
+            "beer",
+            "thirsty",
+            "really",
+            "mm"
+        ]
+    },
+    "ricecooker": {
+        "url": "https://i.ibb.co/B29GvsD/ricecooker.png",
+        "default_width": 42,
+        "width": 400,
+        "height": 353,
+        "tags": [
+            "rice"
+        ]
+    },
+    "smiliebeer": {
+        "url": "https://i.ibb.co/z500kf7/smiliebeer.gif",
+        "default_width": 60,
+        "width": 60,
+        "height": 18,
+        "tags": [
+            "beer",
+            "thirsty",
+            "cheers"
+        ]
+    },
+    "weebBeer": {
+        "url": "https://i.ibb.co/xXh1TkT/weebBeer.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "weeb",
+            "beer",
+            "thirsty"
         ]
     }
 }
