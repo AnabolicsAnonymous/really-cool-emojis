@@ -2572,5 +2572,135 @@
             "beer",
             "thirsty"
         ]
+    },
+    "cageArrive": {
+        "url": "https://i.ibb.co/0mtFWtQ/cage-Arrive.gif",
+        "default_width": 62,
+        "width": 192,
+        "height": 128,
+        "tags": [
+            "arrive"
+        ]
+    },
+    "cageGiggle": {
+        "url": "https://i.ibb.co/5TFfCvQ/cage-Giggle.gif",
+        "default_width": 42,
+        "width": 512,
+        "height": 512,
+        "tags": [
+            "lol",
+            "lmao",
+            "laughing",
+            "hahahaha"
+        ]
+    },
+    "cageLaser": {
+        "url": "https://i.ibb.co/5x3DNnY/cage-Laser.gif",
+        "default_width": 62,
+        "width": 356,
+        "height": 128,
+        "tags": []
+    },
+    "cageRelax": {
+        "url": "https://i.ibb.co/qW3FtkS/cage-Relax.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "relax"
+        ]
+    },
+    "cageWink": {
+        "url": "https://i.ibb.co/tCgcyPF/cageWink.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "horny",
+            "wink"
+        ]
+    },
+    "feelsSadMan": {
+        "url": "https://i.ibb.co/PhBm9zg/feels-Sad-Man.gif",
+        "default_width": 42,
+        "width": 512,
+        "height": 512,
+        "tags": [
+            "sad",
+            "crying"
+        ]
+    },
+    "NoNo": {
+        "url": "https://i.ibb.co/1TGGMTM/NoNo.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "nope",
+            "cat"
+        ]
+    },
+    "NONONO": {
+        "url": "https://i.ibb.co/G7GNdTx/NONONO.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "nope",
+            "weeb"
+        ]
+    },
+    "rabbitFok": {
+        "url": "https://i.ibb.co/V2qYsJ7/rabbit-Fok.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": []
+    },
+    "RIPBOZO": {
+        "url": "https://i.ibb.co/g6g61cs/RIPBOZO.gif",
+        "default_width": 52,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "restinpeace",
+            "raynman"
+        ]
+    },
+    "runOver": {
+        "url": "https://i.ibb.co/gy11ZRk/runOver.gif",
+        "default_width": 42,
+        "width": 512,
+        "height": 512,
+        "tags": []
+    },
+    "yesYes": {
+        "url": "https://i.ibb.co/31DV8rx/yesYes.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "agreed"
+        ]
+    },
+    "yesyesBusiness": {
+        "url": "https://i.ibb.co/KwGkP1v/yesyes-Business.gif",
+        "default_width": 42,
+        "width": 108,
+        "height": 128,
+        "tags": [
+            "agreed",
+            "gamble",
+            "gamba"
+        ]
+    },
+    "YOUDONTSAY": {
+        "url": "https://i.ibb.co/DMM81dJ/YOUDONTSAY.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "cage"
+        ]
     }
 }
