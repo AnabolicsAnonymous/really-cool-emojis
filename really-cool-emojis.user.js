@@ -455,10 +455,6 @@
     closeButton.textContent = "Close";
     closeButton.onclick = () => (modal.style.display = "none");
 
-    const dragIcon = document.createElement("p");
-    dragIcon.id = "draggable";
-    dragIcon.textContent = "🖱️";
-
     const settingsButton = document.createElement("button");
     settingsButton.className = "menu-settings";
     settingsButton.textContent = "⚙️";
@@ -492,17 +488,7 @@
         </select>
     </div>
   `;
-    const draggableWindow = document.getElementById("emote-menu");
-    const draggableIcon = document.getElementById("draggable");
 
-    let offsetX = 0,
-      offsetY = 0,
-      startX = 0,
-      startY = 0;
-
-    draggableIcon.addEventListener("mousedown", dragStart);
-    document.addEventListener("mouseup", dragEnd);
-    document.addEventListener("mousemove", drag);
     settingsMenu
       .querySelector("#autofill_cb")
       .addEventListener("change", (e) => {
@@ -512,23 +498,6 @@
     settingsMenu.querySelector("#img_cb").addEventListener("change", (e) => {
       localStorage.setItem("useImgTag", e.target.checked);
     });
-
-    function dragStart(e) {
-      startX = e.clientX - offsetX;
-      startY = e.clientY - offsetY;
-      document.addEventListener("mousemove", drag);
-    }
-
-    function drag(e) {
-      offsetX = e.clientX - startX;
-      offsetY = e.clientY - startY;
-      draggableWindow.style.left = offsetX + "px";
-      draggableWindow.style.top = offsetY + "px";
-    }
-
-    function dragEnd() {
-      document.removeEventListener("mousemove", drag);
-    }
 
     settingsMenu
       .querySelector("#show_label")
@@ -544,7 +513,6 @@
       });
 
     modal.appendChild(closeButton);
-    modal.appendChild(dragIcon);
     modal.appendChild(settingsButton);
     modal.appendChild(settingsMenu);
     modal.appendChild(emoteMenu);
