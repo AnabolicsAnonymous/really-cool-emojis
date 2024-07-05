@@ -2727,5 +2727,15 @@
             "weeb",
             "twerk"
         ]
+    },
+    "raynPopcorn": {
+        "url": "https://i.ibb.co/kGFX1jt/123.png",
+        "default_width": 100,
+        "width": 226,
+        "height": 64,
+        "tags": [
+            "raynman",
+            "popcorn"
+        ]
     }
 }
