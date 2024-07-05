@@ -4,11 +4,12 @@
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
-// @match        https://blutopia.cc/*
 // @match        https://aither.cc/*
-// @match        https://reelflix.xyz/*
-// @match        https://fearnopeer.com/*
+// @match        https://blutopia.cc/*
 // @match        https://cinematik.net/*
+// @match        https://fearnopeer.com/*
+// @match        https://lst.gg/*
+// @match        https://reelflix.xyz/*
 // @icon         https://ptpimg.me/shqsh5.png
 // @downloadURL  https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
 // @updateURL    https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
