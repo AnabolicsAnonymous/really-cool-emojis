@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      6.9.4
+// @version      6.9.5
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -19,6 +19,9 @@
 
 /************************************************************************************************
  * ChangeLog
+ * 6.9.5
+ *  - Bigger menu + responsive.
+ *  - Draggable.
  * 6.9.0
  *  - Complete refactor emojis stored in separate file.
  *  - Search functionality for easy access.
@@ -330,120 +333,185 @@
         existingMenu.style.display === "none" ? "block" : "none";
       return;
     }
-
     // Attempt to style the modal dynamically. Not great, but it works.
     const menuLeft =
       pageFlags.isChatbox || pageFlags.isNewTopic ? "60%" : "20%";
     const menuTop = pageFlags.isNewTopic ? "10%" : "20%";
     const modalStyler = `
-    .emote-menu {
-      position: fixed;
-      border-radius: 5px;
-      z-index: 1;
-      left: ${menuLeft};
-      top: ${menuTop};
-      max-height: 345px;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.8);
-    }
-    .emote-content {
-      background-color: #1C1C1C;
-      color: #CCCCCC;
-      margin: 15% auto;
-      padding: 20px;
-      max-width: 300px;
-      width: 300px;
-      max-height: 250px;
-      height: 250px;
-      overflow: auto;
-      position: relative;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: 40px;
-      gap: 10px;
-    }
-    .emote-label {
-      max-width: 40px;
-      width: 40px;
-      font-size: 8px;
-      text-align: center;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
-    .emote-label:hover {
-      position: absolute;
-      overflow: visible;
-      z-index: 9999;
-    }
-    .emote-container {
-      max-width: 50px;
-    }
-    .emote-item {
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      transition: transform 0.1s;
-    }
-    .emote-item:hover {
-      transform: scale(1.1);
-    }
-    .emote-search-bar {
-      grid-column: 1 / -1;
-      background-color: #333;
-      color: #a1a1a1;
-      height: 30px;
-      border: none;
-      border-radius: 3px;
-      width: 100%;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-    .menu-close, .menu-settings {
-      background-color: transparent;
-      color: #BBBBBB;
-      position: absolute;
-      top: 10px;
-      padding: 5px;
-      border: 0;
-      cursor: pointer;
-      transition: opacity 0.1s;
-    }
-    .menu-close:hover, .menu-settings:hover {
-      opacity: 0.8;
-    }
-    .menu-close {
-      right: 40px;
-    }
-    .menu-settings {
-      right: 10px;
-    }
-    .settings-menu {
-      background-color: #2C2C2C;
-      color: #CCCCCC;
-      border-radius: 5px;
-      position: absolute;
-      top: 50px;
-      right: 10px;
-      z-index: 2;
-      max-height: 260px;
-      padding: 20px !important;
-      overflow: auto;
-      width: 240px;
-      flex-direction: column;
-      justify-content: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .settings-menu > div {
-      margin: 5px 0 !important;
-    }
-    #img_cb, #autofill_cb, #show_label {
-      cursor: pointer !important;
-    }
-  `;
+        .emote-menu {
+          left: ${menuLeft};
+          top: ${menuTop};
+          position: fixed;
+          border-radius: 5px;
+          z-index: 1;
+          overflow: auto;
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        .emote-menu #draggable {
+          position: absolute;
+          top: 10px;
+          padding: 5px;
+          cursor: grab;
+        }
+        .emote-menu #draggable:active {
+          cursor: grabbing;
+        }
+        .emote-menu .emote-content {
+          background-color: #1C1C1C;
+          color: #CCCCCC;
+          margin: 50px auto auto 0;
+          padding: 20px;
+          max-width: 300px;
+          width: 300px;
+          max-height: 250px;
+          height: 250px;
+          overflow: auto;
+          position: relative;
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: 40px;
+          gap: 10px;
+        }
+        .emote-menu .emote-label {
+          max-width: 40px;
+          width: 40px;
+          font-size: 8px;
+          text-align: center;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        .emote-menu .emote-label:hover {
+          position: absolute;
+          overflow: visible;
+          z-index: 9999;
+        }
+        .emote-menu .emote-container {
+          max-width: 50px;
+        }
+        .emote-menu .emote-item {
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transition: transform 0.1s;
+        }
+        .emote-menu .emote-item:hover {
+          transform: scale(1.1);
+        }
+        .emote-menu .emote-search-bar {
+          grid-column: 1/-1;
+          background-color: #333;
+          color: #a1a1a1;
+          height: 30px;
+          border: none;
+          border-radius: 3px;
+          width: 100%;
+          padding: 10px;
+          box-sizing: border-box;
+        }
+        .emote-menu .menu-close,
+        .emote-menu .menu-settings {
+          background-color: transparent;
+          color: #BBBBBB;
+          position: absolute;
+          top: 10px;
+          padding: 5px;
+          border: 0;
+          cursor: pointer;
+          transition: opacity 0.1s;
+        }
+        .emote-menu .menu-close:hover,
+        .emote-menu .menu-settings:hover {
+          opacity: 0.8;
+        }
+        .emote-menu .menu-close {
+          right: 40px;
+        }
+        .emote-menu .menu-settings {
+          right: 10px;
+        }
+        .emote-menu .settings-menu {
+          background-color: #2C2C2C;
+          color: #CCCCCC;
+          border-radius: 5px;
+          position: absolute;
+          top: 50px;
+          right: 10px;
+          z-index: 2;
+          max-height: 260px;
+          padding: 20px;
+          overflow: auto;
+          width: 240px;
+          flex-direction: column;
+          justify-content: center;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .emote-menu .settings-menu > div {
+          margin: 5px 0;
+        }
+        .emote-menu .settings-menu #img_cb,
+        .emote-menu .settings-menu #autofill_cb,
+        .emote-menu .settings-menu #show_label {
+          cursor: pointer;
+        }
+
+        @media (min-width: 1025px) and (max-width: 1600px) {
+          .emote-menu .emote-content {
+            max-width: 350px;
+            width: 350px;
+            max-height: 350px;
+            height: 350px;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 50px;
+            gap: 15px;
+          }
+          .emote-menu .emote-label {
+            max-width: 50px;
+            width: 50px;
+            font-size: 10px;
+          }
+          .emote-menu .emote-container {
+            max-width: 60px;
+          }
+          .emote-menu .emote-item {
+            width: 50px;
+            height: 50px;
+          }
+          .emote-menu .emote-search-bar {
+            height: 35px;
+            padding: 15px;
+          }
+        }
+        @media (min-width: 1601px) {
+          .emote-menu .emote-content {
+            max-width: 450px;
+            width: 450px;
+            max-height: 420px;
+            height: 420px;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 60px;
+            gap: 20px;
+          }
+          .emote-menu .emote-label {
+            max-width: 60px;
+            width: 60px;
+            font-size: 12px;
+          }
+          .emote-menu .emote-container {
+            max-width: 70px;
+          }
+          .emote-menu .emote-item {
+            width: 60px;
+            height: 60px;
+          }
+          .emote-menu .emote-search-bar {
+            height: 40px;
+            padding: 20px;
+          }
+        }/*# sourceMappingURL=style.css.map */
+`;
 
     addStyle(modalStyler);
 
@@ -455,6 +523,10 @@
     closeButton.className = "menu-close";
     closeButton.textContent = "Close";
     closeButton.onclick = () => (modal.style.display = "none");
+
+    const dragIcon = document.createElement("div");
+    dragIcon.id = "draggable";
+    dragIcon.textContent = "🤚";
 
     const settingsButton = document.createElement("button");
     settingsButton.className = "menu-settings";
@@ -514,13 +586,14 @@
       });
 
     modal.appendChild(closeButton);
+    modal.appendChild(dragIcon);
     modal.appendChild(settingsButton);
     modal.appendChild(settingsMenu);
     modal.appendChild(emoteMenu);
     document.body.appendChild(modal);
-
     initializeSettings();
   }
+
   // Load the settings into the menu from local storage.
   function initializeSettings() {
     document.getElementById("autofill_cb").checked = JSON.parse(
@@ -544,8 +617,48 @@
       localStorage.setItem("sizePref", selectedSizePref);
       sizePref = sizePrefSelect.value;
     });
-  }
 
+    const draggableWindow = document.getElementById("emote-menu");
+    const draggableIcon = document.getElementById("draggable");
+
+    let offsetX = 0,
+      offsetY = 0,
+      startX = 0,
+      startY = 0;
+
+    draggableIcon.addEventListener("mousedown", dragStart);
+    document.addEventListener("mouseup", dragEnd);
+
+    function dragStart(e) {
+      e.preventDefault(); // Prevent default behavior to avoid unexpected issues
+
+      // Calculate the initial offset values
+      offsetX = draggableWindow.offsetLeft;
+      offsetY = draggableWindow.offsetTop;
+
+      startX = e.clientX;
+      startY = e.clientY;
+
+      document.addEventListener("mousemove", drag);
+    }
+
+    function drag(e) {
+      // Calculate new position based on mouse movement
+      offsetX += e.clientX - startX;
+      offsetY += e.clientY - startY;
+
+      // Update the starting positions for the next movement
+      startX = e.clientX;
+      startY = e.clientY;
+
+      draggableWindow.style.left = `${offsetX}px`;
+      draggableWindow.style.top = `${offsetY}px`;
+    }
+
+    function dragEnd() {
+      document.removeEventListener("mousemove", drag);
+    }
+  }
   // Inject the emoji button and run the main script.
   function addEmojiButton() {
     getDOMSelectors();
