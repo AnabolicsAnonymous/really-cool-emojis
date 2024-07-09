@@ -2737,5 +2737,100 @@
             "raynman",
             "popcorn"
         ]
+    },
+    "COCKA": {
+        "url": "https://i.ibb.co/qCvNy3Z/COCKA.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "booba",
+            "horny"
+        ]
+    },
+    "cowass": {
+        "url": "https://i.ibb.co/qd6LCVG/cowass.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "twerk",
+            "jacksaw"
+        ]
+    },
+    "cowUFO": {
+        "url": "https://i.ibb.co/jZ0p1qL/cowUFO.gif",
+        "default_width": 42,
+        "width": 500,
+        "height": 500,
+        "tags": [
+            "jacksaw"
+        ]
+    },
+    "meowdy": {
+        "url": "https://i.ibb.co/T2wZ3jr/meowdy.png",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "cat"
+        ]
+    },
+    "moo": {
+        "url": "https://i.ibb.co/WPyC8Y0/moo.gif",
+        "default_width": 62,
+        "width": 498,
+        "height": 326,
+        "tags": [
+            "cow",
+            "jacksaw"
+        ]
+    },
+    "peepoSitCowboyWithABigIronOnHisHipRidingOnAHorse": {
+        "url": "https://i.ibb.co/pQ8Gzvr/peepo-Sit-Cowboy-With-ABig-Iron-On-His-Hip-Riding-On-AHorse.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": []
+    },
+    "PHEW": {
+        "url": "https://i.ibb.co/k9R4Lsw/PHEW.gif",
+        "default_width": 62,
+        "width": 180,
+        "height": 128,
+        "tags": [
+            "relieved",
+            "really",
+            "mm"
+        ]
+    },
+    "pheww": {
+        "url": "https://i.ibb.co/NNtWbZC/pheww.gif",
+        "default_width": 42,
+        "width": 144,
+        "height": 128,
+        "tags": [
+            "relieved"
+        ]
+    },
+    "superCOCKA": {
+        "url": "https://i.ibb.co/64s7PFf/super-COCKA.gif",
+        "default_width": 62,
+        "width": 384,
+        "height": 124,
+        "tags": [
+            "cocka",
+            "booba"
+        ]
+    },
+    "ultraDuckass": {
+        "url": "https://i.ibb.co/f2ynYbP/ultra-Duckass.gif",
+        "default_width": 42,
+        "width": 498,
+        "height": 498,
+        "tags": [
+            "duckass",
+            "twerk"
+        ]
     }
 }
