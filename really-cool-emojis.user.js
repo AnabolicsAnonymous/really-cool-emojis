@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      6.9.5
+// @version      6.9.6
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -19,6 +19,10 @@
 
 /************************************************************************************************
  * ChangeLog
+ * 6.9.6
+ *  - Menu size moved to settings
+ *  - Sticky search bar
+ *  - Back to top button
  * 6.9.5
  *  - Bigger menu + responsive.
  *  - Draggable.
@@ -119,7 +123,7 @@
     if (sizePref === "default") return emote.default_width;
     if (sizePref === "large") return emote.default_width + 10;
     if (sizePref === "small") return emote.default_width - 10;
-    if (sizePref === "sfa") return Math.min(emote.default_width + 28, 70);
+    if (sizePref === "sfa") return Math.min(emote.default_width + 28, 100);
   }
 
   let sizePref = "default";
@@ -127,9 +131,85 @@
   if (localStorage.getItem("sizePref")) {
     sizePref = localStorage.getItem("sizePref");
   }
+
+  let winSize = "small";
+
+  if (localStorage.getItem("winSize")) {
+    winSize = localStorage.getItem("winSize");
+  }
+
+  function setWinSize(winSize) {
+    const styleMedium = `
+      .emote-menu .emote-content {
+        max-width: 350px;
+        width: 350px;
+        max-height: 350px;
+        height: 350px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 50px;
+        gap: 15px;
+      }
+      .emote-menu .emote-label {
+        max-width: 50px;
+        width: 50px;
+        font-size: 10px;
+      }
+      .emote-menu .emote-container {
+        max-width: 60px;
+      }
+      .emote-menu .emote-item {
+        width: 50px;
+        height: 50px;
+      }
+      .emote-menu .emote-search-bar {
+        height: 35px;
+        padding: 15px;
+      }`;
+
+    const styleLarge = `
+      .emote-menu .emote-content {
+        max-width: 450px;
+        width: 450px;
+        max-height: 420px;
+        height: 420px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 60px;
+        gap: 20px;
+      }
+      .emote-menu .emote-label {
+        max-width: 60px;
+        width: 60px;
+        font-size: 12px;
+      }
+      .emote-menu .emote-container {
+        max-width: 70px;
+      }
+      .emote-menu .emote-item {
+        width: 60px;
+        height: 60px;
+      }
+      .emote-menu .emote-search-bar {
+        height: 40px;
+        padding: 20px;
+      }`;
+    // Remove existing style elements for medium and large sizes
+    const existingMediumStyle = document.getElementById("style-medium");
+    if (existingMediumStyle) existingMediumStyle.remove();
+
+    const existingLargeStyle = document.getElementById("style-large");
+    if (existingLargeStyle) existingLargeStyle.remove();
+
+    if (winSize === "large") {
+      addStyle(styleLarge, "style-large");
+    } else if (winSize === "medium") {
+      addStyle(styleMedium, "style-medium");
+    }
+  }
+
   // Helper function to addStyle instead of using GM.addStyle, for compatibility.
-  function addStyle(css) {
+  function addStyle(css, id) {
     const style = document.createElement("style");
+    style.id = id;
     style.textContent = css;
     document.head.appendChild(style);
   }
@@ -356,6 +436,24 @@
         .emote-menu #draggable:active {
           cursor: grabbing;
         }
+        .emote-menu #topBtn {
+          display: none;
+          position: absolute;
+          bottom: 20px;
+          right: 5px;
+          z-index: 99;
+          border: none;
+          outline: none;
+          background-color: rgb(164, 164, 164);
+          color: white;
+          cursor: pointer;
+          padding: 10px;
+          border-radius: 10px;
+          font-size: 18px;
+        }
+        .emote-menu #topBtn:hover {
+          background-color: #555;
+        }
         .emote-menu .emote-content {
           background-color: #1C1C1C;
           color: #CCCCCC;
@@ -401,8 +499,10 @@
           transform: scale(1.1);
         }
         .emote-menu .emote-search-bar {
+          position: sticky;
+          top: 0;
           grid-column: 1/-1;
-          background-color: #333;
+          background-color: rgba(51, 51, 51, 0.8196078431);
           color: #a1a1a1;
           height: 30px;
           border: none;
@@ -455,65 +555,10 @@
         .emote-menu .settings-menu #autofill_cb,
         .emote-menu .settings-menu #show_label {
           cursor: pointer;
-        }
-
-        @media (min-width: 1025px) and (max-width: 1600px) {
-          .emote-menu .emote-content {
-            max-width: 350px;
-            width: 350px;
-            max-height: 350px;
-            height: 350px;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: 50px;
-            gap: 15px;
-          }
-          .emote-menu .emote-label {
-            max-width: 50px;
-            width: 50px;
-            font-size: 10px;
-          }
-          .emote-menu .emote-container {
-            max-width: 60px;
-          }
-          .emote-menu .emote-item {
-            width: 50px;
-            height: 50px;
-          }
-          .emote-menu .emote-search-bar {
-            height: 35px;
-            padding: 15px;
-          }
-        }
-        @media (min-width: 1601px) {
-          .emote-menu .emote-content {
-            max-width: 450px;
-            width: 450px;
-            max-height: 420px;
-            height: 420px;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: 60px;
-            gap: 20px;
-          }
-          .emote-menu .emote-label {
-            max-width: 60px;
-            width: 60px;
-            font-size: 12px;
-          }
-          .emote-menu .emote-container {
-            max-width: 70px;
-          }
-          .emote-menu .emote-item {
-            width: 60px;
-            height: 60px;
-          }
-          .emote-menu .emote-search-bar {
-            height: 40px;
-            padding: 20px;
-          }
         }/*# sourceMappingURL=style.css.map */
 `;
 
-    addStyle(modalStyler);
+    addStyle(modalStyler, "modal-style");
 
     const modal = document.createElement("div");
     modal.className = "emote-menu";
@@ -553,15 +598,38 @@
     </div>
     <div class="emote__config">
       <label for="sizePref">Select Emote Size:</label>
-        <select id="sizePref" name="sizePref">
+        <select id="sizePref" name="sizePref">        
+            <option value="small">Small</option>
             <option value="default">Default</option>
             <option value="large">Large</option>
-            <option value="small">Small</option>
             <option value="sfa">SFA</option>
         </select>
     </div>
+    <div class="emote__config">
+      <label for="winSize">Select Menu Size:</label>
+        <select id="winSize" name="winSize">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+    </div>
   `;
+    const topButton = document.createElement("button");
+    topButton.id = "topBtn";
+    topButton.onclick = () => topFunction();
 
+    modal.appendChild(topButton);
+    emoteMenu.onscroll = () => scrollFunction();
+    function scrollFunction() {
+      if (emoteMenu.scrollTop > 20 || emoteMenu.scrollTop > 20) {
+        topButton.style.display = "block";
+      } else {
+        topButton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      emoteMenu.scrollTop = 0;
+    }
     settingsMenu
       .querySelector("#autofill_cb")
       .addEventListener("change", (e) => {
@@ -596,6 +664,7 @@
 
   // Load the settings into the menu from local storage.
   function initializeSettings() {
+    setWinSize(winSize)
     document.getElementById("autofill_cb").checked = JSON.parse(
       localStorage.getItem("autofill") || "false"
     );
@@ -616,6 +685,19 @@
       const selectedSizePref = sizePrefSelect.value;
       localStorage.setItem("sizePref", selectedSizePref);
       sizePref = sizePrefSelect.value;
+    });
+
+    const winSizeSelect = document.getElementById("winSize");
+    const savedwinSize = localStorage.getItem("winSize");
+    if (savedwinSize) {
+      winSizeSelect.value = savedwinSize;
+    }
+
+    winSizeSelect.addEventListener("change", () => {
+      const selectedwinSize = winSizeSelect.value;
+      localStorage.setItem("winSize", selectedwinSize);
+      winSize = winSizeSelect.value;
+      setWinSize(winSize);
     });
 
     const draggableWindow = document.getElementById("emote-menu");
@@ -676,7 +758,7 @@
             }
         `;
 
-    addStyle(emojiButtonStyler);
+    addStyle(emojiButtonStyler, "emoji-button");
 
     const emojiButton = document.createElement("span");
     emojiButton.classList.add("emoji-button");
