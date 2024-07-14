@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      6.9.6
+// @version      6.9.7
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -19,6 +19,8 @@
 
 /************************************************************************************************
  * ChangeLog
+ * 6.9.7
+ *  - Added ability to pin emotes.
  * 6.9.6
  *  - Menu size moved to settings
  *  - Sticky search bar
@@ -71,7 +73,7 @@
     bbcodePM: "bbcode-message",
   };
 
-  let menuSelector, chatForm;
+  let menuSelector, chatForm, defaultOrdering;
 
   function getDOMSelectors() {
     const { h4Heading, forumReply, h2Heading, chatboxMenu } = menuQuery;
@@ -237,15 +239,62 @@
       }
     });
   }
+
   async function setEmotes() {
     try {
       emotes = await fetchJSON(
         "https://raw.githubusercontent.com/frenchcutgreenbean/really-cool-emojis/main/emojis.json"
       );
       makeMenu();
+      orderEmotes()
     } catch (error) {
       console.error(error);
     }
+  }
+  /*------------------------PIN HANDLING-------------------- */
+  // koltiscute
+  function orderEmotes() {
+    if (!defaultOrdering || defaultOrdering.length === 0) {
+      console.error(
+        "defaultOrdering is empty. Ensure that emote containers exist in the DOM."
+      );
+      return;
+    }
+
+    const pinnedEmotes =
+      JSON.parse(localStorage.getItem("pinned-emotes")) || [];
+
+    const pinnedElements = [];
+    const nonPinnedElements = [];
+
+    defaultOrdering.forEach((el) => {
+      if (pinnedEmotes.includes(el.id)) {
+        pinnedElements.push(el);
+      } else {
+        nonPinnedElements.push(el);
+      }
+    });
+
+    const newOrder = [...pinnedElements, ...nonPinnedElements];
+
+    const parent = defaultOrdering[0].parentNode;
+    if (!parent) {
+      return;
+    }
+    newOrder.forEach((el) => {
+      parent.appendChild(el);
+    });
+  }
+
+  function onPinClick(emoteId) {
+    let pinnedEmotes = JSON.parse(localStorage.getItem("pinned-emotes")) || [];
+    if (!pinnedEmotes.includes(emoteId)) {
+      pinnedEmotes.push(emoteId);
+    } else {
+      pinnedEmotes = pinnedEmotes.filter((id) => id !== emoteId);
+    }
+    localStorage.setItem("pinned-emotes", JSON.stringify(pinnedEmotes));
+    orderEmotes();
   }
 
   /* ----------------------------Emote-Handling------------------------------------- */
@@ -371,6 +420,10 @@
       createEmoteItem(key, value);
     }
 
+    defaultOrdering = Array.from(
+      emoteMenu.querySelectorAll(".emote-container")
+    );
+
     function filterEmotes(event) {
       const searchTerm = event.target.value.toLowerCase();
       const emoteContainers = emoteMenu.querySelectorAll(".emote-container");
@@ -385,6 +438,7 @@
       const { url, tags } = value;
       const emoteContainer = document.createElement("div");
       emoteContainer.classList.add("emote-container");
+      emoteContainer.id = key;
       tags.push(key.toLowerCase());
       emoteContainer.dataset.tags = tags.join(" ").toLowerCase();
 
@@ -400,6 +454,14 @@
         () => onEmoteClick(value) // pass down the emote object
       );
 
+      const emotePin = document.createElement("i");
+      emotePin.className = "fa fa-thumb-tack emote-pin";
+      emotePin.addEventListener("click", (event) => {
+        event.stopPropagation(); // Prevent the click from bubbling up to emoteItem
+        onPinClick(key); // pass down the emote id
+      });
+
+      emoteItem.appendChild(emotePin);
       emoteContainer.appendChild(emoteItem);
       emoteContainer.appendChild(emoteLabel);
       emoteMenu.appendChild(emoteContainer);
@@ -469,6 +531,15 @@
           grid-template-columns: repeat(5, 1fr);
           grid-template-rows: 40px;
           gap: 10px;
+        }
+        .emote-menu .emote-pin {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          cursor: pointer;
+          padding: 2px;
+          background: rgba(43, 43, 43, 0.7);
+          border-radius: 2px;
         }
         .emote-menu .emote-label {
           max-width: 40px;
@@ -569,9 +640,9 @@
     closeButton.textContent = "Close";
     closeButton.onclick = () => (modal.style.display = "none");
 
-    const dragIcon = document.createElement("div");
+    const dragIcon = document.createElement("i");
     dragIcon.id = "draggable";
-    dragIcon.textContent = "🤚";
+    dragIcon.className = "fa fa-arrows";
 
     const settingsButton = document.createElement("button");
     settingsButton.className = "menu-settings";
@@ -664,7 +735,7 @@
 
   // Load the settings into the menu from local storage.
   function initializeSettings() {
-    setWinSize(winSize)
+    setWinSize(winSize);
     document.getElementById("autofill_cb").checked = JSON.parse(
       localStorage.getItem("autofill") || "false"
     );
