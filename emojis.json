@@ -2839,5 +2839,14 @@
             "duckass",
             "twerk"
         ]
+    },
+        "sadge": {
+        "url": "https://i.ibb.co/8z8rXXm/sadge.png",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "sad"
+        ]
     }
 }
