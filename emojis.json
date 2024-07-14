@@ -320,7 +320,8 @@
         "tags": [
             "hi",
             "yo",
-            "hey"
+            "hey",
+            "hello"
         ]
     },
     "pikahey": {
@@ -331,7 +332,8 @@
         "tags": [
             "hi",
             "yo",
-            "hey"
+            "hey",
+            "hello"
         ]
     },
     "YOO": {
@@ -342,7 +344,8 @@
         "tags": [
             "hi",
             "yo",
-            "hey"
+            "hey",
+            "hello"
         ]
     },
     "yoo": {
@@ -353,7 +356,8 @@
         "tags": [
             "hi",
             "yo",
-            "hey"
+            "hey",
+            "hello"
         ]
     },
     "weebHi": {
@@ -364,7 +368,8 @@
         "tags": [
             "hi",
             "yo",
-            "hey"
+            "hey",
+            "hello"
         ]
     },
     "hasbullahi": {
@@ -375,7 +380,8 @@
         "tags": [
             "hi",
             "yo",
-            "hey"
+            "hey",
+            "hello"
         ]
     },
     "spongeBye": {
@@ -470,7 +476,8 @@
             "ty",
             "thanks",
             "love",
-            "gay"
+            "gay",
+            "kiss"
         ]
     },
     "spongeLove": {
@@ -1583,7 +1590,8 @@
         "tags": [
             "horny",
             "smirk",
-            "sus"
+            "sus",
+            "car"
         ]
     },
     "selen98": {
@@ -2831,6 +2839,15 @@
         "tags": [
             "duckass",
             "twerk"
+        ]
+    },
+        "sadge": {
+        "url": "https://i.ibb.co/8z8rXXm/sadge.png",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "sad"
         ]
     }
 }
