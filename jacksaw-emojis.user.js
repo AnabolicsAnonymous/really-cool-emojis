@@ -1071,7 +1071,7 @@
           default_width: 42,
           width: 136,
           height: 128,
-          tags: ["brain", "thinking"],
+          tags: ["brain", "thinking", "really", "mm"],
         },
         "hmmm": {
           url: "https://i.ibb.co/TvtNp9v/hmmm.gif",
@@ -1694,7 +1694,7 @@
           default_width: 42,
           width: 142,
           height: 142,
-          tags: [],
+          tags: ["cow"],
         },
         "KANE": {
           url: "https://i.ibb.co/bLnTKWL/KANE.gif",
@@ -2030,7 +2030,7 @@
           default_width: 42,
           width: 512,
           height: 512,
-          tags: [],
+          tags: ["angry"],
         },
         "yesYes": {
           url: "https://i.ibb.co/31DV8rx/yesYes.gif",
@@ -2115,7 +2115,7 @@
           default_width: 42,
           width: 128,
           height: 128,
-          tags: [],
+          tags: ["kolt"],
         },
         "PHEW": {
           url: "https://i.ibb.co/k9R4Lsw/PHEW.gif",
@@ -2157,21 +2157,21 @@
           default_width: 42,
           width: 51,
           height: 28,
-          tags: [],
+          tags: ["beer", "thanks"],
         },
         "cr7Sip": {
           url: "https://ptpimg.me/39gjga.gif",
           default_width: 42,
           width: 128,
           height: 128,
-          tags: [],
+          tags: ["drinking", "ronaldo"],
         },
         "gigachad": {
           url: "https://ptpimg.me/21c2ar.gif",
           default_width: 42,
           width: 128,
           height: 128,
-          tags: [],
+          tags: ["chad", "based"],
         },
       };
       makeMenu();
