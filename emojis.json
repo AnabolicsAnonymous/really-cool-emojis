@@ -2841,7 +2841,7 @@
             "twerk"
         ]
     },
-        "sadge": {
+    "sadge": {
         "url": "https://i.ibb.co/8z8rXXm/sadge.png",
         "default_width": 42,
         "width": 128,
@@ -2849,5 +2849,26 @@
         "tags": [
             "sad"
         ]
+    },
+    "cheers": {
+        "url": "https://ptpimg.me/va1g0i.gif",
+        "default_width": 42,
+        "width": 51,
+        "height": 28,
+        "tags": []
+    },
+    "cr7Sip": {
+        "url": "https://ptpimg.me/39gjga.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": []
+    },
+    "gigachad": {
+        "url": "https://ptpimg.me/21c2ar.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": []
     }
 }
