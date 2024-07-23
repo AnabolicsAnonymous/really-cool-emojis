@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      6.9.9
+// @version      7.0.0
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -10,6 +10,7 @@
 // @match        https://fearnopeer.com/*
 // @match        https://lst.gg/*
 // @match        https://reelflix.xyz/*
+// @match        https://upload.cx/*
 // @icon         https://ptpimg.me/shqsh5.png
 // @downloadURL  https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
 // @updateURL    https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
@@ -145,8 +146,8 @@
       .emote-menu .emote-content {
         max-width: 350px;
         width: 350px;
-        max-height: 350px;
-        height: 350px;
+        max-height: 500px;
+        height: 500px;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 50px;
         gap: 15px;
@@ -172,8 +173,8 @@
       .emote-menu .emote-content {
         max-width: 450px;
         width: 450px;
-        max-height: 420px;
-        height: 420px;
+        max-height: 530px;
+        height: 530px;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 60px;
         gap: 20px;
@@ -246,7 +247,7 @@
         "https://raw.githubusercontent.com/frenchcutgreenbean/really-cool-emojis/main/emojis.json"
       );
       makeMenu();
-      orderEmotes()
+      orderEmotes();
     } catch (error) {
       console.error(error);
     }
