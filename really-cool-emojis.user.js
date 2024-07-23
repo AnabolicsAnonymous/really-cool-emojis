@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      6.9.8
+// @version      6.9.9
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -480,7 +480,6 @@
       pageFlags.isChatbox || pageFlags.isNewTopic ? "60%" : "20%";
     const menuTop = pageFlags.isNewTopic ? "10%" : "20%";
     const modalStyler = `
-    
         .emote-menu {
           left: ${menuLeft};
           top: ${menuTop};
@@ -576,6 +575,7 @@
           transform: scale(1.1);
         }
         .emote-menu .emote-search-bar {
+          z-index: 999;
           position: sticky;
           top: 0;
           grid-column: 1/-1;
