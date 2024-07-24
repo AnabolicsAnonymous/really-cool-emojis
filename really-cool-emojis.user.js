@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      7.0.0
+// @version      7.0.1
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy
@@ -531,6 +531,7 @@
           display: grid;
           grid-template-columns: repeat(5, 1fr);
           grid-template-rows: 40px;
+          grid-auto-rows: max-content;
           gap: 10px;
         }
         .emote-menu .emote-item .emote-pin {
@@ -576,7 +577,7 @@
           transform: scale(1.1);
         }
         .emote-menu .emote-search-bar {
-          z-index: 999;
+          z-index: 998;
           position: sticky;
           top: 0;
           grid-column: 1/-1;
@@ -617,7 +618,7 @@
           position: absolute;
           top: 50px;
           right: 10px;
-          z-index: 2;
+          z-index: 999;
           max-height: 260px;
           padding: 20px;
           overflow: auto;

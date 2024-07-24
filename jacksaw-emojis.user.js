@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         jacksaw-emojis
-// @version      7.0.0
+// @version      7.0.1
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis hardcoded into file.
 // @author       dantayy
@@ -2174,6 +2174,13 @@
           height: 128,
           tags: ["chad", "based"],
         },
+        "yachtyOH": {
+          url: "https://ptpimg.me/lzt4mc.gif",
+          default_width: 62,
+          width: 232,
+          height: 128,
+          tags: ["drake", "kjoe", "lilyachty", "oh", "isee"],
+        },
       };
       makeMenu();
       orderEmotes();
@@ -2460,6 +2467,7 @@
           display: grid;
           grid-template-columns: repeat(5, 1fr);
           grid-template-rows: 40px;
+          grid-auto-rows: max-content;
           gap: 10px;
         }
         .emote-menu .emote-item .emote-pin {
@@ -2546,7 +2554,7 @@
           position: absolute;
           top: 50px;
           right: 10px;
-          z-index: 2;
+          z-index: 998;
           max-height: 260px;
           padding: 20px;
           overflow: auto;
