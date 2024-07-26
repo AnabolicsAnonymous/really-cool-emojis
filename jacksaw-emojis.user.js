@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         jacksaw-emojis
-// @version      7.0.2
+// @version      7.0.3
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis hardcoded into file.
 // @author       dantayy
@@ -731,7 +731,7 @@
           height: 128,
           tags: ["huh", "ayo", "sus"],
         },
-        "ayo": {
+        "AYO": {
           url: "https://i.ibb.co/Vx9jZB9/ayo.gif",
           default_width: 42,
           width: 128,
@@ -1263,7 +1263,7 @@
           height: 128,
           tags: ["cat", "evil"],
         },
-        "sfa": {
+        "SFA": {
           url: "https://i.ibb.co/Htbgx17/sfa.gif",
           default_width: 42,
           width: 128,
@@ -1340,7 +1340,7 @@
           height: 128,
           tags: ["russian", "ruski", "putin"],
         },
-        "tfuSay": {
+        "TFuSay": {
           url: "https://i.ibb.co/vJ0Q7L3/tfuSay.gif",
           default_width: 42,
           width: 120,
@@ -1641,7 +1641,7 @@
           height: 54,
           tags: [],
         },
-        "chad": {
+        "CHAD": {
           url: "https://i.ibb.co/Rb7L1Mk/chad.gif",
           default_width: 42,
           width: 184,
@@ -1718,7 +1718,7 @@
           height: 128,
           tags: ["germany", "tham", "mm", "really"],
         },
-        "caught": {
+        "Caught": {
           url: "https://i.ibb.co/JFJxSmX/4k.gif",
           default_width: 42,
           width: 128,
@@ -2096,7 +2096,7 @@
           height: 500,
           tags: ["jacksaw"],
         },
-        "meowdy": {
+        "Meowdy": {
           url: "https://i.ibb.co/T2wZ3jr/meowdy.png",
           default_width: 42,
           width: 128,
