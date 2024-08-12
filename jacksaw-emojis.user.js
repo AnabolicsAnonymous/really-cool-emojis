@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         jacksaw-emojis
-// @version      7.0.3
+// @version      7.0.4
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis hardcoded into file.
 // @author       dantayy
@@ -2362,6 +2362,20 @@
           width: 128,
           height: 128,
           tags: ["hi", "bye"],
+        },
+        "suckerPunch": {
+          url: "https://ptpimg.me/4z2z8k.gif",
+          default_width: 42,
+          width: 360,
+          height: 360,
+          tags: ["fight", "punch", "cat"],
+        },
+        "catJAM": {
+          url: "https://ptpimg.me/3doxd3.gif",
+          default_width: 42,
+          width: 56,
+          height: 56,
+          tags: ["dance", "jam", "cat"],
         },
       };
       makeMenu();
