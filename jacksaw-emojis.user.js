@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         jacksaw-emojis
-// @version      7.0.4
+// @version      7.0.5
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis hardcoded into file.
 // @author       dantayy
@@ -2376,6 +2376,13 @@
           width: 56,
           height: 56,
           tags: ["dance", "jam", "cat"],
+        },
+        "creepBob": {
+          url: "https://ptpimg.me/5f07ig.png",
+          default_width: 42,
+          width: 128,
+          height: 126,
+          tags: ["sus", "spongebob"],
         },
       };
       makeMenu();

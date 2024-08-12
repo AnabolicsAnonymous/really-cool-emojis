@@ -3202,5 +3202,15 @@
             "jam",
             "cat"
         ]
+    },
+    "creepBob": {
+        "url": "https://ptpimg.me/5f07ig.png",
+        "default_width": 42,
+        "width": 128,
+        "height": 126,
+        "tags": [
+            "sus",
+            "spongebob"
+        ]
     }
 }
