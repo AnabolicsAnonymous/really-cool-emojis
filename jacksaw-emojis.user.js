@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         jacksaw-emojis
-// @version      7.0.5
+// @version      7.0.6
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis hardcoded into file.
 // @author       dantayy
@@ -2384,6 +2384,28 @@
           height: 126,
           tags: ["sus", "spongebob"],
         },
+        "squidwardFace": {
+          "url": "https://ptpimg.me/d556ce.png",
+          "default_width": 62,
+          "width": 359,
+          "height": 307,
+          "tags": [
+            "squidward",
+            "soulless"
+          ]
+        },
+        "squidBegging": {
+          "url": "https://ptpimg.me/h7yx8w.png",
+          "default_width": 42,
+          "width": 359,
+          "height": 307,
+          "tags": [
+            "squidward",
+            "money",
+            "bon",
+            "begging"
+          ]
+        }
       };
       makeMenu();
       orderEmotes();
@@ -2795,8 +2817,8 @@
     settingsButton.className = "menu-settings";
     settingsButton.textContent = "⚙️";
     settingsButton.onclick = () =>
-      (settingsMenu.style.display =
-        settingsMenu.style.display === "none" ? "flex" : "none");
+    (settingsMenu.style.display =
+      settingsMenu.style.display === "none" ? "flex" : "none");
 
     const settingsMenu = document.createElement("div");
     settingsMenu.className = "settings-menu";

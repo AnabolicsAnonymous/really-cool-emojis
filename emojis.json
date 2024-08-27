@@ -3212,5 +3212,27 @@
             "sus",
             "spongebob"
         ]
+    },
+    "squidwardFace": {
+        "url": "https://ptpimg.me/d556ce.png",
+        "default_width": 62,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "squidward",
+            "soulless"
+        ]
+    },
+    "squidBegging": {
+        "url": "https://ptpimg.me/h7yx8w.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "squidward",
+            "money",
+            "bon",
+            "begging"
+        ]
     }
 }
