@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         jacksaw-emojis
-// @version      7.0.6
+// @version      7.0.7
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis hardcoded into file.
 // @author       dantayy
@@ -2385,7 +2385,7 @@
           tags: ["sus", "spongebob"],
         },
         "squidwardFace": {
-          "url": "https://ptpimg.me/d556ce.png",
+          "url": "https://ptpimg.me/ep184r.png",
           "default_width": 62,
           "width": 359,
           "height": 307,
