@@ -12,8 +12,8 @@
 // @match        https://reelflix.xyz/*
 // @match        https://upload.cx/*
 // @icon         https://ptpimg.me/shqsh5.png
-// @downloadURL  https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
-// @updateURL    https://github.com/frenchcutgreenbean/really-cool-emojis/raw/main/really-cool-emojis.user.js
+// @downloadURL  https://github.com/AnabolicsAnonymous/really-cool-emojis/blob/main/really-cool-emojis.user.js
+// @updateURL    https://github.com/AnabolicsAnonymous/really-cool-emojis/blob/main/really-cool-emojis.user.js
 // @grant        GM.xmlHttpRequest
 // @license      GPL-3.0-or-later
 // ==/UserScript==
@@ -244,7 +244,7 @@
   async function setEmotes() {
     try {
       emotes = await fetchJSON(
-        "https://raw.githubusercontent.com/frenchcutgreenbean/really-cool-emojis/main/emojis.json"
+        "https://raw.githubusercontent.com/AnabolicsAnonymous/really-cool-emojis/refs/heads/main/emojis.json"
       );
       makeMenu();
       orderEmotes();
@@ -677,7 +677,7 @@
     </div>
     <div class="emote__config">
       <label for="sizePref">Select Emote Size:</label>
-        <select id="sizePref" name="sizePref">        
+        <select id="sizePref" name="sizePref">
             <option value="small">Small</option>
             <option value="default">Default</option>
             <option value="large">Large</option>
