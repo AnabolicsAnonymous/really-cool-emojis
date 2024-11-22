@@ -820,6 +820,7 @@
       document.removeEventListener("mousemove", drag);
     }
   }
+
   // Inject the emoji button and run the main script.
   function addEmojiButton() {
     getDOMSelectors();
@@ -863,11 +864,26 @@
       }
     });
   }
+
   if (Object.keys(emotes).length === 0 && emotes.constructor === Object) {
     setEmotes();
   }
+
   // Only call the script on supported pages.
   if (Object.values(pageFlags).some((flag) => flag)) {
     addEmojiButton();
+    
+    // returns the emoji toggle button after the cancel button is pressed
+    const resetButton = document.querySelector('button[type="reset"].form__button.form__button--text');
+
+    if (resetButton) {
+      resetButton.addEventListener('click', function() {
+          setTimeout(() => {
+              addEmojiButton();
+          }, 1000);
+      });
+    } else {
+        //console.log('reset button not found.');
+    }
   }
 })();
