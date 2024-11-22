@@ -3234,5 +3234,216 @@
             "bon",
             "begging"
         ]
+    },
+    "catsip": {
+        "url": "https://ptpimg.me/e44il4.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "catsip",
+            "catsipping"
+        ]
+    },
+    "suspepe": {
+        "url": "https://ptpimg.me/qv582b.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "sus",
+            "suspepe"
+        ]
+    },
+    "spongecryin": {
+        "url": "https://ptpimg.me/cft26c.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "spongecryin",
+            "cryin"
+        ]
+    },
+    "BitconnectGuy": {
+        "url": "https://ptpimg.me/i52y95.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "BitconnectGuy",
+            "cryin"
+        ]
+    },
+    "wadafak": {
+        "url": "https://ptpimg.me/ebj3c9.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "wadafak",
+            "wtf"
+        ]
+    },
+    "fatpfff": {
+        "url": "https://ptpimg.me/202dxq.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "fatpfff",
+            "lol"
+        ]
+    },
+    "susge": {
+        "url": "https://ptpimg.me/j1d627.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "susge",
+            "suspepe"
+        ]
+    },
+    "cofeege": {
+        "url": "https://ptpimg.me/90440v.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "cofeege",
+            "coffee"
+        ]
+    },
+    "deadspongebob": {
+        "url": "https://ptpimg.me/q353oa.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "deadspongebob",
+            "dead"
+        ]
+    },
+    "madge": {
+        "url": "https://ptpimg.me/ep90p9.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "madge",
+            "madpepe"
+        ]
+    },
+    "king": {
+        "url": "https://ptpimg.me/9809yh.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "king",
+            "kingpepe"
+        ]
+    },
+    "skeletor": {
+        "url": "https://ptpimg.me/51n2gf.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "skeletor",
+            "skeleton"
+        ]
+    },
+    "petercryin": {
+        "url": "https://ptpimg.me/6t94m1.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "petercryin",
+            "cryin"
+        ]
+    },
+    "hmmmpepe": {
+        "url": "https://ptpimg.me/6nv06p.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "hmmmpepe",
+            "hmmm"
+        ]
+    },
+    "jerrywhat": {
+        "url": "https://ptpimg.me/5l5i28.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "jerrywhat",
+            "wtf"
+        ]
+    },
+    "cryindead": {
+        "url": "https://ptpimg.me/k99945.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "cryindead",
+            "dead",
+            "cryin"
+        ]
+    },
+    "kerk": {
+        "url": "https://ptpimg.me/26l2v0.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "kerk",
+            "kekw"
+        ]
+    },
+    "mike": {
+        "url": "https://ptpimg.me/ygc0b0.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "mike",
+            "mikestare"
+        ]
+    },
+    "scp": {
+        "url": "https://ptpimg.me/2os341.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "scp",
+            "pepedumb"
+        ]
+    },
+    "cryin": {
+        "url": "https://ptpimg.me/d437ew.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "cryin",
+            "JJJlaugh"
+        ]
+    },
+    "hapbruh": {
+        "url": "https://ptpimg.me/1x5edp.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "hapbruh",
+            "mikestare"
+        ]
     }
 }
