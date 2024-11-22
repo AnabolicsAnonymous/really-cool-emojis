@@ -1,898 +1,11 @@
 {
-    "concernedApe": {
-        "url": "https://ptpimg.me/4dz6m0.gif",
+    "2munn": {
+        "url": "https://ptpimg.me/2w7925.gif",
         "default_width": 42,
-        "width": 128,
-        "height": 128,
+        "width": 300,
+        "height": 300,
         "tags": [
-            "monkey",
-            "ape",
-            "gorilla",
-            "worried",
-            "concerned"
-        ]
-    },
-    "stanced": {
-        "url": "https://ptpimg.me/ot61y5.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "cat",
-            "standing"
-        ]
-    },
-    "sittin": {
-        "url": "https://ptpimg.me/0lj832.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "chillin",
-            "seal"
-        ]
-    },
-    "monkeat": {
-        "url": "https://ptpimg.me/69m02r.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "monkey",
-            "eating",
-            "gorilla",
-            "ape"
-        ]
-    },
-    "monkE": {
-        "url": "https://ptpimg.me/972uuy.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "monkey",
-            "ape",
-            "gorilla",
-            "worried",
-            "concerned",
-            "lurk"
-        ]
-    },
-    "aussie": {
-        "url": "https://ptpimg.me/3f2r1m.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "kangaroo",
-            "australia",
-            "eating"
-        ]
-    },
-    "wuh": {
-        "url": "https://ptpimg.me/78bp2n.gif",
-        "default_width": 42,
-        "width": 176,
-        "height": 128,
-        "tags": [
-            "cat",
-            "buh"
-        ]
-    },
-    "shitlookgood": {
-        "url": "https://ptpimg.me/st39iy.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "cow",
-            "hungry"
-        ]
-    },
-    "SNACKING": {
-        "url": "https://ptpimg.me/6c4wfj.gif",
-        "default_width": 62,
-        "width": 208,
-        "height": 128,
-        "tags": [
-            "eating",
-            "groundhog"
-        ]
-    },
-    "PLEASE": {
-        "url": "https://ptpimg.me/35e4km.gif",
-        "default_width": 42,
-        "width": 132,
-        "height": 128,
-        "tags": [
-            "cat",
-            "beg"
-        ]
-    },
-    ":d": {
-        "url": "https://ptpimg.me/g8o07m.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "cat",
-            "happy"
-        ]
-    },
-    "buh": {
-        "url": "https://ptpimg.me/00y9l9.gif",
-        "default_width": 62,
-        "width": 180,
-        "height": 128,
-        "tags": [
-            "cat",
-            "buh",
-            "concerned"
-        ]
-    },
-    "chimpE": {
-        "url": "https://ptpimg.me/4oqbrc.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "monkey",
-            "angry",
-            "rage"
-        ]
-    },
-    "meow": {
-        "url": "https://ptpimg.me/r3og9i.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "cat"
-        ]
-    },
-    "catsmirk": {
-        "url": "https://ptpimg.me/59g5le.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "cat"
-        ]
-    },
-    "cronch": {
-        "url": "https://ptpimg.me/z23tw5.gif",
-        "default_width": 62,
-        "width": 192,
-        "height": 128,
-        "tags": [
-            "eating",
-            "cat"
-        ]
-    },
-    "duckass": {
-        "url": "https://ptpimg.me/5o97h5.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "twerk",
             "horny"
-        ]
-    },
-    "sfagoat": {
-        "url": "https://ptpimg.me/180bg3.png",
-        "default_width": 42,
-        "width": 400,
-        "height": 461,
-        "tags": [
-            "goat"
-        ]
-    },
-    "BANANY": {
-        "url": "https://ptpimg.me/kiv65u.gif",
-        "default_width": 42,
-        "width": 144,
-        "height": 128,
-        "tags": [
-            "eating",
-            "cat"
-        ]
-    },
-    "monkeSpin": {
-        "url": "https://ptpimg.me/nyd414.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "monkey"
-        ]
-    },
-    "monkeSip": {
-        "url": "https://ptpimg.me/p9g5l6.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "chillin"
-        ]
-    },
-    "monkeTea": {
-        "url": "https://ptpimg.me/bbg9y7.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "morning",
-            "monkey"
-        ]
-    },
-    "monkeLeave": {
-        "url": "https://ptpimg.me/ep9tn4.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "leaving",
-            "monkey"
-        ]
-    },
-    "monkeKiss": {
-        "url": "https://ptpimg.me/518635.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "kiss",
-            "horny",
-            "thanks"
-        ]
-    },
-    "monkeDrive": {
-        "url": "https://ptpimg.me/86xb7l.gif",
-        "default_width": 62,
-        "width": 232,
-        "height": 128,
-        "tags": [
-            "monkey"
-        ]
-    },
-    "monkeArrive": {
-        "url": "https://ptpimg.me/q80op1.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "arrive",
-            "monkey"
-        ]
-    },
-    "Monke": {
-        "url": "https://ptpimg.me/0s9klq.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "monkey"
-        ]
-    },
-    "fishy": {
-        "url": "https://ptpimg.me/610jt3.gif",
-        "default_width": 42,
-        "width": 60,
-        "height": 25,
-        "tags": []
-    },
-    "kidgokuEat": {
-        "url": "https://ptpimg.me/4si2k7.gif",
-        "default_width": 42,
-        "width": 172,
-        "height": 128,
-        "tags": [
-            "eat",
-            "hungry"
-        ]
-    },
-    "gokueat": {
-        "url": "https://ptpimg.me/1x376p.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "eat",
-            "hungry"
-        ]
-    },
-    "hungy": {
-        "url": "https://ptpimg.me/r8isxj.gif",
-        "default_width": 42,
-        "width": 172,
-        "height": 128,
-        "tags": [
-            "eat",
-            "hungry"
-        ]
-    },
-    "helloo": {
-        "url": "https://ptpimg.me/6d7gkq.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "hi",
-            "yo",
-            "hey",
-            "hello"
-        ]
-    },
-    "pikahey": {
-        "url": "https://ptpimg.me/j95798.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "hi",
-            "yo",
-            "hey",
-            "hello"
-        ]
-    },
-    "YOO": {
-        "url": "https://ptpimg.me/ml759b.gif",
-        "default_width": 62,
-        "width": 180,
-        "height": 128,
-        "tags": [
-            "hi",
-            "yo",
-            "hey",
-            "hello"
-        ]
-    },
-    "yoo": {
-        "url": "https://ptpimg.me/d7kn0f.gif",
-        "default_width": 62,
-        "width": 180,
-        "height": 128,
-        "tags": [
-            "hi",
-            "yo",
-            "hey",
-            "hello"
-        ]
-    },
-    "weebHi": {
-        "url": "https://ptpimg.me/3m536z.gif",
-        "default_width": 42,
-        "width": 173,
-        "height": 200,
-        "tags": [
-            "hi",
-            "yo",
-            "hey",
-            "hello"
-        ]
-    },
-    "hasbullahi": {
-        "url": "https://ptpimg.me/5ar43v.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "hi",
-            "yo",
-            "hey",
-            "hello"
-        ]
-    },
-    "spongeBye": {
-        "url": "https://ptpimg.me/qzrr6w.gif",
-        "default_width": 42,
-        "width": 136,
-        "height": 128,
-        "tags": [
-            "bye"
-        ]
-    },
-    "ByeBye": {
-        "url": "https://ptpimg.me/k95a2y.gif",
-        "default_width": 42,
-        "width": 172,
-        "height": 128,
-        "tags": [
-            "bye"
-        ]
-    },
-    "imout": {
-        "url": "https://ptpimg.me/422e50.gif",
-        "default_width": 42,
-        "width": 100,
-        "height": 128,
-        "tags": [
-            "bye",
-            "peace"
-        ]
-    },
-    "hi5": {
-        "url": "https://ptpimg.me/5op1lk.gif",
-        "default_width": 42,
-        "width": 140,
-        "height": 128,
-        "tags": [
-            "nice",
-            "congrats",
-            "gz"
-        ]
-    },
-    "tyronegz": {
-        "url": "https://ptpimg.me/m6g632.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "nice",
-            "congrats",
-            "gz"
-        ]
-    },
-    "congrats": {
-        "url": "https://ptpimg.me/9ar3d5.gif",
-        "default_width": 42,
-        "width": 124,
-        "height": 128,
-        "tags": [
-            "nice",
-            "congrats",
-            "gz"
-        ]
-    },
-    "confetti": {
-        "url": "https://ptpimg.me/x775e6.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "nice",
-            "congrats",
-            "gz"
-        ]
-    },
-    "thanksbro": {
-        "url": "https://ptpimg.me/t68l43.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "ty",
-            "thanks",
-            "love",
-            "gay",
-            "kiss"
-        ]
-    },
-    "spongeLove": {
-        "url": "https://ptpimg.me/oav645.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "ty",
-            "thanks",
-            "love",
-            "heart"
-        ]
-    },
-    "ohstop": {
-        "url": "https://ptpimg.me/kb73eq.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "flattered",
-            "love",
-            "heart"
-        ]
-    },
-    "gothKiss": {
-        "url": "https://ptpimg.me/7558x6.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "horny",
-            "thanks",
-            "ty",
-            "kiss"
-        ]
-    },
-    "catLove": {
-        "url": "https://ptpimg.me/kxw1y1.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "cat",
-            "ty",
-            "thanks",
-            "love",
-            "heart"
-        ]
-    },
-    "bearHug": {
-        "url": "https://ptpimg.me/66lcz7.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "ty",
-            "thanks",
-            "love",
-            "heart"
-        ]
-    },
-    "batemanArrive": {
-        "url": "https://ptpimg.me/8811v2.gif",
-        "default_width": 42,
-        "width": 200,
-        "height": 157,
-        "tags": [
-            "arrived"
-        ]
-    },
-    "homerArrive": {
-        "url": "https://ptpimg.me/00506z.gif",
-        "default_width": 42,
-        "width": 156,
-        "height": 128,
-        "tags": [
-            "arrived"
-        ]
-    },
-    "homerLeave": {
-        "url": "https://ptpimg.me/lo9118.gif",
-        "default_width": 42,
-        "width": 156,
-        "height": 128,
-        "tags": [
-            "leaving"
-        ]
-    },
-    "youRang": {
-        "url": "https://ptpimg.me/d16d85.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "arrived"
-        ]
-    },
-    "prayge": {
-        "url": "https://ptpimg.me/1ar7r1.gif",
-        "default_width": 42,
-        "width": 164,
-        "height": 128,
-        "tags": [
-            "praying",
-            "holy",
-            "gamble",
-            "bless"
-        ]
-    },
-    "standPrayge": {
-        "url": "https://ptpimg.me/3on120.gif",
-        "default_width": 42,
-        "width": 76,
-        "height": 128,
-        "tags": [
-            "praying",
-            "holy",
-            "gamble",
-            "bless"
-        ]
-    },
-    "pikaBless": {
-        "url": "https://ptpimg.me/0e3g30.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "praying",
-            "holy",
-            "gamble",
-            "bless"
-        ]
-    },
-    "blessRNG": {
-        "url": "https://ptpimg.me/whr6ix.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "praying",
-            "holy",
-            "gamble",
-            "bless"
-        ]
-    },
-    "GAMBA": {
-        "url": "https://ptpimg.me/1hu15v.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "gamble"
-        ]
-    },
-    "stonksUp": {
-        "url": "https://ptpimg.me/147g2p.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "gamble"
-        ]
-    },
-    "stonksDown": {
-        "url": "https://ptpimg.me/6y7o09.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "gamble"
-        ]
-    },
-    "reallyRich": {
-        "url": "https://ptpimg.me/3nshoh.gif",
-        "default_width": 42,
-        "width": 140,
-        "height": 128,
-        "tags": [
-            "gamble",
-            "rich",
-            "money",
-            "bon"
-        ]
-    },
-    "moneyTime": {
-        "url": "https://ptpimg.me/69c4n5.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "gamble",
-            "rich",
-            "money",
-            "bon"
-        ]
-    },
-    "BIGMONEY": {
-        "url": "https://ptpimg.me/vft0p0.gif",
-        "default_width": 42,
-        "width": 172,
-        "height": 128,
-        "tags": [
-            "gamble",
-            "rich",
-            "money",
-            "bon"
-        ]
-    },
-    "robbery": {
-        "url": "https://ptpimg.me/6b004o.png",
-        "default_width": 42,
-        "width": 136,
-        "height": 128,
-        "tags": [
-            "gamble",
-            "rich",
-            "money",
-            "bon"
-        ]
-    },
-    "moneyRun": {
-        "url": "https://ptpimg.me/b9625q.gif",
-        "default_width": 62,
-        "width": 220,
-        "height": 128,
-        "tags": [
-            "gamble",
-            "rich",
-            "money",
-            "bon"
-        ]
-    },
-    "RICH": {
-        "url": "https://ptpimg.me/o0m2h0.gif",
-        "default_width": 42,
-        "width": 124,
-        "height": 128,
-        "tags": [
-            "gamble",
-            "rich",
-            "money",
-            "bon"
-        ]
-    },
-    "rockhuh": {
-        "url": "https://ptpimg.me/w85982.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "huh",
-            "ayo",
-            "sus"
-        ]
-    },
-    "sus": {
-        "url": "https://ptpimg.me/hwt7rs.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "huh",
-            "ayo",
-            "sus"
-        ]
-    },
-    "AYO": {
-        "url": "https://ptpimg.me/jd14rb.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "huh",
-            "ayo",
-            "sus"
-        ]
-    },
-    "jusreadin": {
-        "url": "https://ptpimg.me/r73619.gif",
-        "default_width": 42,
-        "width": 64,
-        "height": 64,
-        "tags": [
-            "huh",
-            "ayo",
-            "sus",
-            "mm",
-            "really"
-        ]
-    },
-    "sideeye": {
-        "url": "https://ptpimg.me/td0725.jpg",
-        "default_width": 42,
-        "width": 400,
-        "height": 400,
-        "tags": [
-            "huh",
-            "ayo",
-            "sus"
-        ]
-    },
-    "saythatagain": {
-        "url": "https://ptpimg.me/7uiofq.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "huh",
-            "ayo",
-            "sus"
-        ]
-    },
-    "dafuq": {
-        "url": "https://ptpimg.me/4ni4c5.gif",
-        "default_width": 42,
-        "width": 132,
-        "height": 128,
-        "tags": [
-            "huh",
-            "ayo",
-            "sus"
-        ]
-    },
-    "fucku": {
-        "url": "https://ptpimg.me/4l6yo2.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "mad",
-            "angry",
-            "stfu"
-        ]
-    },
-    "sadd": {
-        "url": "https://ptpimg.me/f90101.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "cat",
-            "sad",
-            "crying"
-        ]
-    },
-    "despair": {
-        "url": "https://ptpimg.me/im367e.gif",
-        "default_width": 42,
-        "width": 132,
-        "height": 128,
-        "tags": [
-            "sad",
-            "despair",
-            "disappointed"
-        ]
-    },
-    "WHY": {
-        "url": "https://ptpimg.me/0be6s4.gif",
-        "default_width": 42,
-        "width": 108,
-        "height": 128,
-        "tags": [
-            "sad",
-            "despair",
-            "disappointed",
-            "why"
-        ]
-    },
-    "fishWhy": {
-        "url": "https://ptpimg.me/062y30.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "sad",
-            "despair",
-            "disappointed",
-            "why"
-        ]
-    },
-    "WAIT": {
-        "url": "https://ptpimg.me/qj93by.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "reality",
-            "huh",
-            "ayo",
-            "sus"
-        ]
-    },
-    "NotLikeThis": {
-        "url": "https://ptpimg.me/m225dm.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "sad",
-            "despair",
-            "disappointed",
-            "why"
-        ]
-    },
-    "pandaWhy": {
-        "url": "https://ptpimg.me/st2zn7.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "sad",
-            "despair",
-            "disappointed",
-            "why"
-        ]
-    },
-    "crychattin": {
-        "url": "https://ptpimg.me/whwbgo.gif",
-        "default_width": 42,
-        "width": 64,
-        "height": 64,
-        "tags": [
-            "sad",
-            "crying",
-            "chatting"
         ]
     },
     ":c": {
@@ -907,160 +20,14 @@
             "cat"
         ]
     },
-    "lmaoo": {
-        "url": "https://ptpimg.me/1ucp45.png",
-        "default_width": 42,
-        "width": 164,
-        "height": 128,
-        "tags": [
-            "lol",
-            "lmao",
-            "laughing",
-            "hahahaha"
-        ]
-    },
-    "laught": {
-        "url": "https://ptpimg.me/q0nw2y.jpg",
-        "default_width": 42,
-        "width": 108,
-        "height": 128,
-        "tags": [
-            "lol",
-            "lmao",
-            "laughing",
-            "hahahaha"
-        ]
-    },
-    "xdd": {
-        "url": "https://ptpimg.me/h28kd0.gif",
-        "default_width": 62,
-        "width": 228,
-        "height": 128,
-        "tags": [
-            "lol",
-            "lmao",
-            "laughing",
-            "hahahaha"
-        ]
-    },
-    "hahaso": {
-        "url": "https://ptpimg.me/682ekp.gif",
-        "default_width": 42,
-        "width": 200,
-        "height": 200,
-        "tags": [
-            "lol",
-            "lmao",
-            "laughing",
-            "hahahaha"
-        ]
-    },
-    "kek": {
-        "url": "https://ptpimg.me/h60uyp.gif",
-        "default_width": 42,
-        "width": 200,
-        "height": 174,
-        "tags": [
-            "lol",
-            "lmao",
-            "laughing",
-            "hahahaha"
-        ]
-    },
-    "HEH": {
-        "url": "https://ptpimg.me/a1a8eb.gif",
+    ":d": {
+        "url": "https://ptpimg.me/g8o07m.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "lol",
-            "lmao",
-            "laughing",
-            "hahahaha"
-        ]
-    },
-    "imdead": {
-        "url": "https://ptpimg.me/7uq04d.gif",
-        "default_width": 42,
-        "width": 156,
-        "height": 128,
-        "tags": [
-            "dead",
-            "lol",
-            "lmao",
-            "laughing",
-            "hahahaha"
-        ]
-    },
-    "dead": {
-        "url": "https://ptpimg.me/38666x.gif",
-        "default_width": 42,
-        "width": 124,
-        "height": 128,
-        "tags": [
-            "lol",
-            "lmao",
-            "laughing",
-            "hahahaha",
-            "mm",
-            "really"
-        ]
-    },
-    "shockedmonkey": {
-        "url": "https://ptpimg.me/5qlfz4.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            ":o",
-            "shocked",
-            "shocking",
-            "monkey"
-        ]
-    },
-    "shookt": {
-        "url": "https://ptpimg.me/el9y45.gif",
-        "default_width": 42,
-        "width": 200,
-        "height": 154,
-        "tags": [
-            ":o",
-            "shocked",
-            "shocking"
-        ]
-    },
-    "ohno": {
-        "url": "https://ptpimg.me/1h75ab.gif",
-        "default_width": 42,
-        "width": 120,
-        "height": 128,
-        "tags": [
-            "sad",
-            "despair",
-            "disappointed",
-            "monkey"
-        ]
-    },
-    "whatda": {
-        "url": "https://ptpimg.me/87fej0.gif",
-        "default_width": 62,
-        "width": 188,
-        "height": 128,
-        "tags": [
-            ":o",
-            "shocked",
-            "shocking"
-        ]
-    },
-    "joe": {
-        "url": "https://ptpimg.me/0pk71c.gif",
-        "default_width": 62,
-        "width": 180,
-        "height": 128,
-        "tags": [
-            ":o",
-            "shocked",
-            "shocking"
+            "cat",
+            "happy"
         ]
     },
     ":o": {
@@ -1075,6 +42,170 @@
             "monkey"
         ]
     },
+    "ALRIGHT": {
+        "url": "https://ptpimg.me/lqmfhx.gif",
+        "default_width": 62,
+        "width": 228,
+        "height": 128,
+        "tags": [
+            "boys",
+            "theboys"
+        ]
+    },
+    "ANGRE": {
+        "url": "https://ptpimg.me/s5h50v.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "angry",
+            "mad",
+            "grumpy",
+            "monkey"
+        ]
+    },
+    "AYO": {
+        "url": "https://ptpimg.me/jd14rb.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "huh",
+            "ayo",
+            "sus"
+        ]
+    },
+    "AndreNO": {
+        "url": "https://ptpimg.me/a6i436.gif",
+        "default_width": 42,
+        "width": 172,
+        "height": 128,
+        "tags": [
+            "no",
+            "wwe",
+            "notlikethis"
+        ]
+    },
+    "AngryMonke": {
+        "url": "https://ptpimg.me/1j8i21.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "angry",
+            "mad",
+            "grumpy",
+            "monkey"
+        ]
+    },
+    "BANANY": {
+        "url": "https://ptpimg.me/kiv65u.gif",
+        "default_width": 42,
+        "width": 144,
+        "height": 128,
+        "tags": [
+            "eating",
+            "cat"
+        ]
+    },
+    "BIGMONEY": {
+        "url": "https://ptpimg.me/vft0p0.gif",
+        "default_width": 42,
+        "width": 172,
+        "height": 128,
+        "tags": [
+            "gamble",
+            "rich",
+            "money",
+            "bon"
+        ]
+    },
+    "BOOBA": {
+        "url": "https://ptpimg.me/s053bk.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "horny",
+            "pepe"
+        ]
+    },
+    "BitconnectGuy": {
+        "url": "https://ptpimg.me/i52y95.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "BitconnectGuy",
+            "cryin"
+        ]
+    },
+    "ByeBye": {
+        "url": "https://ptpimg.me/k95a2y.gif",
+        "default_width": 42,
+        "width": 172,
+        "height": 128,
+        "tags": [
+            "bye"
+        ]
+    },
+    "CHAD": {
+        "url": "https://ptpimg.me/lqa307.gif",
+        "default_width": 42,
+        "width": 184,
+        "height": 184,
+        "tags": []
+    },
+    "COCKA": {
+        "url": "https://ptpimg.me/q0kosa.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "booba",
+            "horny"
+        ]
+    },
+    "CONFUSED": {
+        "url": "https://ptpimg.me/023tgv.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "rock",
+            "huh"
+        ]
+    },
+    "CT": {
+        "url": "https://ptpimg.me/6ud645.gif",
+        "default_width": 42,
+        "width": 355,
+        "height": 379,
+        "tags": [
+            "praying"
+        ]
+    },
+    "Capping": {
+        "url": "https://ptpimg.me/rr7d4y.png",
+        "default_width": 42,
+        "width": 148,
+        "height": 128,
+        "tags": [
+            "sus",
+            "capping",
+            "dog",
+            "imontoyou"
+        ]
+    },
+    "Caught": {
+        "url": "https://ptpimg.me/42z9dt.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "4k"
+        ]
+    },
     "D:": {
         "url": "https://ptpimg.me/728bt3.png",
         "default_width": 32,
@@ -1086,147 +217,44 @@
             "shocking"
         ]
     },
-    "reallyshocked": {
-        "url": "https://ptpimg.me/47hecg.gif",
+    "Dodged": {
+        "url": "https://ptpimg.me/m1zoc4.gif",
+        "default_width": 42,
+        "width": 168,
+        "height": 128,
+        "tags": [
+            "weave",
+            "dodged"
+        ]
+    },
+    "DuckStare": {
+        "url": "https://ptpimg.me/mbq06b.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            ":o",
-            "shocked",
-            "shocking",
-            "mm",
-            "really"
+            "sus",
+            "awkward"
         ]
     },
-    "dogWTF": {
-        "url": "https://ptpimg.me/58tf25.png",
-        "default_width": 42,
-        "width": 200,
-        "height": 209,
-        "tags": [
-            ":o",
-            "shocked",
-            "shocking"
-        ]
-    },
-    "sleepy": {
-        "url": "https://ptpimg.me/3m9l97.gif",
-        "default_width": 42,
-        "width": 140,
-        "height": 128,
-        "tags": [
-            "bored",
-            "tired",
-            "sleepy"
-        ]
-    },
-    "gnite": {
-        "url": "https://ptpimg.me/kg9ats.gif",
-        "default_width": 62,
-        "width": 188,
-        "height": 128,
-        "tags": [
-            "bored",
-            "tired",
-            "sleepy"
-        ]
-    },
-    "calculate": {
-        "url": "https://ptpimg.me/75q56k.gif",
+    "EZDodge": {
+        "url": "https://ptpimg.me/l1btn8.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "math",
-            "brain",
-            "thinking"
+            "weave",
+            "dodged"
         ]
     },
-    "reallythinking": {
-        "url": "https://ptpimg.me/i5qytz.gif",
-        "default_width": 42,
-        "width": 124,
-        "height": 128,
-        "tags": [
-            "brain",
-            "thinking",
-            "mm",
-            "really"
-        ]
-    },
-    "smart": {
-        "url": "https://ptpimg.me/8g45e8.gif",
-        "default_width": 42,
-        "width": 124,
-        "height": 128,
-        "tags": [
-            "brain",
-            "thinking"
-        ]
-    },
-    "nerdbob": {
-        "url": "https://ptpimg.me/72zp0m.gif",
-        "default_width": 42,
-        "width": 176,
-        "height": 128,
-        "tags": [
-            "brain",
-            "thinking"
-        ]
-    },
-    "nerD": {
-        "url": "https://ptpimg.me/83wujd.gif",
-        "default_width": 42,
-        "width": 160,
-        "height": 128,
-        "tags": [
-            "actually",
-            "brain",
-            "thinking"
-        ]
-    },
-    "thinking": {
-        "url": "https://ptpimg.me/nri9ne.gif",
+    "EmiruYuck": {
+        "url": "https://ptpimg.me/t4wq54.gif",
         "default_width": 42,
         "width": 136,
         "height": 128,
         "tags": [
-            "brain",
-            "thinking",
-            "really",
-            "mm"
-        ]
-    },
-    "hmmm": {
-        "url": "https://ptpimg.me/44ti0h.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "brain",
-            "thinking"
-        ]
-    },
-    "actually": {
-        "url": "https://ptpimg.me/q3byu8.gif",
-        "default_width": 42,
-        "width": 152,
-        "height": 128,
-        "tags": [
-            "brain",
-            "thinking"
-        ]
-    },
-    "ionkno": {
-        "url": "https://ptpimg.me/oy2vb6.png",
-        "default_width": 62,
-        "width": 184,
-        "height": 128,
-        "tags": [
-            "mm",
-            "i don't know",
-            "really"
+            "ew",
+            "gross"
         ]
     },
     "Erm": {
@@ -1240,153 +268,61 @@
             "cat"
         ]
     },
-    "noted": {
-        "url": "https://ptpimg.me/j7v95f.gif",
-        "default_width": 42,
-        "width": 156,
-        "height": 128,
-        "tags": [
-            "brain",
-            "thinking",
-            "learning"
-        ]
-    },
-    "anyaNoted": {
-        "url": "https://ptpimg.me/djs4mr.gif",
+    "GAMBA": {
+        "url": "https://ptpimg.me/1hu15v.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "brain",
-            "thinking",
-            "learning",
-            "noted"
+            "gamble"
         ]
     },
-    "brainhurt": {
-        "url": "https://ptpimg.me/e4b35c.gif",
+    "GYAT": {
+        "url": "https://ptpimg.me/7226bj.gif",
         "default_width": 42,
-        "width": 140,
+        "width": 480,
+        "height": 480,
+        "tags": [
+            "horny",
+            "twerk",
+            "booty"
+        ]
+    },
+    "HARAM": {
+        "url": "https://ptpimg.me/38y8b9.gif",
+        "default_width": 42,
+        "width": 128,
         "height": 128,
         "tags": [
-            "brain",
-            "thinking"
+            "islam"
         ]
     },
-    "princessK": {
-        "url": "https://ptpimg.me/xu2f0o.png",
+    "HEH": {
+        "url": "https://ptpimg.me/a1a8eb.gif",
         "default_width": 42,
-        "width": 415,
-        "height": 537,
+        "width": 128,
+        "height": 128,
         "tags": [
-            "selen",
-            "catfish"
+            "lol",
+            "lmao",
+            "laughing",
+            "hahahaha"
         ]
     },
-    "NOHORNY": {
-        "url": "https://ptpimg.me/94kx52.gif",
+    "KANE": {
+        "url": "https://ptpimg.me/w3mp39.gif",
         "default_width": 62,
-        "width": 292,
+        "width": 196,
         "height": 128,
-        "tags": [
-            "horny"
-        ]
+        "tags": []
     },
-    "kok": {
-        "url": "https://ptpimg.me/n4r95m.gif",
-        "default_width": 42,
-        "width": 132,
-        "height": 128,
-        "tags": [
-            "horny",
-            "cat"
-        ]
-    },
-    "marinFlushed": {
-        "url": "https://ptpimg.me/km9668.gif",
-        "default_width": 42,
-        "width": 176,
-        "height": 128,
-        "tags": [
-            "horny",
-            "weeb"
-        ]
-    },
-    "Shyboi": {
-        "url": "https://ptpimg.me/eb3931.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "horny",
-            "shy",
-            "flushed"
-        ]
-    },
-    "mikeW": {
-        "url": "https://ptpimg.me/6ltj64.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "horny",
-            "shy",
-            "flushed"
-        ]
-    },
-    "awooga": {
-        "url": "https://ptpimg.me/ntn328.gif",
-        "default_width": 62,
-        "width": 256,
-        "height": 128,
-        "tags": [
-            "horny"
-        ]
-    },
-    "hubba": {
-        "url": "https://ptpimg.me/3s9ur5.gif",
+    "LETHIMCOOK": {
+        "url": "https://ptpimg.me/052hr0.gif",
         "default_width": 42,
         "width": 144,
         "height": 128,
         "tags": [
-            "horny"
-        ]
-    },
-    "lip": {
-        "url": "https://ptpimg.me/5pq39g.png",
-        "default_width": 32,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "horny"
-        ]
-    },
-    "boobies": {
-        "url": "https://ptpimg.me/zs4184.gif",
-        "default_width": 42,
-        "width": 184,
-        "height": 184,
-        "tags": [
-            "horny",
-            "weeb"
-        ]
-    },
-    "munn": {
-        "url": "https://ptpimg.me/vls4r0.gif",
-        "default_width": 42,
-        "width": 418,
-        "height": 418,
-        "tags": [
-            "horny"
-        ]
-    },
-    "2munn": {
-        "url": "https://ptpimg.me/2w7925.gif",
-        "default_width": 42,
-        "width": 300,
-        "height": 300,
-        "tags": [
-            "horny"
+            "cooking"
         ]
     },
     "MOMMY": {
@@ -1398,55 +334,169 @@
             "horny"
         ]
     },
-    "Sussy": {
-        "url": "https://ptpimg.me/07f46v.gif",
+    "Meowdy": {
+        "url": "https://ptpimg.me/v7nk73.png",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "horny",
-            "twerking"
+            "cat"
         ]
     },
-    "mcqSus": {
-        "url": "https://ptpimg.me/5l0skd.gif",
+    "Monke": {
+        "url": "https://ptpimg.me/0s9klq.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "monkey"
+        ]
+    },
+    "NOHORNY": {
+        "url": "https://ptpimg.me/94kx52.gif",
         "default_width": 62,
-        "width": 324,
+        "width": 292,
         "height": 128,
         "tags": [
-            "horny",
-            "smirk",
-            "sus",
-            "car"
+            "horny"
         ]
     },
-    "selen98": {
-        "url": "https://ptpimg.me/52mtiw.gif",
-        "default_width": 42,
-        "width": 96,
-        "height": 96,
-        "tags": [
-            "horny",
-            "flushed"
-        ]
-    },
-    "coffeeTime": {
-        "url": "https://ptpimg.me/3vr6p7.gif",
+    "NONONO": {
+        "url": "https://ptpimg.me/q8vu89.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "coffee"
+            "nope",
+            "weeb"
         ]
     },
-    "demontime": {
-        "url": "https://ptpimg.me/816q7s.gif",
+    "NOPERS": {
+        "url": "https://ptpimg.me/58y079.gif",
         "default_width": 42,
         "width": 128,
+        "height": 128,
+        "tags": [
+            "no"
+        ]
+    },
+    "NoNo": {
+        "url": "https://ptpimg.me/t2i793.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "nope",
+            "cat"
+        ]
+    },
+    "NotLikeThis": {
+        "url": "https://ptpimg.me/m225dm.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "sad",
+            "despair",
+            "disappointed",
+            "why"
+        ]
+    },
+    "NotTooFond": {
+        "url": "https://ptpimg.me/e9l54e.png",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "gay",
+            "homophobic",
+            "dog"
+        ]
+    },
+    "PHEW": {
+        "url": "https://ptpimg.me/8bot47.gif",
+        "default_width": 62,
+        "width": 180,
+        "height": 128,
+        "tags": [
+            "relieved",
+            "really",
+            "mm"
+        ]
+    },
+    "PISSED": {
+        "url": "https://ptpimg.me/8k00m0.gif",
+        "default_width": 42,
+        "width": 156,
         "height": 128,
         "tags": [
             "cat",
-            "evil"
+            "angry",
+            "mad",
+            "grumpy"
+        ]
+    },
+    "PLEASE": {
+        "url": "https://ptpimg.me/35e4km.gif",
+        "default_width": 42,
+        "width": 132,
+        "height": 128,
+        "tags": [
+            "cat",
+            "beg"
+        ]
+    },
+    "RICH": {
+        "url": "https://ptpimg.me/o0m2h0.gif",
+        "default_width": 42,
+        "width": 124,
+        "height": 128,
+        "tags": [
+            "gamble",
+            "rich",
+            "money",
+            "bon"
+        ]
+    },
+    "RIPBOZO": {
+        "url": "https://ptpimg.me/10175j.gif",
+        "default_width": 52,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "restinpeace",
+            "raynman"
+        ]
+    },
+    "RKO": {
+        "url": "https://ptpimg.me/h2vl64.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "wwe",
+            "fight",
+            "slammed"
+        ]
+    },
+    "RaynMan": {
+        "url": "https://ptpimg.me/qd2i5w.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "boomer",
+            "old",
+            "angry"
+        ]
+    },
+    "Risenocular": {
+        "url": "https://ptpimg.me/7x68o8.gif",
+        "default_width": 42,
+        "width": 168,
+        "height": 128,
+        "tags": [
+            "spotted"
         ]
     },
     "SFA": {
@@ -1460,106 +510,77 @@
             "putin"
         ]
     },
-    "putinRide": {
-        "url": "https://ptpimg.me/1t79r1.png",
-        "default_width": 42,
-        "width": 583,
-        "height": 700,
-        "tags": [
-            "russian",
-            "ruski",
-            "putin"
-        ]
-    },
-    "chadmirPutin": {
-        "url": "https://ptpimg.me/56nion.png",
-        "default_width": 42,
-        "width": 500,
-        "height": 500,
-        "tags": [
-            "russian",
-            "ruski",
-            "putin"
-        ]
-    },
-    "putinLaugh": {
-        "url": "https://ptpimg.me/f4iy33.gif",
+    "SHUTUP": {
+        "url": "https://ptpimg.me/74gv71.gif",
         "default_width": 62,
-        "width": 498,
-        "height": 350,
+        "width": 228,
+        "height": 128,
         "tags": [
-            "russian",
-            "ruski",
-            "putin",
-            "lol",
-            "laughing",
-            "funny"
+            "fight",
+            "punch",
+            "squidward"
         ]
     },
-    "surething": {
-        "url": "https://ptpimg.me/3fo0wu.gif",
-        "default_width": 42,
-        "width": 218,
-        "height": 234,
+    "SNACKING": {
+        "url": "https://ptpimg.me/6c4wfj.gif",
+        "default_width": 62,
+        "width": 208,
+        "height": 128,
         "tags": [
-            "russian",
-            "ruski",
-            "putin"
+            "eating",
+            "groundhog"
         ]
     },
-    "putinApprove": {
-        "url": "https://ptpimg.me/00nff0.gif",
+    "STFU": {
+        "url": "https://ptpimg.me/35b7b5.gif",
+        "default_width": 62,
+        "width": 228,
+        "height": 128,
+        "tags": [
+            "fight",
+            "stfu"
+        ]
+    },
+    "STRESSED": {
+        "url": "https://ptpimg.me/t50v7t.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "russian",
-            "ruski",
-            "putin"
+            "boys",
+            "theboys"
         ]
     },
-    "putinwalk": {
-        "url": "https://ptpimg.me/53m50q.gif",
-        "default_width": 62,
-        "width": 384,
-        "height": 112,
-        "tags": [
-            "russian",
-            "ruski",
-            "putin"
-        ]
-    },
-    "putinSquat": {
-        "url": "https://ptpimg.me/whb0o1.png",
-        "default_width": 42,
-        "width": 250,
-        "height": 318,
-        "tags": [
-            "russian",
-            "ruski",
-            "putin"
-        ]
-    },
-    "putinAttack": {
-        "url": "https://ptpimg.me/h5j95j.png",
-        "default_width": 42,
-        "width": 250,
-        "height": 361,
-        "tags": [
-            "russian",
-            "ruski",
-            "putin"
-        ]
-    },
-    "putinDive": {
-        "url": "https://ptpimg.me/r0k68s.gif",
+    "Shyboi": {
+        "url": "https://ptpimg.me/eb3931.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "russian",
-            "ruski",
-            "putin"
+            "horny",
+            "shy",
+            "flushed"
+        ]
+    },
+    "SnackTime": {
+        "url": "https://ptpimg.me/l902yh.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "horny",
+            "dog",
+            "hungry"
+        ]
+    },
+    "Sussy": {
+        "url": "https://ptpimg.me/07f46v.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "horny",
+            "twerking"
         ]
     },
     "TFuSay": {
@@ -1577,610 +598,69 @@
             "ayo"
         ]
     },
-    "slammed": {
-        "url": "https://ptpimg.me/53o1rx.gif",
-        "default_width": 62,
-        "width": 228,
-        "height": 128,
-        "tags": [
-            "wwe",
-            "fight",
-            "stfu"
-        ]
-    },
-    "catpunch": {
-        "url": "https://ptpimg.me/a69w1c.gif",
-        "default_width": 42,
-        "width": 136,
-        "height": 128,
-        "tags": [
-            "fight",
-            "stfu",
-            "cat"
-        ]
-    },
-    "hasbullaFight": {
-        "url": "https://ptpimg.me/b0e999.gif",
+    "Uhm": {
+        "url": "https://ptpimg.me/0n8ofl.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "fight",
-            "stfu"
+            "awkward",
+            "sideeye"
         ]
     },
-    "squareUp": {
-        "url": "https://ptpimg.me/9z9gs1.gif",
+    "WAIT": {
+        "url": "https://ptpimg.me/qj93by.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "reality",
+            "huh",
+            "ayo",
+            "sus"
+        ]
+    },
+    "WHY": {
+        "url": "https://ptpimg.me/0be6s4.gif",
         "default_width": 42,
         "width": 108,
         "height": 128,
         "tags": [
-            "fight",
-            "stfu"
+            "sad",
+            "despair",
+            "disappointed",
+            "why"
         ]
     },
-    "STFU": {
-        "url": "https://ptpimg.me/35b7b5.gif",
+    "YOO": {
+        "url": "https://ptpimg.me/ml759b.gif",
         "default_width": 62,
-        "width": 228,
+        "width": 180,
         "height": 128,
         "tags": [
-            "fight",
-            "stfu"
+            "hi",
+            "yo",
+            "hey",
+            "hello"
         ]
     },
-    "mhm": {
-        "url": "https://ptpimg.me/v536jt.gif",
-        "default_width": 42,
-        "width": 148,
-        "height": 128,
-        "tags": [
-            "agreed"
-        ]
-    },
-    "gandi": {
-        "url": "https://ptpimg.me/h8yl06.gif",
+    "YOUDONTSAY": {
+        "url": "https://ptpimg.me/z7oww8.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "yes"
+            "cage"
         ]
     },
-    "NOPERS": {
-        "url": "https://ptpimg.me/58y079.gif",
+    "actually": {
+        "url": "https://ptpimg.me/q3byu8.gif",
         "default_width": 42,
-        "width": 128,
+        "width": 152,
         "height": 128,
         "tags": [
-            "no"
-        ]
-    },
-    "HARAM": {
-        "url": "https://ptpimg.me/38y8b9.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "islam"
-        ]
-    },
-    "EmiruYuck": {
-        "url": "https://ptpimg.me/t4wq54.gif",
-        "default_width": 42,
-        "width": 136,
-        "height": 128,
-        "tags": [
-            "ew",
-            "gross"
-        ]
-    },
-    "waiting": {
-        "url": "https://ptpimg.me/qcvip8.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "waiting"
-        ]
-    },
-    "spongeWait": {
-        "url": "https://ptpimg.me/10pie2.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "waiting"
-        ]
-    },
-    "pabloWait": {
-        "url": "https://ptpimg.me/e7z04w.gif",
-        "default_width": 62,
-        "width": 192,
-        "height": 128,
-        "tags": [
-            "waiting"
-        ]
-    },
-    "monkWait": {
-        "url": "https://ptpimg.me/9ak3s1.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "waiting",
-            "monkey"
-        ]
-    },
-    "sealWait": {
-        "url": "https://ptpimg.me/09j109.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "waiting"
-        ]
-    },
-    "watchit": {
-        "url": "https://ptpimg.me/x0n33x.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "careful"
-        ]
-    },
-    "trash": {
-        "url": "https://ptpimg.me/b93osr.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "boys",
-            "theboys"
-        ]
-    },
-    "STRESSED": {
-        "url": "https://ptpimg.me/t50v7t.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "boys",
-            "theboys"
-        ]
-    },
-    "stonecold": {
-        "url": "https://ptpimg.me/196wsi.gif",
-        "default_width": 42,
-        "width": 172,
-        "height": 128,
-        "tags": [
-            "wwe",
-            "beer"
-        ]
-    },
-    "ALRIGHT": {
-        "url": "https://ptpimg.me/lqmfhx.gif",
-        "default_width": 62,
-        "width": 228,
-        "height": 128,
-        "tags": [
-            "boys",
-            "theboys"
-        ]
-    },
-    "caughtme": {
-        "url": "https://ptpimg.me/3ij7p8.gif",
-        "default_width": 62,
-        "width": 244,
-        "height": 128,
-        "tags": [
-            "really",
-            "mm"
-        ]
-    },
-    "spotted": {
-        "url": "https://ptpimg.me/8ahc69.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": []
-    },
-    "modCheck": {
-        "url": "https://ptpimg.me/cxz1tu.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "where"
-        ]
-    },
-    "whereTho": {
-        "url": "https://ptpimg.me/1mf7y8.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "where"
-        ]
-    },
-    "niceone": {
-        "url": "https://ptpimg.me/80fs05.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "notfunny"
-        ]
-    },
-    "prideFlag": {
-        "url": "https://ptpimg.me/48c544.gif",
-        "default_width": 42,
-        "width": 540,
-        "height": 540,
-        "tags": [
-            "chad",
-            "lgbt",
-            "gay",
-            "pride"
-        ]
-    },
-    "parrot": {
-        "url": "https://ptpimg.me/ddx54t.gif",
-        "default_width": 62,
-        "width": 228,
-        "height": 128,
-        "tags": [
-            "chad",
-            "lgbt",
-            "gay",
-            "pride"
-        ]
-    },
-    "killua": {
-        "url": "https://ptpimg.me/ln2eup.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "hxh"
-        ]
-    },
-    "mamamia": {
-        "url": "https://ptpimg.me/y90z9g.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "italy"
-        ]
-    },
-    "ayoh": {
-        "url": "https://ptpimg.me/q1l9zo.gif",
-        "default_width": 42,
-        "width": 156,
-        "height": 128,
-        "tags": [
-            "italy"
-        ]
-    },
-    "excellent": {
-        "url": "https://ptpimg.me/2f0not.gif",
-        "default_width": 42,
-        "width": 172,
-        "height": 128,
-        "tags": [
-            "plotting",
-            "evil"
-        ]
-    },
-    "empty": {
-        "url": "https://ptpimg.me/55htn2.png",
-        "default_width": 42,
-        "width": 54,
-        "height": 54,
-        "tags": []
-    },
-    "dumbo": {
-        "url": "https://ptpimg.me/ad8185.png",
-        "default_width": 42,
-        "width": 54,
-        "height": 54,
-        "tags": []
-    },
-    "brothers": {
-        "url": "https://ptpimg.me/t4p9qo.png",
-        "default_width": 42,
-        "width": 54,
-        "height": 54,
-        "tags": []
-    },
-    "CHAD": {
-        "url": "https://ptpimg.me/lqa307.gif",
-        "default_width": 42,
-        "width": 184,
-        "height": 184,
-        "tags": []
-    },
-    "dino": {
-        "url": "https://ptpimg.me/4x78q1.gif",
-        "default_width": 42,
-        "width": 184,
-        "height": 184,
-        "tags": []
-    },
-    "skatin": {
-        "url": "https://ptpimg.me/h00h64.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "hxh",
-            "killua"
-        ]
-    },
-    "whatido": {
-        "url": "https://ptpimg.me/kiuyn3.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "50cent"
-        ]
-    },
-    "mmkay": {
-        "url": "https://ptpimg.me/r338w4.png",
-        "default_width": 42,
-        "width": 300,
-        "height": 256,
-        "tags": []
-    },
-    "Risenocular": {
-        "url": "https://ptpimg.me/7x68o8.gif",
-        "default_width": 42,
-        "width": 168,
-        "height": 128,
-        "tags": [
-            "spotted"
-        ]
-    },
-    "LETHIMCOOK": {
-        "url": "https://ptpimg.me/052hr0.gif",
-        "default_width": 42,
-        "width": 144,
-        "height": 128,
-        "tags": [
-            "cooking"
-        ]
-    },
-    "jacksaw": {
-        "url": "https://ptpimg.me/877s52.png",
-        "default_width": 42,
-        "width": 142,
-        "height": 142,
-        "tags": [
-            "cow"
-        ]
-    },
-    "KANE": {
-        "url": "https://ptpimg.me/w3mp39.gif",
-        "default_width": 62,
-        "width": 196,
-        "height": 128,
-        "tags": []
-    },
-    "chatting": {
-        "url": "https://ptpimg.me/nk2517.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "typing",
-            "mm",
-            "really"
-        ]
-    },
-    "bratwu": {
-        "url": "https://ptpimg.me/l5q3ao.png",
-        "default_width": 42,
-        "width": 132,
-        "height": 128,
-        "tags": [
-            "germany",
-            "tham",
-            "mm",
-            "really"
-        ]
-    },
-    "Caught": {
-        "url": "https://ptpimg.me/42z9dt.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "4k"
-        ]
-    },
-    "innocent": {
-        "url": "https://ptpimg.me/401e5a.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "mm",
-            "really"
-        ]
-    },
-    "reallycool": {
-        "url": "https://ptpimg.me/v12yh2.gif",
-        "default_width": 42,
-        "width": 176,
-        "height": 128,
-        "tags": [
-            "mm",
-            "really",
-            "cool"
-        ]
-    },
-    "fbi": {
-        "url": "https://ptpimg.me/33b284.png",
-        "default_width": 62,
-        "width": 228,
-        "height": 128,
-        "tags": [
-            "mm",
-            "really",
-            "lockhimup"
-        ]
-    },
-    "ho7": {
-        "url": "https://ptpimg.me/y16963.png",
-        "default_width": 42,
-        "width": 255,
-        "height": 324,
-        "tags": [
-            "salute"
-        ]
-    },
-    "o7": {
-        "url": "https://ptpimg.me/z2m7k4.png",
-        "default_width": 42,
-        "width": 164,
-        "height": 128,
-        "tags": [
-            "salute"
-        ]
-    },
-    "gamin": {
-        "url": "https://ptpimg.me/6a4l58.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "rayn"
-        ]
-    },
-    "popcorn": {
-        "url": "https://ptpimg.me/b1k81q.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "eating"
-        ]
-    },
-    "catcorn": {
-        "url": "https://ptpimg.me/558c96.png",
-        "default_width": 42,
-        "width": 150,
-        "height": 150,
-        "tags": [
-            "eating",
-            "cat"
-        ]
-    },
-    "clown": {
-        "url": "https://ptpimg.me/0yyg5e.gif",
-        "default_width": 42,
-        "width": 64,
-        "height": 64,
-        "tags": []
-    },
-    "ban": {
-        "url": "https://ptpimg.me/48u3n7.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": []
-    },
-    "sexo": {
-        "url": "https://ptpimg.me/n2e5lt.gif",
-        "default_width": 42,
-        "width": 80,
-        "height": 128,
-        "tags": [
-            "horny"
-        ]
-    },
-    "classic": {
-        "url": "https://ptpimg.me/3uyet8.gif",
-        "default_width": 42,
-        "width": 164,
-        "height": 128,
-        "tags": []
-    },
-    "cowDance": {
-        "url": "https://ptpimg.me/vo2x0u.gif",
-        "default_width": 62,
-        "width": 456,
-        "height": 362,
-        "tags": [
-            "dance"
-        ]
-    },
-    "CT": {
-        "url": "https://ptpimg.me/6ud645.gif",
-        "default_width": 42,
-        "width": 355,
-        "height": 379,
-        "tags": [
-            "praying"
-        ]
-    },
-    "kdotsmash": {
-        "url": "https://ptpimg.me/7s1g2o.gif",
-        "default_width": 62,
-        "width": 256,
-        "height": 192,
-        "tags": [
-            "fight",
-            "kendrick",
-            "punch"
-        ]
-    },
-    "offToWork": {
-        "url": "https://ptpimg.me/c1i9l2.gif",
-        "default_width": 62,
-        "width": 174,
-        "height": 222,
-        "tags": [
-            "penguin",
-            "working",
-            "leaving"
-        ]
-    },
-    "RaynMan": {
-        "url": "https://ptpimg.me/qd2i5w.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "boomer",
-            "old",
-            "angry"
-        ]
-    },
-    "junesOver": {
-        "url": "https://ptpimg.me/83g0w1.png",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "gay",
-            "homophobic",
-            "dog"
-        ]
-    },
-    "NotTooFond": {
-        "url": "https://ptpimg.me/e9l54e.png",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "gay",
-            "homophobic",
-            "dog"
+            "brain",
+            "thinking"
         ]
     },
     "angryDog": {
@@ -2195,37 +675,115 @@
             "mad"
         ]
     },
-    "Capping": {
-        "url": "https://ptpimg.me/rr7d4y.png",
+    "angytype": {
+        "url": "https://ptpimg.me/c51694.png",
         "default_width": 42,
-        "width": 148,
-        "height": 128,
+        "width": 150,
+        "height": 150,
         "tags": [
-            "sus",
-            "capping",
-            "dog",
-            "imontoyou"
+            "mad",
+            "angry",
+            "cat"
         ]
     },
-    "SnackTime": {
-        "url": "https://ptpimg.me/l902yh.gif",
+    "annoyed": {
+        "url": "https://ptpimg.me/1840r6.gif",
+        "default_width": 42,
+        "width": 132,
+        "height": 128,
+        "tags": [
+            "angry",
+            "mad",
+            "grumpy",
+            "cat"
+        ]
+    },
+    "anyaNoted": {
+        "url": "https://ptpimg.me/djs4mr.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "horny",
-            "dog",
-            "hungry"
+            "brain",
+            "thinking",
+            "learning",
+            "noted"
         ]
     },
-    "BOOBA": {
-        "url": "https://ptpimg.me/s053bk.gif",
+    "ascared": {
+        "url": "https://ptpimg.me/qbf200.png",
+        "default_width": 42,
+        "width": 150,
+        "height": 150,
+        "tags": [
+            "scared"
+        ]
+    },
+    "aussie": {
+        "url": "https://ptpimg.me/3f2r1m.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "horny",
-            "pepe"
+            "kangaroo",
+            "australia",
+            "eating"
+        ]
+    },
+    "awooga": {
+        "url": "https://ptpimg.me/ntn328.gif",
+        "default_width": 62,
+        "width": 256,
+        "height": 128,
+        "tags": [
+            "horny"
+        ]
+    },
+    "ayoh": {
+        "url": "https://ptpimg.me/q1l9zo.gif",
+        "default_width": 42,
+        "width": 156,
+        "height": 128,
+        "tags": [
+            "italy"
+        ]
+    },
+    "ban": {
+        "url": "https://ptpimg.me/48u3n7.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": []
+    },
+    "barf": {
+        "url": "https://ptpimg.me/is0oh0.gif",
+        "default_width": 42,
+        "width": 150,
+        "height": 150,
+        "tags": [
+            "ew",
+            "gross"
+        ]
+    },
+    "batemanArrive": {
+        "url": "https://ptpimg.me/8811v2.gif",
+        "default_width": 42,
+        "width": 200,
+        "height": 157,
+        "tags": [
+            "arrived"
+        ]
+    },
+    "bearHug": {
+        "url": "https://ptpimg.me/66lcz7.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "ty",
+            "thanks",
+            "love",
+            "heart"
         ]
     },
     "beerTime": {
@@ -2239,47 +797,77 @@
             "time"
         ]
     },
-    "reallyThirsty": {
-        "url": "https://ptpimg.me/3p2m57.gif",
+    "beetleSlap": {
+        "url": "https://ptpimg.me/45ejwk.gif",
         "default_width": 42,
-        "width": 168,
+        "width": 96,
         "height": 128,
         "tags": [
-            "beer",
-            "thirsty",
-            "really",
-            "mm"
+            "beetlejuice",
+            "fight",
+            "punch"
         ]
     },
-    "ricecooker": {
-        "url": "https://ptpimg.me/67009z.png",
-        "default_width": 42,
-        "width": 400,
-        "height": 353,
-        "tags": [
-            "rice"
-        ]
-    },
-    "smiliebeer": {
-        "url": "https://ptpimg.me/s1spl0.gif",
-        "default_width": 60,
-        "width": 60,
-        "height": 18,
-        "tags": [
-            "beer",
-            "thirsty",
-            "cheers"
-        ]
-    },
-    "weebBeer": {
-        "url": "https://ptpimg.me/g7xstm.gif",
+    "blessRNG": {
+        "url": "https://ptpimg.me/whr6ix.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "weeb",
-            "beer",
-            "thirsty"
+            "praying",
+            "holy",
+            "gamble",
+            "bless"
+        ]
+    },
+    "boobies": {
+        "url": "https://ptpimg.me/zs4184.gif",
+        "default_width": 42,
+        "width": 184,
+        "height": 184,
+        "tags": [
+            "horny",
+            "weeb"
+        ]
+    },
+    "brainhurt": {
+        "url": "https://ptpimg.me/e4b35c.gif",
+        "default_width": 42,
+        "width": 140,
+        "height": 128,
+        "tags": [
+            "brain",
+            "thinking"
+        ]
+    },
+    "bratwu": {
+        "url": "https://ptpimg.me/l5q3ao.png",
+        "default_width": 42,
+        "width": 132,
+        "height": 128,
+        "tags": [
+            "germany",
+            "tham",
+            "mm",
+            "really"
+        ]
+    },
+    "brothers": {
+        "url": "https://ptpimg.me/t4p9qo.png",
+        "default_width": 42,
+        "width": 54,
+        "height": 54,
+        "tags": []
+    },
+    "buh": {
+        "url": "https://ptpimg.me/00y9l9.gif",
+        "default_width": 62,
+        "width": 180,
+        "height": 128,
+        "tags": [
+            "cat",
+            "buh",
+            "concerned"
         ]
     },
     "cageArrive": {
@@ -2329,344 +917,187 @@
             "wink"
         ]
     },
-    "feelsSadMan": {
-        "url": "https://ptpimg.me/eo0vnq.gif",
-        "default_width": 42,
-        "width": 512,
-        "height": 512,
-        "tags": [
-            "sad",
-            "crying"
-        ]
-    },
-    "NoNo": {
-        "url": "https://ptpimg.me/t2i793.gif",
+    "calculate": {
+        "url": "https://ptpimg.me/75q56k.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "nope",
+            "math",
+            "brain",
+            "thinking"
+        ]
+    },
+    "catJAM": {
+        "url": "https://ptpimg.me/3doxd3.gif",
+        "default_width": 42,
+        "width": 56,
+        "height": 56,
+        "tags": [
+            "dance",
+            "jam",
             "cat"
         ]
     },
-    "NONONO": {
-        "url": "https://ptpimg.me/q8vu89.gif",
+    "catLeave": {
+        "url": "https://ptpimg.me/520033.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "nope",
-            "weeb"
+            "leaving",
+            "leave",
+            "bye"
         ]
     },
-    "rabbitFok": {
-        "url": "https://ptpimg.me/jy722d.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": []
-    },
-    "RIPBOZO": {
-        "url": "https://ptpimg.me/10175j.gif",
-        "default_width": 52,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "restinpeace",
-            "raynman"
-        ]
-    },
-    "runOver": {
-        "url": "https://ptpimg.me/026s81.gif",
-        "default_width": 42,
-        "width": 512,
-        "height": 512,
-        "tags": [
-            "angry"
-        ]
-    },
-    "yesYes": {
-        "url": "https://ptpimg.me/4268sd.gif",
+    "catLove": {
+        "url": "https://ptpimg.me/kxw1y1.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "agreed"
+            "cat",
+            "ty",
+            "thanks",
+            "love",
+            "heart"
         ]
     },
-    "yesyesBusiness": {
-        "url": "https://ptpimg.me/modkf9.gif",
-        "default_width": 42,
-        "width": 108,
-        "height": 128,
-        "tags": [
-            "agreed",
-            "gamble",
-            "gamba"
-        ]
-    },
-    "YOUDONTSAY": {
-        "url": "https://ptpimg.me/z7oww8.gif",
+    "catWave": {
+        "url": "https://ptpimg.me/e3sfze.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "cage"
+            "hi",
+            "cat",
+            "wave"
         ]
     },
-    "GYAT": {
-        "url": "https://ptpimg.me/7226bj.gif",
+    "catcorn": {
+        "url": "https://ptpimg.me/558c96.png",
         "default_width": 42,
-        "width": 480,
-        "height": 480,
+        "width": 150,
+        "height": 150,
         "tags": [
-            "horny",
-            "twerk",
-            "booty"
+            "eating",
+            "cat"
         ]
     },
-    "fukoDuck": {
-        "url": "https://ptpimg.me/39ka5r.gif",
+    "catpunch": {
+        "url": "https://ptpimg.me/a69w1c.gif",
+        "default_width": 42,
+        "width": 136,
+        "height": 128,
+        "tags": [
+            "fight",
+            "stfu",
+            "cat"
+        ]
+    },
+    "catsip": {
+        "url": "https://ptpimg.me/e44il4.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "catsip",
+            "catsipping"
+        ]
+    },
+    "catsmirk": {
+        "url": "https://ptpimg.me/59g5le.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "cat"
+        ]
+    },
+    "caughtme": {
+        "url": "https://ptpimg.me/3ij7p8.gif",
         "default_width": 62,
-        "width": 200,
-        "height": 133,
-        "tags": [
-            "kolt",
-            "fuko",
-            "weeb",
-            "twerk"
-        ]
-    },
-    "raynPopcorn": {
-        "url": "https://ptpimg.me/j9cv07.png",
-        "default_width": 100,
-        "width": 226,
-        "height": 64,
-        "tags": [
-            "raynman",
-            "popcorn"
-        ]
-    },
-    "COCKA": {
-        "url": "https://ptpimg.me/q0kosa.gif",
-        "default_width": 42,
-        "width": 128,
+        "width": 244,
         "height": 128,
         "tags": [
-            "booba",
-            "horny"
+            "really",
+            "mm"
         ]
     },
-    "cowass": {
-        "url": "https://ptpimg.me/f8o394.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "twerk",
-            "jacksaw"
-        ]
-    },
-    "cowUFO": {
-        "url": "https://ptpimg.me/3mol6n.gif",
+    "chadmirPutin": {
+        "url": "https://ptpimg.me/56nion.png",
         "default_width": 42,
         "width": 500,
         "height": 500,
         "tags": [
-            "jacksaw"
+            "russian",
+            "ruski",
+            "putin"
         ]
     },
-    "Meowdy": {
-        "url": "https://ptpimg.me/v7nk73.png",
+    "chatting": {
+        "url": "https://ptpimg.me/nk2517.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "cat"
-        ]
-    },
-    "moo": {
-        "url": "https://ptpimg.me/0z0arm.gif",
-        "default_width": 62,
-        "width": 498,
-        "height": 326,
-        "tags": [
-            "cow",
-            "jacksaw"
-        ]
-    },
-    "peepoSitCowboyWithABigIronOnHisHipRidingOnAHorse": {
-        "url": "https://ptpimg.me/0q704e.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "kolt"
-        ]
-    },
-    "PHEW": {
-        "url": "https://ptpimg.me/8bot47.gif",
-        "default_width": 62,
-        "width": 180,
-        "height": 128,
-        "tags": [
-            "relieved",
-            "really",
-            "mm"
-        ]
-    },
-    "pheww": {
-        "url": "https://ptpimg.me/222c5p.gif",
-        "default_width": 42,
-        "width": 144,
-        "height": 128,
-        "tags": [
-            "relieved"
-        ]
-    },
-    "superCOCKA": {
-        "url": "https://ptpimg.me/518cav.gif",
-        "default_width": 82,
-        "width": 384,
-        "height": 124,
-        "tags": [
-            "cocka",
-            "booba"
-        ]
-    },
-    "ultraDuckass": {
-        "url": "https://ptpimg.me/rdy1f5.gif",
-        "default_width": 42,
-        "width": 498,
-        "height": 498,
-        "tags": [
-            "duckass",
-            "twerk"
-        ]
-    },
-    "sadge": {
-        "url": "https://ptpimg.me/5wgjn3.png",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "sad"
-        ]
-    },
-    "stingUp": {
-        "url": "https://ptpimg.me/ze6c85.gif",
-        "default_width": 52,
-        "width": 256,
-        "height": 256,
-        "tags": [
-            "nice",
-            "congrats",
-            "gz"
-        ]
-    },
-    "stackin": {
-        "url": "https://ptpimg.me/616o42.png",
-        "default_width": 42,
-        "width": 150,
-        "height": 150,
-        "tags": [
-            "gamble",
-            "rich",
-            "money",
-            "bon"
-        ]
-    },
-    "counting": {
-        "url": "https://ptpimg.me/59emhk.gif",
-        "default_width": 42,
-        "width": 168,
-        "height": 128,
-        "tags": [
-            "gamble",
-            "rich",
-            "money",
-            "bon"
-        ]
-    },
-    "huh": {
-        "url": "https://ptpimg.me/12kx8m.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "huh",
-            "ayo",
-            "sus"
-        ]
-    },
-    "ultramad": {
-        "url": "https://ptpimg.me/vbg6q3.png",
-        "default_width": 42,
-        "width": 152,
-        "height": 128,
-        "tags": [
-            "mad",
-            "angry",
+            "typing",
             "mm",
             "really"
         ]
     },
-    "slightlymad": {
-        "url": "https://ptpimg.me/ut9wv7.png",
-        "default_width": 62,
-        "width": 180,
-        "height": 128,
-        "tags": [
-            "mad",
-            "angry",
-            "mm",
-            "really"
-        ]
-    },
-    "reallymad": {
-        "url": "https://ptpimg.me/znro3o.png",
+    "cheers": {
+        "url": "https://ptpimg.me/va1g0i.gif",
         "default_width": 42,
-        "width": 132,
-        "height": 128,
+        "width": 51,
+        "height": 28,
         "tags": [
-            "mad",
-            "angry",
-            "mm",
-            "really"
+            "beer",
+            "thanks"
         ]
     },
-    "rage": {
-        "url": "https://ptpimg.me/cqu9qr.gif",
-        "default_width": 62,
-        "width": 180,
-        "height": 128,
-        "tags": [
-            "mad",
-            "angry",
-            "cat"
-        ]
-    },
-    "angytype": {
-        "url": "https://ptpimg.me/c51694.png",
-        "default_width": 42,
-        "width": 150,
-        "height": 150,
-        "tags": [
-            "mad",
-            "angry",
-            "cat"
-        ]
-    },
-    "reallysad": {
-        "url": "https://ptpimg.me/m9f985.png",
+    "chimpE": {
+        "url": "https://ptpimg.me/4oqbrc.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "sad",
-            "crying",
-            "really",
-            "mm"
+            "monkey",
+            "angry",
+            "rage"
+        ]
+    },
+    "classic": {
+        "url": "https://ptpimg.me/3uyet8.gif",
+        "default_width": 42,
+        "width": 164,
+        "height": 128,
+        "tags": []
+    },
+    "clown": {
+        "url": "https://ptpimg.me/0yyg5e.gif",
+        "default_width": 42,
+        "width": 64,
+        "height": 64,
+        "tags": []
+    },
+    "cofeege": {
+        "url": "https://ptpimg.me/90440v.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "cofeege",
+            "coffee"
+        ]
+    },
+    "coffeeTime": {
+        "url": "https://ptpimg.me/3vr6p7.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "coffee"
         ]
     },
     "comedy": {
@@ -2683,6 +1114,378 @@
             "really"
         ]
     },
+    "concernedApe": {
+        "url": "https://ptpimg.me/4dz6m0.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "monkey",
+            "ape",
+            "gorilla",
+            "worried",
+            "concerned"
+        ]
+    },
+    "confetti": {
+        "url": "https://ptpimg.me/x775e6.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "nice",
+            "congrats",
+            "gz"
+        ]
+    },
+    "congrats": {
+        "url": "https://ptpimg.me/9ar3d5.gif",
+        "default_width": 42,
+        "width": 124,
+        "height": 128,
+        "tags": [
+            "nice",
+            "congrats",
+            "gz"
+        ]
+    },
+    "counting": {
+        "url": "https://ptpimg.me/59emhk.gif",
+        "default_width": 42,
+        "width": 168,
+        "height": 128,
+        "tags": [
+            "gamble",
+            "rich",
+            "money",
+            "bon"
+        ]
+    },
+    "cowDance": {
+        "url": "https://ptpimg.me/vo2x0u.gif",
+        "default_width": 62,
+        "width": 456,
+        "height": 362,
+        "tags": [
+            "dance"
+        ]
+    },
+    "cowUFO": {
+        "url": "https://ptpimg.me/3mol6n.gif",
+        "default_width": 42,
+        "width": 500,
+        "height": 500,
+        "tags": [
+            "jacksaw"
+        ]
+    },
+    "cowass": {
+        "url": "https://ptpimg.me/f8o394.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "twerk",
+            "jacksaw"
+        ]
+    },
+    "cr7Sip": {
+        "url": "https://ptpimg.me/39gjga.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "drinking",
+            "ronaldo"
+        ]
+    },
+    "creepBob": {
+        "url": "https://ptpimg.me/5f07ig.png",
+        "default_width": 42,
+        "width": 128,
+        "height": 126,
+        "tags": [
+            "sus",
+            "spongebob"
+        ]
+    },
+    "cronch": {
+        "url": "https://ptpimg.me/z23tw5.gif",
+        "default_width": 62,
+        "width": 192,
+        "height": 128,
+        "tags": [
+            "eating",
+            "cat"
+        ]
+    },
+    "crychattin": {
+        "url": "https://ptpimg.me/whwbgo.gif",
+        "default_width": 42,
+        "width": 64,
+        "height": 64,
+        "tags": [
+            "sad",
+            "crying",
+            "chatting"
+        ]
+    },
+    "cryin": {
+        "url": "https://ptpimg.me/d437ew.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "cryin",
+            "JJJlaugh"
+        ]
+    },
+    "cryindead": {
+        "url": "https://ptpimg.me/k99945.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "cryindead",
+            "dead",
+            "cryin"
+        ]
+    },
+    "dafuq": {
+        "url": "https://ptpimg.me/4ni4c5.gif",
+        "default_width": 42,
+        "width": 132,
+        "height": 128,
+        "tags": [
+            "huh",
+            "ayo",
+            "sus"
+        ]
+    },
+    "dead": {
+        "url": "https://ptpimg.me/38666x.gif",
+        "default_width": 42,
+        "width": 124,
+        "height": 128,
+        "tags": [
+            "lol",
+            "lmao",
+            "laughing",
+            "hahahaha",
+            "mm",
+            "really"
+        ]
+    },
+    "deadspongebob": {
+        "url": "https://ptpimg.me/q353oa.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "deadspongebob",
+            "dead"
+        ]
+    },
+    "dealwithit": {
+        "url": "https://ptpimg.me/321azk.png",
+        "default_width": 42,
+        "width": 150,
+        "height": 150,
+        "tags": []
+    },
+    "demontime": {
+        "url": "https://ptpimg.me/816q7s.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "cat",
+            "evil"
+        ]
+    },
+    "despair": {
+        "url": "https://ptpimg.me/im367e.gif",
+        "default_width": 42,
+        "width": 132,
+        "height": 128,
+        "tags": [
+            "sad",
+            "despair",
+            "disappointed"
+        ]
+    },
+    "dino": {
+        "url": "https://ptpimg.me/4x78q1.gif",
+        "default_width": 42,
+        "width": 184,
+        "height": 184,
+        "tags": []
+    },
+    "dogWTF": {
+        "url": "https://ptpimg.me/58tf25.png",
+        "default_width": 42,
+        "width": 200,
+        "height": 209,
+        "tags": [
+            ":o",
+            "shocked",
+            "shocking"
+        ]
+    },
+    "duckass": {
+        "url": "https://ptpimg.me/5o97h5.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "twerk",
+            "horny"
+        ]
+    },
+    "dumbo": {
+        "url": "https://ptpimg.me/ad8185.png",
+        "default_width": 42,
+        "width": 54,
+        "height": 54,
+        "tags": []
+    },
+    "empty": {
+        "url": "https://ptpimg.me/55htn2.png",
+        "default_width": 42,
+        "width": 54,
+        "height": 54,
+        "tags": []
+    },
+    "excellent": {
+        "url": "https://ptpimg.me/2f0not.gif",
+        "default_width": 42,
+        "width": 172,
+        "height": 128,
+        "tags": [
+            "plotting",
+            "evil"
+        ]
+    },
+    "fatpfff": {
+        "url": "https://ptpimg.me/202dxq.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "fatpfff",
+            "lol"
+        ]
+    },
+    "fbi": {
+        "url": "https://ptpimg.me/33b284.png",
+        "default_width": 62,
+        "width": 228,
+        "height": 128,
+        "tags": [
+            "mm",
+            "really",
+            "lockhimup"
+        ]
+    },
+    "feelsSadMan": {
+        "url": "https://ptpimg.me/eo0vnq.gif",
+        "default_width": 42,
+        "width": 512,
+        "height": 512,
+        "tags": [
+            "sad",
+            "crying"
+        ]
+    },
+    "feet": {
+        "url": "https://ptpimg.me/622oxi.png",
+        "default_width": 42,
+        "width": 132,
+        "height": 128,
+        "tags": [
+            "horny"
+        ]
+    },
+    "feltcute": {
+        "url": "https://ptpimg.me/20180i.png",
+        "default_width": 42,
+        "width": 50,
+        "height": 66,
+        "tags": [
+            "horny",
+            "feet"
+        ]
+    },
+    "fishWhy": {
+        "url": "https://ptpimg.me/062y30.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "sad",
+            "despair",
+            "disappointed",
+            "why"
+        ]
+    },
+    "fishy": {
+        "url": "https://ptpimg.me/610jt3.gif",
+        "default_width": 42,
+        "width": 60,
+        "height": 25,
+        "tags": []
+    },
+    "fucku": {
+        "url": "https://ptpimg.me/4l6yo2.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "mad",
+            "angry",
+            "stfu"
+        ]
+    },
+    "fukoDuck": {
+        "url": "https://ptpimg.me/39ka5r.gif",
+        "default_width": 62,
+        "width": 200,
+        "height": 133,
+        "tags": [
+            "kolt",
+            "fuko",
+            "weeb",
+            "twerk"
+        ]
+    },
+    "gamin": {
+        "url": "https://ptpimg.me/6a4l58.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "rayn"
+        ]
+    },
+    "gandi": {
+        "url": "https://ptpimg.me/h8yl06.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "yes"
+        ]
+    },
+    "gigachad": {
+        "url": "https://ptpimg.me/21c2ar.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "chad",
+            "based"
+        ]
+    },
     "giggle": {
         "url": "https://ptpimg.me/f9opi2.png",
         "default_width": 42,
@@ -2697,36 +1500,957 @@
             "really"
         ]
     },
-    "yawn": {
-        "url": "https://ptpimg.me/l4l3r6.png",
-        "default_width": 42,
-        "width": 120,
+    "gnite": {
+        "url": "https://ptpimg.me/kg9ats.gif",
+        "default_width": 62,
+        "width": 188,
         "height": 128,
         "tags": [
             "bored",
             "tired",
-            "sleepy",
+            "sleepy"
+        ]
+    },
+    "gokueat": {
+        "url": "https://ptpimg.me/1x376p.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "eat",
+            "hungry"
+        ]
+    },
+    "gothKiss": {
+        "url": "https://ptpimg.me/7558x6.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "horny",
+            "thanks",
+            "ty",
+            "kiss"
+        ]
+    },
+    "gulp": {
+        "url": "https://ptpimg.me/1h5dj2.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "nervous"
+        ]
+    },
+    "hahaso": {
+        "url": "https://ptpimg.me/682ekp.gif",
+        "default_width": 42,
+        "width": 200,
+        "height": 200,
+        "tags": [
+            "lol",
+            "lmao",
+            "laughing",
+            "hahahaha"
+        ]
+    },
+    "hapbruh": {
+        "url": "https://ptpimg.me/1x5edp.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "hapbruh",
+            "mikestare"
+        ]
+    },
+    "happyCat": {
+        "url": "https://ptpimg.me/99v2hb.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "happy",
+            "cat"
+        ]
+    },
+    "hasbullaFight": {
+        "url": "https://ptpimg.me/b0e999.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "fight",
+            "stfu"
+        ]
+    },
+    "hasbullahi": {
+        "url": "https://ptpimg.me/5ar43v.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "hi",
+            "yo",
+            "hey",
+            "hello"
+        ]
+    },
+    "helloo": {
+        "url": "https://ptpimg.me/6d7gkq.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "hi",
+            "yo",
+            "hey",
+            "hello"
+        ]
+    },
+    "hi5": {
+        "url": "https://ptpimg.me/5op1lk.gif",
+        "default_width": 42,
+        "width": 140,
+        "height": 128,
+        "tags": [
+            "nice",
+            "congrats",
+            "gz"
+        ]
+    },
+    "hmmm": {
+        "url": "https://ptpimg.me/44ti0h.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "brain",
+            "thinking"
+        ]
+    },
+    "hmmmpepe": {
+        "url": "https://ptpimg.me/6nv06p.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "hmmmpepe",
+            "hmmm"
+        ]
+    },
+    "ho7": {
+        "url": "https://ptpimg.me/y16963.png",
+        "default_width": 42,
+        "width": 255,
+        "height": 324,
+        "tags": [
+            "salute"
+        ]
+    },
+    "homerArrive": {
+        "url": "https://ptpimg.me/00506z.gif",
+        "default_width": 42,
+        "width": 156,
+        "height": 128,
+        "tags": [
+            "arrived"
+        ]
+    },
+    "homerLeave": {
+        "url": "https://ptpimg.me/lo9118.gif",
+        "default_width": 42,
+        "width": 156,
+        "height": 128,
+        "tags": [
+            "leaving"
+        ]
+    },
+    "hubba": {
+        "url": "https://ptpimg.me/3s9ur5.gif",
+        "default_width": 42,
+        "width": 144,
+        "height": 128,
+        "tags": [
+            "horny"
+        ]
+    },
+    "huh": {
+        "url": "https://ptpimg.me/12kx8m.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "huh",
+            "ayo",
+            "sus"
+        ]
+    },
+    "hungy": {
+        "url": "https://ptpimg.me/r8isxj.gif",
+        "default_width": 42,
+        "width": 172,
+        "height": 128,
+        "tags": [
+            "eat",
+            "hungry"
+        ]
+    },
+    "imdead": {
+        "url": "https://ptpimg.me/7uq04d.gif",
+        "default_width": 42,
+        "width": 156,
+        "height": 128,
+        "tags": [
+            "dead",
+            "lol",
+            "lmao",
+            "laughing",
+            "hahahaha"
+        ]
+    },
+    "imout": {
+        "url": "https://ptpimg.me/422e50.gif",
+        "default_width": 42,
+        "width": 100,
+        "height": 128,
+        "tags": [
+            "bye",
+            "peace"
+        ]
+    },
+    "innocent": {
+        "url": "https://ptpimg.me/401e5a.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
             "mm",
             "really"
         ]
     },
-    "feltcute": {
-        "url": "https://ptpimg.me/20180i.png",
-        "default_width": 42,
-        "width": 50,
-        "height": 66,
+    "ionkno": {
+        "url": "https://ptpimg.me/oy2vb6.png",
+        "default_width": 62,
+        "width": 184,
+        "height": 128,
         "tags": [
-            "horny",
-            "feet"
+            "mm",
+            "i don't know",
+            "really"
         ]
     },
-    "feet": {
-        "url": "https://ptpimg.me/622oxi.png",
+    "jacksaw": {
+        "url": "https://ptpimg.me/877s52.png",
+        "default_width": 42,
+        "width": 142,
+        "height": 142,
+        "tags": [
+            "cow"
+        ]
+    },
+    "jerryBye": {
+        "url": "https://ptpimg.me/0om1qn.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "bye",
+            "wave"
+        ]
+    },
+    "jerrywhat": {
+        "url": "https://ptpimg.me/5l5i28.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "jerrywhat",
+            "wtf"
+        ]
+    },
+    "joe": {
+        "url": "https://ptpimg.me/0pk71c.gif",
+        "default_width": 62,
+        "width": 180,
+        "height": 128,
+        "tags": [
+            ":o",
+            "shocked",
+            "shocking"
+        ]
+    },
+    "junesOver": {
+        "url": "https://ptpimg.me/83g0w1.png",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "gay",
+            "homophobic",
+            "dog"
+        ]
+    },
+    "jusreadin": {
+        "url": "https://ptpimg.me/r73619.gif",
+        "default_width": 42,
+        "width": 64,
+        "height": 64,
+        "tags": [
+            "huh",
+            "ayo",
+            "sus",
+            "mm",
+            "really"
+        ]
+    },
+    "kdotsmash": {
+        "url": "https://ptpimg.me/7s1g2o.gif",
+        "default_width": 62,
+        "width": 256,
+        "height": 192,
+        "tags": [
+            "fight",
+            "kendrick",
+            "punch"
+        ]
+    },
+    "kek": {
+        "url": "https://ptpimg.me/h60uyp.gif",
+        "default_width": 42,
+        "width": 200,
+        "height": 174,
+        "tags": [
+            "lol",
+            "lmao",
+            "laughing",
+            "hahahaha"
+        ]
+    },
+    "kerk": {
+        "url": "https://ptpimg.me/26l2v0.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "kerk",
+            "kekw"
+        ]
+    },
+    "kermitWorried": {
+        "url": "https://ptpimg.me/k5j489.gif",
+        "default_width": 42,
+        "width": 124,
+        "height": 128,
+        "tags": [
+            "worried",
+            "nervous"
+        ]
+    },
+    "kidgokuEat": {
+        "url": "https://ptpimg.me/4si2k7.gif",
+        "default_width": 42,
+        "width": 172,
+        "height": 128,
+        "tags": [
+            "eat",
+            "hungry"
+        ]
+    },
+    "killua": {
+        "url": "https://ptpimg.me/ln2eup.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "hxh"
+        ]
+    },
+    "king": {
+        "url": "https://ptpimg.me/9809yh.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "king",
+            "kingpepe"
+        ]
+    },
+    "kok": {
+        "url": "https://ptpimg.me/n4r95m.gif",
         "default_width": 42,
         "width": 132,
         "height": 128,
         "tags": [
+            "horny",
+            "cat"
+        ]
+    },
+    "laught": {
+        "url": "https://ptpimg.me/q0nw2y.jpg",
+        "default_width": 42,
+        "width": 108,
+        "height": 128,
+        "tags": [
+            "lol",
+            "lmao",
+            "laughing",
+            "hahahaha"
+        ]
+    },
+    "lip": {
+        "url": "https://ptpimg.me/5pq39g.png",
+        "default_width": 32,
+        "width": 128,
+        "height": 128,
+        "tags": [
             "horny"
+        ]
+    },
+    "lmaoo": {
+        "url": "https://ptpimg.me/1ucp45.png",
+        "default_width": 42,
+        "width": 164,
+        "height": 128,
+        "tags": [
+            "lol",
+            "lmao",
+            "laughing",
+            "hahahaha"
+        ]
+    },
+    "loopy": {
+        "url": "https://ptpimg.me/vmq38q.png",
+        "default_width": 42,
+        "width": 150,
+        "height": 150,
+        "tags": []
+    },
+    "madge": {
+        "url": "https://ptpimg.me/ep90p9.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "madge",
+            "madpepe"
+        ]
+    },
+    "mamamia": {
+        "url": "https://ptpimg.me/y90z9g.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "italy"
+        ]
+    },
+    "marinFlushed": {
+        "url": "https://ptpimg.me/km9668.gif",
+        "default_width": 42,
+        "width": 176,
+        "height": 128,
+        "tags": [
+            "horny",
+            "weeb"
+        ]
+    },
+    "mcqSus": {
+        "url": "https://ptpimg.me/5l0skd.gif",
+        "default_width": 62,
+        "width": 324,
+        "height": 128,
+        "tags": [
+            "horny",
+            "smirk",
+            "sus",
+            "car"
+        ]
+    },
+    "meow": {
+        "url": "https://ptpimg.me/r3og9i.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "cat"
+        ]
+    },
+    "mhm": {
+        "url": "https://ptpimg.me/v536jt.gif",
+        "default_width": 42,
+        "width": 148,
+        "height": 128,
+        "tags": [
+            "agreed"
+        ]
+    },
+    "mike": {
+        "url": "https://ptpimg.me/ygc0b0.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "mike",
+            "mikestare"
+        ]
+    },
+    "mikeW": {
+        "url": "https://ptpimg.me/6ltj64.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "horny",
+            "shy",
+            "flushed"
+        ]
+    },
+    "mmkay": {
+        "url": "https://ptpimg.me/r338w4.png",
+        "default_width": 42,
+        "width": 300,
+        "height": 256,
+        "tags": []
+    },
+    "modCheck": {
+        "url": "https://ptpimg.me/cxz1tu.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "where"
+        ]
+    },
+    "monKEK": {
+        "url": "https://ptpimg.me/ffp05g.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "lol",
+            "monkey",
+            "lmao"
+        ]
+    },
+    "moneyRun": {
+        "url": "https://ptpimg.me/b9625q.gif",
+        "default_width": 62,
+        "width": 220,
+        "height": 128,
+        "tags": [
+            "gamble",
+            "rich",
+            "money",
+            "bon"
+        ]
+    },
+    "moneyTime": {
+        "url": "https://ptpimg.me/69c4n5.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "gamble",
+            "rich",
+            "money",
+            "bon"
+        ]
+    },
+    "monkE": {
+        "url": "https://ptpimg.me/972uuy.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "monkey",
+            "ape",
+            "gorilla",
+            "worried",
+            "concerned",
+            "lurk"
+        ]
+    },
+    "monkWait": {
+        "url": "https://ptpimg.me/9ak3s1.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "waiting",
+            "monkey"
+        ]
+    },
+    "monkeArrive": {
+        "url": "https://ptpimg.me/q80op1.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "arrive",
+            "monkey"
+        ]
+    },
+    "monkeDrive": {
+        "url": "https://ptpimg.me/86xb7l.gif",
+        "default_width": 62,
+        "width": 232,
+        "height": 128,
+        "tags": [
+            "monkey"
+        ]
+    },
+    "monkeKiss": {
+        "url": "https://ptpimg.me/518635.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "kiss",
+            "horny",
+            "thanks"
+        ]
+    },
+    "monkeLeave": {
+        "url": "https://ptpimg.me/ep9tn4.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "leaving",
+            "monkey"
+        ]
+    },
+    "monkeSip": {
+        "url": "https://ptpimg.me/p9g5l6.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "chillin"
+        ]
+    },
+    "monkeSpin": {
+        "url": "https://ptpimg.me/nyd414.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "monkey"
+        ]
+    },
+    "monkeTea": {
+        "url": "https://ptpimg.me/bbg9y7.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "morning",
+            "monkey"
+        ]
+    },
+    "monkeat": {
+        "url": "https://ptpimg.me/69m02r.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "monkey",
+            "eating",
+            "gorilla",
+            "ape"
+        ]
+    },
+    "moo": {
+        "url": "https://ptpimg.me/0z0arm.gif",
+        "default_width": 62,
+        "width": 498,
+        "height": 326,
+        "tags": [
+            "cow",
+            "jacksaw"
+        ]
+    },
+    "munn": {
+        "url": "https://ptpimg.me/vls4r0.gif",
+        "default_width": 42,
+        "width": 418,
+        "height": 418,
+        "tags": [
+            "horny"
+        ]
+    },
+    "nerD": {
+        "url": "https://ptpimg.me/83wujd.gif",
+        "default_width": 42,
+        "width": 160,
+        "height": 128,
+        "tags": [
+            "actually",
+            "brain",
+            "thinking"
+        ]
+    },
+    "nerdbob": {
+        "url": "https://ptpimg.me/72zp0m.gif",
+        "default_width": 42,
+        "width": 176,
+        "height": 128,
+        "tags": [
+            "brain",
+            "thinking"
+        ]
+    },
+    "niceone": {
+        "url": "https://ptpimg.me/80fs05.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "notfunny"
+        ]
+    },
+    "noWay": {
+        "url": "https://ptpimg.me/4i469f.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "ohno",
+            "notlikethis",
+            "jerry",
+            "sad"
+        ]
+    },
+    "noted": {
+        "url": "https://ptpimg.me/j7v95f.gif",
+        "default_width": 42,
+        "width": 156,
+        "height": 128,
+        "tags": [
+            "brain",
+            "thinking",
+            "learning"
+        ]
+    },
+    "o7": {
+        "url": "https://ptpimg.me/z2m7k4.png",
+        "default_width": 42,
+        "width": 164,
+        "height": 128,
+        "tags": [
+            "salute"
+        ]
+    },
+    "offToWork": {
+        "url": "https://ptpimg.me/c1i9l2.gif",
+        "default_width": 62,
+        "width": 174,
+        "height": 222,
+        "tags": [
+            "penguin",
+            "working",
+            "leaving"
+        ]
+    },
+    "ohno": {
+        "url": "https://ptpimg.me/1h75ab.gif",
+        "default_width": 42,
+        "width": 120,
+        "height": 128,
+        "tags": [
+            "sad",
+            "despair",
+            "disappointed",
+            "monkey"
+        ]
+    },
+    "ohstop": {
+        "url": "https://ptpimg.me/kb73eq.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "flattered",
+            "love",
+            "heart"
+        ]
+    },
+    "pabloWait": {
+        "url": "https://ptpimg.me/e7z04w.gif",
+        "default_width": 62,
+        "width": 192,
+        "height": 128,
+        "tags": [
+            "waiting"
+        ]
+    },
+    "pandaWhy": {
+        "url": "https://ptpimg.me/st2zn7.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "sad",
+            "despair",
+            "disappointed",
+            "why"
+        ]
+    },
+    "parrot": {
+        "url": "https://ptpimg.me/ddx54t.gif",
+        "default_width": 62,
+        "width": 228,
+        "height": 128,
+        "tags": [
+            "chad",
+            "lgbt",
+            "gay",
+            "pride"
+        ]
+    },
+    "peepoSitCowboyWithABigIronOnHisHipRidingOnAHorse": {
+        "url": "https://ptpimg.me/0q704e.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "kolt"
+        ]
+    },
+    "petercryin": {
+        "url": "https://ptpimg.me/6t94m1.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "petercryin",
+            "cryin"
+        ]
+    },
+    "pheww": {
+        "url": "https://ptpimg.me/222c5p.gif",
+        "default_width": 42,
+        "width": 144,
+        "height": 128,
+        "tags": [
+            "relieved"
+        ]
+    },
+    "pikaBless": {
+        "url": "https://ptpimg.me/0e3g30.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "praying",
+            "holy",
+            "gamble",
+            "bless"
+        ]
+    },
+    "pikaBye": {
+        "url": "https://ptpimg.me/92i3wl.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "pikachu",
+            "bye"
+        ]
+    },
+    "pikahey": {
+        "url": "https://ptpimg.me/j95798.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "hi",
+            "yo",
+            "hey",
+            "hello"
+        ]
+    },
+    "plottin": {
+        "url": "https://ptpimg.me/df30z2.gif",
+        "default_width": 42,
+        "width": 256,
+        "height": 256,
+        "tags": [
+            "plotting",
+            "evil"
+        ]
+    },
+    "poop": {
+        "url": "https://ptpimg.me/a8mn3s.png",
+        "default_width": 42,
+        "width": 150,
+        "height": 150,
+        "tags": []
+    },
+    "popcorn": {
+        "url": "https://ptpimg.me/b1k81q.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "eating"
+        ]
+    },
+    "prayge": {
+        "url": "https://ptpimg.me/1ar7r1.gif",
+        "default_width": 42,
+        "width": 164,
+        "height": 128,
+        "tags": [
+            "praying",
+            "holy",
+            "gamble",
+            "bless"
+        ]
+    },
+    "prideFlag": {
+        "url": "https://ptpimg.me/48c544.gif",
+        "default_width": 42,
+        "width": 540,
+        "height": 540,
+        "tags": [
+            "chad",
+            "lgbt",
+            "gay",
+            "pride"
+        ]
+    },
+    "princessK": {
+        "url": "https://ptpimg.me/xu2f0o.png",
+        "default_width": 42,
+        "width": 415,
+        "height": 537,
+        "tags": [
+            "selen",
+            "catfish"
+        ]
+    },
+    "putinApprove": {
+        "url": "https://ptpimg.me/00nff0.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "russian",
+            "ruski",
+            "putin"
+        ]
+    },
+    "putinAttack": {
+        "url": "https://ptpimg.me/h5j95j.png",
+        "default_width": 42,
+        "width": 250,
+        "height": 361,
+        "tags": [
+            "russian",
+            "ruski",
+            "putin"
         ]
     },
     "putinDance": {
@@ -2741,82 +2465,246 @@
             "dance"
         ]
     },
-    "barf": {
-        "url": "https://ptpimg.me/is0oh0.gif",
+    "putinDive": {
+        "url": "https://ptpimg.me/r0k68s.gif",
         "default_width": 42,
-        "width": 150,
-        "height": 150,
-        "tags": [
-            "ew",
-            "gross"
-        ]
-    },
-    "tf": {
-        "url": "https://ptpimg.me/44b994.png",
-        "default_width": 42,
-        "width": 156,
+        "width": 128,
         "height": 128,
         "tags": [
-            "trolling"
+            "russian",
+            "ruski",
+            "putin"
         ]
     },
-    "shy": {
-        "url": "https://ptpimg.me/olw327.png",
-        "default_width": 42,
-        "width": 150,
-        "height": 150,
+    "putinLaugh": {
+        "url": "https://ptpimg.me/f4iy33.gif",
+        "default_width": 62,
+        "width": 498,
+        "height": 350,
         "tags": [
-            "lurking"
+            "russian",
+            "ruski",
+            "putin",
+            "lol",
+            "laughing",
+            "funny"
         ]
     },
-    "ascared": {
-        "url": "https://ptpimg.me/qbf200.png",
+    "putinRide": {
+        "url": "https://ptpimg.me/1t79r1.png",
         "default_width": 42,
-        "width": 150,
-        "height": 150,
+        "width": 583,
+        "height": 700,
         "tags": [
-            "scared"
+            "russian",
+            "ruski",
+            "putin"
         ]
     },
-    "dealwithit": {
-        "url": "https://ptpimg.me/321azk.png",
+    "putinSquat": {
+        "url": "https://ptpimg.me/whb0o1.png",
         "default_width": 42,
-        "width": 150,
-        "height": 150,
+        "width": 250,
+        "height": 318,
+        "tags": [
+            "russian",
+            "ruski",
+            "putin"
+        ]
+    },
+    "putinwalk": {
+        "url": "https://ptpimg.me/53m50q.gif",
+        "default_width": 62,
+        "width": 384,
+        "height": 112,
+        "tags": [
+            "russian",
+            "ruski",
+            "putin"
+        ]
+    },
+    "rabbitFok": {
+        "url": "https://ptpimg.me/jy722d.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
         "tags": []
     },
-    "poop": {
-        "url": "https://ptpimg.me/a8mn3s.png",
-        "default_width": 42,
-        "width": 150,
-        "height": 150,
-        "tags": []
-    },
-    "loopy": {
-        "url": "https://ptpimg.me/vmq38q.png",
-        "default_width": 42,
-        "width": 150,
-        "height": 150,
-        "tags": []
-    },
-    "plottin": {
-        "url": "https://ptpimg.me/df30z2.gif",
-        "default_width": 42,
-        "width": 256,
-        "height": 256,
+    "rage": {
+        "url": "https://ptpimg.me/cqu9qr.gif",
+        "default_width": 62,
+        "width": 180,
+        "height": 128,
         "tags": [
-            "plotting",
-            "evil"
+            "mad",
+            "angry",
+            "cat"
         ]
     },
-    "sbKick": {
-        "url": "https://ptpimg.me/nuvrb8.gif",
-        "default_width": 42,
-        "width": 80,
-        "height": 118,
+    "raynPopcorn": {
+        "url": "https://ptpimg.me/j9cv07.png",
+        "default_width": 100,
+        "width": 226,
+        "height": 64,
         "tags": [
-            "fight",
-            "strongbad"
+            "raynman",
+            "popcorn"
+        ]
+    },
+    "reallyRich": {
+        "url": "https://ptpimg.me/3nshoh.gif",
+        "default_width": 42,
+        "width": 140,
+        "height": 128,
+        "tags": [
+            "gamble",
+            "rich",
+            "money",
+            "bon"
+        ]
+    },
+    "reallyThirsty": {
+        "url": "https://ptpimg.me/3p2m57.gif",
+        "default_width": 42,
+        "width": 168,
+        "height": 128,
+        "tags": [
+            "beer",
+            "thirsty",
+            "really",
+            "mm"
+        ]
+    },
+    "reallycool": {
+        "url": "https://ptpimg.me/v12yh2.gif",
+        "default_width": 42,
+        "width": 176,
+        "height": 128,
+        "tags": [
+            "mm",
+            "really",
+            "cool"
+        ]
+    },
+    "reallymad": {
+        "url": "https://ptpimg.me/znro3o.png",
+        "default_width": 42,
+        "width": 132,
+        "height": 128,
+        "tags": [
+            "mad",
+            "angry",
+            "mm",
+            "really"
+        ]
+    },
+    "reallysad": {
+        "url": "https://ptpimg.me/m9f985.png",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "sad",
+            "crying",
+            "really",
+            "mm"
+        ]
+    },
+    "reallyshocked": {
+        "url": "https://ptpimg.me/47hecg.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            ":o",
+            "shocked",
+            "shocking",
+            "mm",
+            "really"
+        ]
+    },
+    "reallythinking": {
+        "url": "https://ptpimg.me/i5qytz.gif",
+        "default_width": 42,
+        "width": 124,
+        "height": 128,
+        "tags": [
+            "brain",
+            "thinking",
+            "mm",
+            "really"
+        ]
+    },
+    "ricecooker": {
+        "url": "https://ptpimg.me/67009z.png",
+        "default_width": 42,
+        "width": 400,
+        "height": 353,
+        "tags": [
+            "rice"
+        ]
+    },
+    "robbery": {
+        "url": "https://ptpimg.me/6b004o.png",
+        "default_width": 42,
+        "width": 136,
+        "height": 128,
+        "tags": [
+            "gamble",
+            "rich",
+            "money",
+            "bon"
+        ]
+    },
+    "rockhuh": {
+        "url": "https://ptpimg.me/w85982.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "huh",
+            "ayo",
+            "sus"
+        ]
+    },
+    "runOver": {
+        "url": "https://ptpimg.me/026s81.gif",
+        "default_width": 42,
+        "width": 512,
+        "height": 512,
+        "tags": [
+            "angry"
+        ]
+    },
+    "sadd": {
+        "url": "https://ptpimg.me/f90101.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "cat",
+            "sad",
+            "crying"
+        ]
+    },
+    "sadge": {
+        "url": "https://ptpimg.me/5wgjn3.png",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "sad"
+        ]
+    },
+    "saythatagain": {
+        "url": "https://ptpimg.me/7uiofq.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "huh",
+            "ayo",
+            "sus"
         ]
     },
     "sbKO": {
@@ -2829,13 +2717,13 @@
             "strongbad"
         ]
     },
-    "sbSpin": {
-        "url": "https://ptpimg.me/x9s0d0.gif",
+    "sbKick": {
+        "url": "https://ptpimg.me/nuvrb8.gif",
         "default_width": 42,
         "width": 80,
         "height": 118,
         "tags": [
-            "thumbup",
+            "fight",
             "strongbad"
         ]
     },
@@ -2858,34 +2746,637 @@
             "fight"
         ]
     },
-    "cheers": {
-        "url": "https://ptpimg.me/va1g0i.gif",
+    "sbSpin": {
+        "url": "https://ptpimg.me/x9s0d0.gif",
         "default_width": 42,
-        "width": 51,
-        "height": 28,
+        "width": 80,
+        "height": 118,
+        "tags": [
+            "thumbup",
+            "strongbad"
+        ]
+    },
+    "scp": {
+        "url": "https://ptpimg.me/2os341.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "scp",
+            "pepedumb"
+        ]
+    },
+    "sealLeave": {
+        "url": "https://ptpimg.me/q1q691.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "leave",
+            "leaving",
+            "bye"
+        ]
+    },
+    "sealWait": {
+        "url": "https://ptpimg.me/09j109.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "waiting"
+        ]
+    },
+    "selen98": {
+        "url": "https://ptpimg.me/52mtiw.gif",
+        "default_width": 42,
+        "width": 96,
+        "height": 96,
+        "tags": [
+            "horny",
+            "flushed"
+        ]
+    },
+    "sexo": {
+        "url": "https://ptpimg.me/n2e5lt.gif",
+        "default_width": 42,
+        "width": 80,
+        "height": 128,
+        "tags": [
+            "horny"
+        ]
+    },
+    "sfagoat": {
+        "url": "https://ptpimg.me/180bg3.png",
+        "default_width": 42,
+        "width": 400,
+        "height": 461,
+        "tags": [
+            "goat"
+        ]
+    },
+    "shitlookgood": {
+        "url": "https://ptpimg.me/st39iy.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "cow",
+            "hungry"
+        ]
+    },
+    "shockedmonkey": {
+        "url": "https://ptpimg.me/5qlfz4.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            ":o",
+            "shocked",
+            "shocking",
+            "monkey"
+        ]
+    },
+    "shookt": {
+        "url": "https://ptpimg.me/el9y45.gif",
+        "default_width": 42,
+        "width": 200,
+        "height": 154,
+        "tags": [
+            ":o",
+            "shocked",
+            "shocking"
+        ]
+    },
+    "shy": {
+        "url": "https://ptpimg.me/olw327.png",
+        "default_width": 42,
+        "width": 150,
+        "height": 150,
+        "tags": [
+            "lurking"
+        ]
+    },
+    "sideeye": {
+        "url": "https://ptpimg.me/td0725.jpg",
+        "default_width": 42,
+        "width": 400,
+        "height": 400,
+        "tags": [
+            "huh",
+            "ayo",
+            "sus"
+        ]
+    },
+    "sittin": {
+        "url": "https://ptpimg.me/0lj832.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "chillin",
+            "seal"
+        ]
+    },
+    "skatin": {
+        "url": "https://ptpimg.me/h00h64.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "hxh",
+            "killua"
+        ]
+    },
+    "skeletor": {
+        "url": "https://ptpimg.me/51n2gf.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "skeletor",
+            "skeleton"
+        ]
+    },
+    "slammed": {
+        "url": "https://ptpimg.me/53o1rx.gif",
+        "default_width": 62,
+        "width": 228,
+        "height": 128,
+        "tags": [
+            "wwe",
+            "fight",
+            "stfu"
+        ]
+    },
+    "sleepy": {
+        "url": "https://ptpimg.me/3m9l97.gif",
+        "default_width": 42,
+        "width": 140,
+        "height": 128,
+        "tags": [
+            "bored",
+            "tired",
+            "sleepy"
+        ]
+    },
+    "slightlymad": {
+        "url": "https://ptpimg.me/ut9wv7.png",
+        "default_width": 62,
+        "width": 180,
+        "height": 128,
+        "tags": [
+            "mad",
+            "angry",
+            "mm",
+            "really"
+        ]
+    },
+    "smart": {
+        "url": "https://ptpimg.me/8g45e8.gif",
+        "default_width": 42,
+        "width": 124,
+        "height": 128,
+        "tags": [
+            "brain",
+            "thinking"
+        ]
+    },
+    "smiliebeer": {
+        "url": "https://ptpimg.me/s1spl0.gif",
+        "default_width": 60,
+        "width": 60,
+        "height": 18,
         "tags": [
             "beer",
-            "thanks"
+            "thirsty",
+            "cheers"
         ]
     },
-    "cr7Sip": {
-        "url": "https://ptpimg.me/39gjga.gif",
+    "spongeBye": {
+        "url": "https://ptpimg.me/qzrr6w.gif",
+        "default_width": 42,
+        "width": 136,
+        "height": 128,
+        "tags": [
+            "bye"
+        ]
+    },
+    "spongeLove": {
+        "url": "https://ptpimg.me/oav645.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "drinking",
-            "ronaldo"
+            "ty",
+            "thanks",
+            "love",
+            "heart"
         ]
     },
-    "gigachad": {
-        "url": "https://ptpimg.me/21c2ar.gif",
+    "spongeWait": {
+        "url": "https://ptpimg.me/10pie2.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "chad",
-            "based"
+            "waiting"
+        ]
+    },
+    "spongecryin": {
+        "url": "https://ptpimg.me/cft26c.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "spongecryin",
+            "cryin"
+        ]
+    },
+    "spotted": {
+        "url": "https://ptpimg.me/8ahc69.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": []
+    },
+    "squareUp": {
+        "url": "https://ptpimg.me/9z9gs1.gif",
+        "default_width": 42,
+        "width": 108,
+        "height": 128,
+        "tags": [
+            "fight",
+            "stfu"
+        ]
+    },
+    "squidBegging": {
+        "url": "https://ptpimg.me/h7yx8w.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "squidward",
+            "money",
+            "bon",
+            "begging"
+        ]
+    },
+    "squidwardFace": {
+        "url": "https://ptpimg.me/ep184r.png",
+        "default_width": 62,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "squidward",
+            "soulless"
+        ]
+    },
+    "stackin": {
+        "url": "https://ptpimg.me/616o42.png",
+        "default_width": 42,
+        "width": 150,
+        "height": 150,
+        "tags": [
+            "gamble",
+            "rich",
+            "money",
+            "bon"
+        ]
+    },
+    "stanced": {
+        "url": "https://ptpimg.me/ot61y5.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "cat",
+            "standing"
+        ]
+    },
+    "standPrayge": {
+        "url": "https://ptpimg.me/3on120.gif",
+        "default_width": 42,
+        "width": 76,
+        "height": 128,
+        "tags": [
+            "praying",
+            "holy",
+            "gamble",
+            "bless"
+        ]
+    },
+    "stingUp": {
+        "url": "https://ptpimg.me/ze6c85.gif",
+        "default_width": 52,
+        "width": 256,
+        "height": 256,
+        "tags": [
+            "nice",
+            "congrats",
+            "gz"
+        ]
+    },
+    "stonecold": {
+        "url": "https://ptpimg.me/196wsi.gif",
+        "default_width": 42,
+        "width": 172,
+        "height": 128,
+        "tags": [
+            "wwe",
+            "beer"
+        ]
+    },
+    "stonksDown": {
+        "url": "https://ptpimg.me/6y7o09.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "gamble"
+        ]
+    },
+    "stonksUp": {
+        "url": "https://ptpimg.me/147g2p.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "gamble"
+        ]
+    },
+    "suckerPunch": {
+        "url": "https://ptpimg.me/4z2z8k.gif",
+        "default_width": 42,
+        "width": 360,
+        "height": 360,
+        "tags": [
+            "fight",
+            "punch",
+            "cat"
+        ]
+    },
+    "suk": {
+        "url": "https://ptpimg.me/plin4t.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "angry",
+            "mad",
+            "grumpy"
+        ]
+    },
+    "superCOCKA": {
+        "url": "https://ptpimg.me/518cav.gif",
+        "default_width": 82,
+        "width": 384,
+        "height": 124,
+        "tags": [
+            "cocka",
+            "booba"
+        ]
+    },
+    "surething": {
+        "url": "https://ptpimg.me/3fo0wu.gif",
+        "default_width": 42,
+        "width": 218,
+        "height": 234,
+        "tags": [
+            "russian",
+            "ruski",
+            "putin"
+        ]
+    },
+    "sus": {
+        "url": "https://ptpimg.me/hwt7rs.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "huh",
+            "ayo",
+            "sus"
+        ]
+    },
+    "susge": {
+        "url": "https://ptpimg.me/j1d627.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "susge",
+            "suspepe"
+        ]
+    },
+    "suspepe": {
+        "url": "https://ptpimg.me/qv582b.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "sus",
+            "suspepe"
+        ]
+    },
+    "tf": {
+        "url": "https://ptpimg.me/44b994.png",
+        "default_width": 42,
+        "width": 156,
+        "height": 128,
+        "tags": [
+            "trolling"
+        ]
+    },
+    "thanksbro": {
+        "url": "https://ptpimg.me/t68l43.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "ty",
+            "thanks",
+            "love",
+            "gay",
+            "kiss"
+        ]
+    },
+    "thinking": {
+        "url": "https://ptpimg.me/nri9ne.gif",
+        "default_width": 42,
+        "width": 136,
+        "height": 128,
+        "tags": [
+            "brain",
+            "thinking",
+            "really",
+            "mm"
+        ]
+    },
+    "trash": {
+        "url": "https://ptpimg.me/b93osr.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "boys",
+            "theboys"
+        ]
+    },
+    "tyronegz": {
+        "url": "https://ptpimg.me/m6g632.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "nice",
+            "congrats",
+            "gz"
+        ]
+    },
+    "ultraDuckass": {
+        "url": "https://ptpimg.me/rdy1f5.gif",
+        "default_width": 42,
+        "width": 498,
+        "height": 498,
+        "tags": [
+            "duckass",
+            "twerk"
+        ]
+    },
+    "ultramad": {
+        "url": "https://ptpimg.me/vbg6q3.png",
+        "default_width": 42,
+        "width": 152,
+        "height": 128,
+        "tags": [
+            "mad",
+            "angry",
+            "mm",
+            "really"
+        ]
+    },
+    "vinnieGulp": {
+        "url": "https://ptpimg.me/7f02gs.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "wwe",
+            "vince",
+            "nervous",
+            "gulp"
+        ]
+    },
+    "wadafak": {
+        "url": "https://ptpimg.me/ebj3c9.png",
+        "default_width": 42,
+        "width": 359,
+        "height": 307,
+        "tags": [
+            "wadafak",
+            "wtf"
+        ]
+    },
+    "waiting": {
+        "url": "https://ptpimg.me/qcvip8.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "waiting"
+        ]
+    },
+    "watchit": {
+        "url": "https://ptpimg.me/x0n33x.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "careful"
+        ]
+    },
+    "wave": {
+        "url": "https://ptpimg.me/73h4a7.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "hi",
+            "bye"
+        ]
+    },
+    "weebBeer": {
+        "url": "https://ptpimg.me/g7xstm.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "weeb",
+            "beer",
+            "thirsty"
+        ]
+    },
+    "weebHi": {
+        "url": "https://ptpimg.me/3m536z.gif",
+        "default_width": 42,
+        "width": 173,
+        "height": 200,
+        "tags": [
+            "hi",
+            "yo",
+            "hey",
+            "hello"
+        ]
+    },
+    "whatda": {
+        "url": "https://ptpimg.me/87fej0.gif",
+        "default_width": 62,
+        "width": 188,
+        "height": 128,
+        "tags": [
+            ":o",
+            "shocked",
+            "shocking"
+        ]
+    },
+    "whatido": {
+        "url": "https://ptpimg.me/kiuyn3.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "50cent"
+        ]
+    },
+    "whereTho": {
+        "url": "https://ptpimg.me/1mf7y8.gif",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "where"
+        ]
+    },
+    "wuh": {
+        "url": "https://ptpimg.me/78bp2n.gif",
+        "default_width": 42,
+        "width": 176,
+        "height": 128,
+        "tags": [
+            "cat",
+            "buh"
+        ]
+    },
+    "xdd": {
+        "url": "https://ptpimg.me/h28kd0.gif",
+        "default_width": 62,
+        "width": 228,
+        "height": 128,
+        "tags": [
+            "lol",
+            "lmao",
+            "laughing",
+            "hahahaha"
         ]
     },
     "yachtyOH": {
@@ -2901,549 +3392,58 @@
             "isee"
         ]
     },
-    "AndreNO": {
-        "url": "https://ptpimg.me/a6i436.gif",
+    "yawn": {
+        "url": "https://ptpimg.me/l4l3r6.png",
         "default_width": 42,
-        "width": 172,
+        "width": 120,
         "height": 128,
         "tags": [
-            "no",
-            "wwe",
-            "notlikethis"
+            "bored",
+            "tired",
+            "sleepy",
+            "mm",
+            "really"
         ]
     },
-    "ANGRE": {
-        "url": "https://ptpimg.me/s5h50v.gif",
+    "yesYes": {
+        "url": "https://ptpimg.me/4268sd.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "angry",
-            "mad",
-            "grumpy",
-            "monkey"
+            "agreed"
         ]
     },
-    "AngryMonke": {
-        "url": "https://ptpimg.me/1j8i21.gif",
+    "yesyesBusiness": {
+        "url": "https://ptpimg.me/modkf9.gif",
         "default_width": 42,
-        "width": 128,
+        "width": 108,
         "height": 128,
         "tags": [
-            "angry",
-            "mad",
-            "grumpy",
-            "monkey"
+            "agreed",
+            "gamble",
+            "gamba"
         ]
     },
-    "annoyed": {
-        "url": "https://ptpimg.me/1840r6.gif",
-        "default_width": 42,
-        "width": 132,
-        "height": 128,
-        "tags": [
-            "angry",
-            "mad",
-            "grumpy",
-            "cat"
-        ]
-    },
-    "beetleSlap": {
-        "url": "https://ptpimg.me/45ejwk.gif",
-        "default_width": 42,
-        "width": 96,
-        "height": 128,
-        "tags": [
-            "beetlejuice",
-            "fight",
-            "punch"
-        ]
-    },
-    "catLeave": {
-        "url": "https://ptpimg.me/520033.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "leaving",
-            "leave",
-            "bye"
-        ]
-    },
-    "catWave": {
-        "url": "https://ptpimg.me/e3sfze.gif",
-        "default_width": 42,
-        "width": 128,
+    "yoo": {
+        "url": "https://ptpimg.me/d7kn0f.gif",
+        "default_width": 62,
+        "width": 180,
         "height": 128,
         "tags": [
             "hi",
-            "cat",
-            "wave"
+            "yo",
+            "hey",
+            "hello"
         ]
     },
-    "CONFUSED": {
-        "url": "https://ptpimg.me/023tgv.gif",
+    "youRang": {
+        "url": "https://ptpimg.me/d16d85.gif",
         "default_width": 42,
         "width": 128,
         "height": 128,
         "tags": [
-            "rock",
-            "huh"
-        ]
-    },
-    "Dodged": {
-        "url": "https://ptpimg.me/m1zoc4.gif",
-        "default_width": 42,
-        "width": 168,
-        "height": 128,
-        "tags": [
-            "weave",
-            "dodged"
-        ]
-    },
-    "DuckStare": {
-        "url": "https://ptpimg.me/mbq06b.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "sus",
-            "awkward"
-        ]
-    },
-    "EZDodge": {
-        "url": "https://ptpimg.me/l1btn8.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "weave",
-            "dodged"
-        ]
-    },
-    "gulp": {
-        "url": "https://ptpimg.me/1h5dj2.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "nervous"
-        ]
-    },
-    "happyCat": {
-        "url": "https://ptpimg.me/99v2hb.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "happy",
-            "cat"
-        ]
-    },
-    "jerryBye": {
-        "url": "https://ptpimg.me/0om1qn.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "bye",
-            "wave"
-        ]
-    },
-    "kermitWorried": {
-        "url": "https://ptpimg.me/k5j489.gif",
-        "default_width": 42,
-        "width": 124,
-        "height": 128,
-        "tags": [
-            "worried",
-            "nervous"
-        ]
-    },
-    "monKEK": {
-        "url": "https://ptpimg.me/ffp05g.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "lol",
-            "monkey",
-            "lmao"
-        ]
-    },
-    "noWay": {
-        "url": "https://ptpimg.me/4i469f.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "ohno",
-            "notlikethis",
-            "jerry",
-            "sad"
-        ]
-    },
-    "pikaBye": {
-        "url": "https://ptpimg.me/92i3wl.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "pikachu",
-            "bye"
-        ]
-    },
-    "PISSED": {
-        "url": "https://ptpimg.me/8k00m0.gif",
-        "default_width": 42,
-        "width": 156,
-        "height": 128,
-        "tags": [
-            "cat",
-            "angry",
-            "mad",
-            "grumpy"
-        ]
-    },
-    "RKO": {
-        "url": "https://ptpimg.me/h2vl64.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "wwe",
-            "fight",
-            "slammed"
-        ]
-    },
-    "sealLeave": {
-        "url": "https://ptpimg.me/q1q691.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "leave",
-            "leaving",
-            "bye"
-        ]
-    },
-    "SHUTUP": {
-        "url": "https://ptpimg.me/74gv71.gif",
-        "default_width": 62,
-        "width": 228,
-        "height": 128,
-        "tags": [
-            "fight",
-            "punch",
-            "squidward"
-        ]
-    },
-    "suk": {
-        "url": "https://ptpimg.me/plin4t.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "angry",
-            "mad",
-            "grumpy"
-        ]
-    },
-    "Uhm": {
-        "url": "https://ptpimg.me/0n8ofl.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "awkward",
-            "sideeye"
-        ]
-    },
-    "vinnieGulp": {
-        "url": "https://ptpimg.me/7f02gs.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "wwe",
-            "vince",
-            "nervous",
-            "gulp"
-        ]
-    },
-    "wave": {
-        "url": "https://ptpimg.me/73h4a7.gif",
-        "default_width": 42,
-        "width": 128,
-        "height": 128,
-        "tags": [
-            "hi",
-            "bye"
-        ]
-    },
-    "suckerPunch": {
-        "url": "https://ptpimg.me/4z2z8k.gif",
-        "default_width": 42,
-        "width": 360,
-        "height": 360,
-        "tags": [
-            "fight",
-            "punch",
-            "cat"
-        ]
-    },
-    "catJAM": {
-        "url": "https://ptpimg.me/3doxd3.gif",
-        "default_width": 42,
-        "width": 56,
-        "height": 56,
-        "tags": [
-            "dance",
-            "jam",
-            "cat"
-        ]
-    },
-    "creepBob": {
-        "url": "https://ptpimg.me/5f07ig.png",
-        "default_width": 42,
-        "width": 128,
-        "height": 126,
-        "tags": [
-            "sus",
-            "spongebob"
-        ]
-    },
-    "squidwardFace": {
-        "url": "https://ptpimg.me/ep184r.png",
-        "default_width": 62,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "squidward",
-            "soulless"
-        ]
-    },
-    "squidBegging": {
-        "url": "https://ptpimg.me/h7yx8w.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "squidward",
-            "money",
-            "bon",
-            "begging"
-        ]
-    },
-    "catsip": {
-        "url": "https://ptpimg.me/e44il4.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "catsip",
-            "catsipping"
-        ]
-    },
-    "suspepe": {
-        "url": "https://ptpimg.me/qv582b.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "sus",
-            "suspepe"
-        ]
-    },
-    "spongecryin": {
-        "url": "https://ptpimg.me/cft26c.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "spongecryin",
-            "cryin"
-        ]
-    },
-    "BitconnectGuy": {
-        "url": "https://ptpimg.me/i52y95.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "BitconnectGuy",
-            "cryin"
-        ]
-    },
-    "wadafak": {
-        "url": "https://ptpimg.me/ebj3c9.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "wadafak",
-            "wtf"
-        ]
-    },
-    "fatpfff": {
-        "url": "https://ptpimg.me/202dxq.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "fatpfff",
-            "lol"
-        ]
-    },
-    "susge": {
-        "url": "https://ptpimg.me/j1d627.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "susge",
-            "suspepe"
-        ]
-    },
-    "cofeege": {
-        "url": "https://ptpimg.me/90440v.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "cofeege",
-            "coffee"
-        ]
-    },
-    "deadspongebob": {
-        "url": "https://ptpimg.me/q353oa.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "deadspongebob",
-            "dead"
-        ]
-    },
-    "madge": {
-        "url": "https://ptpimg.me/ep90p9.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "madge",
-            "madpepe"
-        ]
-    },
-    "king": {
-        "url": "https://ptpimg.me/9809yh.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "king",
-            "kingpepe"
-        ]
-    },
-    "skeletor": {
-        "url": "https://ptpimg.me/51n2gf.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "skeletor",
-            "skeleton"
-        ]
-    },
-    "petercryin": {
-        "url": "https://ptpimg.me/6t94m1.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "petercryin",
-            "cryin"
-        ]
-    },
-    "hmmmpepe": {
-        "url": "https://ptpimg.me/6nv06p.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "hmmmpepe",
-            "hmmm"
-        ]
-    },
-    "jerrywhat": {
-        "url": "https://ptpimg.me/5l5i28.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "jerrywhat",
-            "wtf"
-        ]
-    },
-    "cryindead": {
-        "url": "https://ptpimg.me/k99945.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "cryindead",
-            "dead",
-            "cryin"
-        ]
-    },
-    "kerk": {
-        "url": "https://ptpimg.me/26l2v0.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "kerk",
-            "kekw"
-        ]
-    },
-    "mike": {
-        "url": "https://ptpimg.me/ygc0b0.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "mike",
-            "mikestare"
-        ]
-    },
-    "scp": {
-        "url": "https://ptpimg.me/2os341.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "scp",
-            "pepedumb"
-        ]
-    },
-    "cryin": {
-        "url": "https://ptpimg.me/d437ew.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "cryin",
-            "JJJlaugh"
-        ]
-    },
-    "hapbruh": {
-        "url": "https://ptpimg.me/1x5edp.png",
-        "default_width": 42,
-        "width": 359,
-        "height": 307,
-        "tags": [
-            "hapbruh",
-            "mikestare"
+            "arrived"
         ]
     }
 }
