@@ -488,7 +488,7 @@
           border-radius: 5px;
           z-index: 1;
           overflow: auto;
-          background-color: rgba(0, 0, 0, 0.8);
+          background-color: rgba(27, 27, 31, 0.8);
         }
         .emote-menu #draggable {
           position: absolute;
@@ -507,18 +507,18 @@
           z-index: 99;
           border: none;
           outline: none;
-          background-color: rgb(164, 164, 164);
-          color: white;
+          background-color: rgb(42,41,46);
+          color: rgb(26,24,32);
           cursor: pointer;
           padding: 10px;
           border-radius: 10px;
           font-size: 18px;
         }
         .emote-menu #topBtn:hover {
-          background-color: #555;
+          color: white;
         }
         .emote-menu .emote-content {
-          background-color: #1C1C1C;
+          background-color: #1a1820;
           color: #CCCCCC;
           margin: 50px auto auto 0;
           padding: 20px;
@@ -581,7 +581,7 @@
           position: sticky;
           top: 0;
           grid-column: 1/-1;
-          background-color: rgba(51, 51, 51, 0.8196078431);
+          background-color: #2a292e;
           color: #a1a1a1;
           height: 30px;
           border: none;
@@ -612,7 +612,7 @@
           right: 10px;
         }
         .emote-menu .settings-menu {
-          background-color: #2C2C2C;
+          background-color: #2a292e;
           color: #CCCCCC;
           border-radius: 5px;
           position: absolute;
@@ -695,26 +695,30 @@
   `;
     const topButton = document.createElement("button");
     topButton.id = "topBtn";
+    topButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
     topButton.onclick = () => topFunction();
-
+    
     modal.appendChild(topButton);
     emoteMenu.onscroll = () => scrollFunction();
+    
     function scrollFunction() {
-      if (emoteMenu.scrollTop > 20 || emoteMenu.scrollTop > 20) {
+      if (emoteMenu.scrollTop > 20) {
         topButton.style.display = "block";
       } else {
         topButton.style.display = "none";
       }
     }
+    
     function topFunction() {
       emoteMenu.scrollTop = 0;
     }
+    
     settingsMenu
       .querySelector("#autofill_cb")
       .addEventListener("change", (e) => {
         localStorage.setItem("autofill", e.target.checked);
       });
-
+    
     settingsMenu.querySelector("#img_cb").addEventListener("change", (e) => {
       localStorage.setItem("useImgTag", e.target.checked);
     });
