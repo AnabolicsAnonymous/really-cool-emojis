@@ -305,10 +305,19 @@
     const { url } = emote;
     let size = getEmoteSize(sizePref, emote);
     const emoji = `[img=${size}]${url}[/img]`;
-    chatForm.value = chatForm.value
-      ? `${chatForm.value.trim()} ${emoji}`
-      : emoji;
-    chatForm.focus();
+    if (chatForm && typeof chatForm.selectionStart === 'number') {
+      const start = chatForm.selectionStart;
+      const end = chatForm.selectionEnd;
+      const value = chatForm.value;
+      chatForm.value = value.slice(0, start) + emoji + value.slice(end);
+      // Move the caret after the inserted emoji
+      chatForm.selectionStart = chatForm.selectionEnd = start + emoji.length;
+      chatForm.focus();
+    } else if (chatForm) {
+      // fallback: just append, but do not trim
+      chatForm.value += emoji;
+      chatForm.focus();
+    }
     chatForm.dispatchEvent(new Event("input", { bubbles: true }));
   }
 
