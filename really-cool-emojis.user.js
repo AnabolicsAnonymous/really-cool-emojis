@@ -766,17 +766,7 @@
             return;
         }
 
-        // Create a container for the textarea and emoji button
-        const container = document.createElement('div');
-        container.className = 'textarea-container';
-        
-        // Move the textarea into the container
-        const textareaParent = input.parentElement;
-        if (textareaParent) {
-            textareaParent.insertBefore(container, input);
-            container.appendChild(input);
-        }
-
+        // Do NOT wrap or move the textarea. Just add the emoji button as a sibling after the textarea.
         const emojiButton = document.createElement("span");
         emojiButton.classList.add("emoji-button");
         emojiButton.innerHTML = "😂";
@@ -837,7 +827,6 @@
         });
 
         function closeMenuOnScroll(e) {
-            // Only close if the scroll event is on the window/document, not inside the menu
             if (e && e.target && e.target !== document && e.target !== window) return;
             const menu = document.getElementById("emote-menu");
             if (menu) {
@@ -846,7 +835,14 @@
             }
         }
 
-        container.appendChild(emojiButton);
+        // Set parent to relative for absolute positioning
+        const textareaParent = input.parentElement;
+        if (textareaParent) {
+            if (getComputedStyle(textareaParent).position === 'static') {
+                textareaParent.style.position = 'relative';
+            }
+            textareaParent.appendChild(emojiButton);
+        }
     });
 
     document.addEventListener('click', (e) => {
