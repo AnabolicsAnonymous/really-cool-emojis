@@ -35,6 +35,10 @@
  *  - Complete refactor emojis stored in separate file.
  *  - Search functionality for easy access.
  *  - Tagging for similar querying.
+ * 7.0.3
+ *  - Discord-ified emoji button.
+ *  - Globalized pinned emotes.
+ *  - Pinned emotes to textboxes.
  ************************************************************************************************/
 
 (function () {
