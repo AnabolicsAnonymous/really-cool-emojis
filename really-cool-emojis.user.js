@@ -792,6 +792,8 @@
             const existingMenu = document.getElementById("emote-menu");
             if (existingMenu) {
                 existingMenu.remove();
+                window.removeEventListener('scroll', closeMenuOnScroll);
+                return;
             }
             
             createModal();
@@ -819,8 +821,21 @@
                 menu.style.top = `${top}px`;
                 menu.style.left = `${left}px`;
                 menu.style.display = 'block';
+
+                // Add scroll event listener to close menu on page scroll only
+                window.addEventListener('scroll', closeMenuOnScroll);
             }
         });
+
+        function closeMenuOnScroll(e) {
+            // Only close if the scroll event is on the window/document, not inside the menu
+            if (e && e.target && e.target !== document && e.target !== window) return;
+            const menu = document.getElementById("emote-menu");
+            if (menu) {
+                menu.remove();
+                window.removeEventListener('scroll', closeMenuOnScroll);
+            }
+        }
 
         container.appendChild(emojiButton);
     });
