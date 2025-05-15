@@ -470,279 +470,254 @@
   }
 
   function createModal() {
+    // Remove any existing menu
     const existingMenu = document.getElementById("emote-menu");
     if (existingMenu) {
-      existingMenu.style.display =
-        existingMenu.style.display === "none" ? "block" : "none";
-      return;
+      existingMenu.remove();
     }
-    // Attempt to style the modal dynamically. Not great, but it works.
-    const menuLeft =
-      pageFlags.isChatbox || pageFlags.isNewTopic ? "60%" : "20%";
-    const menuTop = pageFlags.isNewTopic ? "10%" : "20%";
-    const modalStyler = `
-        .emote-menu {
-          left: ${menuLeft};
-          top: ${menuTop};
-          position: fixed;
-          border-radius: 5px;
-          z-index: 1;
-          overflow: auto;
-          background-color: rgba(27, 27, 31, 0.8);
-        }
-        .emote-menu #draggable {
-          position: absolute;
-          top: 10px;
-          padding: 5px;
-          cursor: grab;
-        }
-        .emote-menu #draggable:active {
-          cursor: grabbing;
-        }
-        .emote-menu #topBtn {
-          display: none;
-          position: absolute;
-          bottom: 20px;
-          right: 5px;
-          z-index: 99;
-          border: none;
-          outline: none;
-          background-color: rgb(42,41,46);
-          color: rgb(26,24,32);
-          cursor: pointer;
-          padding: 10px;
-          border-radius: 10px;
-          font-size: 18px;
-        }
-        .emote-menu #topBtn:hover {
-          color: white;
-        }
-        .emote-menu .emote-content {
-          background-color: #1a1820;
-          color: #CCCCCC;
-          margin: 50px auto auto 0;
-          padding: 20px;
-          max-width: 300px;
-          width: 300px;
-          max-height: 250px;
-          height: 250px;
-          overflow: auto;
-          position: relative;
-          display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          grid-template-rows: 40px;
-          grid-auto-rows: max-content;
-          gap: 10px;
-        }
-        .emote-menu .emote-item .emote-pin {
-          display: none;
-        }
-        .emote-menu .emote-item:hover .emote-pin {
-          display: block;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          cursor: pointer;
-          padding: 2px;
-          background: rgba(43, 43, 43, 0.7);
-          border-radius: 2px;
-        }
-        .emote-menu .emote-label {
-          max-width: 40px;
-          width: 40px;
-          font-size: 8px;
-          text-align: center;
-          text-overflow: ellipsis;
-          overflow: hidden;
-        }
-        .emote-menu .emote-label:hover {
-          position: absolute;
-          overflow: visible;
-          z-index: 9999;
-        }
-        .emote-menu .emote-container {
-          max-width: 50px;
-        }
-        .emote-menu .emote-item {
-          position: relative;
-          width: 40px;
-          height: 40px;
-          cursor: pointer;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-          transition: transform 0.1s;
-        }
-        .emote-menu .emote-item:hover {
-          transform: scale(1.1);
-        }
-        .emote-menu .emote-search-bar {
-          z-index: 998;
-          position: sticky;
-          top: 0;
-          grid-column: 1/-1;
-          background-color: #2a292e;
-          color: #a1a1a1;
-          height: 30px;
-          border: none;
-          border-radius: 3px;
-          width: 100%;
-          padding: 10px;
-          box-sizing: border-box;
-        }
-        .emote-menu .menu-close,
-        .emote-menu .menu-settings {
-          background-color: transparent;
-          color: #BBBBBB;
-          position: absolute;
-          top: 10px;
-          padding: 5px;
-          border: 0;
-          cursor: pointer;
-          transition: opacity 0.1s;
-        }
-        .emote-menu .menu-close:hover,
-        .emote-menu .menu-settings:hover {
-          opacity: 0.8;
-        }
-        .emote-menu .menu-close {
-          right: 40px;
-        }
-        .emote-menu .menu-settings {
-          right: 10px;
-        }
-        .emote-menu .settings-menu {
-          background-color: #2a292e;
-          color: #CCCCCC;
-          border-radius: 5px;
-          position: absolute;
-          top: 50px;
-          right: 10px;
-          z-index: 999;
-          max-height: 260px;
-          padding: 20px;
-          overflow: auto;
-          width: 240px;
-          flex-direction: column;
-          justify-content: center;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .emote-menu .settings-menu > div {
-          margin: 5px 0;
-        }
-        .emote-menu .settings-menu #img_cb,
-        .emote-menu .settings-menu #autofill_cb,
-        .emote-menu .settings-menu #show_label {
-          cursor: pointer;
-        }/*# sourceMappingURL=style.css.map */
-`;
 
-    addStyle(modalStyler, "modal-style");
-
+    // Create the menu container
     const modal = document.createElement("div");
     modal.className = "emote-menu";
     modal.id = "emote-menu";
+    modal.style.cssText = `
+        position: fixed;
+        border-radius: 5px;
+        z-index: 9999;
+        background-color: #2a292e;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        display: block;
+        width: 300px;
+        height: 300px;
+    `;
 
+    // Create the emote content
+    const emoteContent = document.createElement("div");
+    emoteContent.className = "emote-content";
+    emoteContent.style.cssText = `
+        background-color: #1a1820;
+        color: #CCCCCC;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 40px;
+        grid-auto-rows: max-content;
+        gap: 10px;
+        box-sizing: border-box;
+    `;
+
+    // Create search bar
+    const searchBar = document.createElement("input");
+    searchBar.type = "text";
+    searchBar.placeholder = "Search emotes...";
+    searchBar.className = "emote-search-bar";
+    searchBar.style.cssText = `
+        z-index: 998;
+        position: sticky;
+        top: 0;
+        grid-column: 1/-1;
+        background-color: #2a292e;
+        color: #a1a1a1;
+        height: 30px;
+        border: none;
+        border-radius: 3px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    `;
+    searchBar.addEventListener("input", filterEmotes);
+
+    // Create close button
     const closeButton = document.createElement("button");
     closeButton.className = "menu-close";
     closeButton.textContent = "Close";
-    closeButton.onclick = () => (modal.style.display = "none");
+    closeButton.style.cssText = `
+        background-color: transparent;
+        color: #BBBBBB;
+        position: absolute;
+        top: 10px;
+        right: 40px;
+        padding: 5px;
+        border: 0;
+        cursor: pointer;
+        transition: opacity 0.1s;
+    `;
+    closeButton.onclick = () => modal.remove();
 
-    const dragIcon = document.createElement("i");
-    dragIcon.id = "draggable";
-    dragIcon.className = "fa fa-arrows";
-
+    // Create settings button
     const settingsButton = document.createElement("button");
     settingsButton.className = "menu-settings";
     settingsButton.textContent = "⚙️";
-    settingsButton.onclick = () =>
-      (settingsMenu.style.display =
-        settingsMenu.style.display === "none" ? "flex" : "none");
+    settingsButton.style.cssText = `
+        background-color: transparent;
+        color: #BBBBBB;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px;
+        border: 0;
+        cursor: pointer;
+        transition: opacity 0.1s;
+    `;
 
+    // Create settings menu
     const settingsMenu = document.createElement("div");
     settingsMenu.className = "settings-menu";
-    settingsMenu.style.display = "none";
+    settingsMenu.style.cssText = `
+        background-color: #2a292e;
+        color: #CCCCCC;
+        border-radius: 5px;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        z-index: 999;
+        max-height: 260px;
+        padding: 20px;
+        overflow: auto;
+        width: 240px;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    `;
     settingsMenu.innerHTML = `
-    <div class="emote__config">
-      <label for="autofill_cb">Autofill emote name</label>
-      <input type="checkbox" id="autofill_cb">
-    </div>
-    <div class="emote__config">
-      <label for="img_cb">Auto img tag</label>
-      <input type="checkbox" id="img_cb">
-    </div>
-    <div class="emote__config">
-      <label for="show_label">Show emote labels</label>
-      <input type="checkbox" id="show_label">
-    </div>
-    <div class="emote__config">
-      <label for="sizePref">Select Emote Size:</label>
-        <select id="sizePref" name="sizePref">
-            <option value="small">Small</option>
-            <option value="default">Default</option>
-            <option value="large">Large</option>
-            <option value="sfa">SFA</option>
-        </select>
-    </div>
-    <div class="emote__config">
-      <label for="winSize">Select Menu Size:</label>
-        <select id="winSize" name="winSize">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-        </select>
-    </div>
-  `;
-    const topButton = document.createElement("button");
-    topButton.id = "topBtn";
-    topButton.innerHTML = '<i class="fas fa-arrow-up"></i>';
-    topButton.onclick = () => topFunction();
-    
-    modal.appendChild(topButton);
-    emoteMenu.onscroll = () => scrollFunction();
-    
-    function scrollFunction() {
-      if (emoteMenu.scrollTop > 20) {
-        topButton.style.display = "block";
-      } else {
-        topButton.style.display = "none";
-      }
-    }
-    
-    function topFunction() {
-      emoteMenu.scrollTop = 0;
-    }
-    
-    settingsMenu
-      .querySelector("#autofill_cb")
-      .addEventListener("change", (e) => {
-        localStorage.setItem("autofill", e.target.checked);
-      });
-    
-    settingsMenu.querySelector("#img_cb").addEventListener("change", (e) => {
-      localStorage.setItem("useImgTag", e.target.checked);
-    });
+        <div class="emote__config">
+            <label for="autofill_cb">Autofill emote name</label>
+            <input type="checkbox" id="autofill_cb">
+        </div>
+        <div class="emote__config">
+            <label for="img_cb">Auto img tag</label>
+            <input type="checkbox" id="img_cb">
+        </div>
+        <div class="emote__config">
+            <label for="show_label">Show emote labels</label>
+            <input type="checkbox" id="show_label">
+        </div>
+        <div class="emote__config">
+            <label for="sizePref">Select Emote Size:</label>
+            <select id="sizePref" name="sizePref">
+                <option value="small">Small</option>
+                <option value="default">Default</option>
+                <option value="large">Large</option>
+                <option value="sfa">SFA</option>
+            </select>
+        </div>
+        <div class="emote__config">
+            <label for="winSize">Select Menu Size:</label>
+            <select id="winSize" name="winSize">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+    `;
 
-    settingsMenu
-      .querySelector("#show_label")
-      .addEventListener("change", (e) => {
-        localStorage.setItem(
-          "showEmoteLabel",
-          JSON.stringify(e.target.checked)
-        ); // Store as JSON string
-        const labels = document.querySelectorAll(".emote-label"); // Select elements with class 'emote-label'
-        labels.forEach(
-          (label) => (label.style.display = e.target.checked ? "block" : "none")
-        ); // Corrected display logic
-      });
+    settingsButton.onclick = () => {
+      settingsMenu.style.display = settingsMenu.style.display === "none" ? "flex" : "none";
+    };
 
+    // Add all elements to the modal
+    emoteContent.appendChild(searchBar);
     modal.appendChild(closeButton);
-    modal.appendChild(dragIcon);
     modal.appendChild(settingsButton);
     modal.appendChild(settingsMenu);
-    modal.appendChild(emoteMenu);
+    modal.appendChild(emoteContent);
+
+    // Fill the menu with emotes
+    for (const [key, value] of Object.entries(emotes)) {
+      createEmoteItem(key, value, emoteContent);
+    }
+
+    // Add the modal to the document
     document.body.appendChild(modal);
-    initializeSettings();
+
+    // Store the default ordering for pin functionality
+    defaultOrdering = Array.from(emoteContent.querySelectorAll(".emote-container"));
+
+    // Apply pinned emotes order
+    orderEmotes();
+
+    function filterEmotes(event) {
+      const searchTerm = event.target.value.toLowerCase();
+      const emoteContainers = emoteContent.querySelectorAll(".emote-container");
+      emoteContainers.forEach((container) => {
+        const tags = container.dataset.tags.split(" ");
+        const matches = tags.some((tag) => tag.startsWith(searchTerm));
+        container.style.display = matches ? "block" : "none";
+      });
+    }
+
+    function createEmoteItem(key, value, container) {
+      const { url, tags } = value;
+      const emoteContainer = document.createElement("div");
+      emoteContainer.classList.add("emote-container");
+      emoteContainer.id = key;
+      tags.push(key.toLowerCase());
+      emoteContainer.dataset.tags = tags.join(" ").toLowerCase();
+      emoteContainer.style.cssText = `
+        max-width: 50px;
+        position: relative;
+      `;
+
+      const emoteLabel = document.createElement("p");
+      emoteLabel.innerText = key;
+      emoteLabel.classList.add("emote-label");
+      emoteLabel.style.cssText = `
+        max-width: 40px;
+        width: 40px;
+        font-size: 8px;
+        text-align: center;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      `;
+
+      const emoteItem = document.createElement("div");
+      emoteItem.classList.add("emote-item");
+      emoteItem.style.cssText = `
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform 0.1s;
+        background-image: url(${url});
+      `;
+      emoteItem.addEventListener("click", () => onEmoteClick(value));
+
+      const emotePin = document.createElement("i");
+      emotePin.className = "fa fa-thumb-tack emote-pin";
+      emotePin.style.cssText = `
+        display: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        padding: 2px;
+        background: rgba(43, 43, 43, 0.7);
+        border-radius: 2px;
+      `;
+      emotePin.addEventListener("click", (event) => {
+        event.stopPropagation();
+        onPinClick(key);
+      });
+
+      emoteItem.addEventListener("mouseenter", () => {
+        emotePin.style.display = "block";
+      });
+      emoteItem.addEventListener("mouseleave", () => {
+        emotePin.style.display = "none";
+      });
+
+      emoteItem.appendChild(emotePin);
+      emoteContainer.appendChild(emoteItem);
+      emoteContainer.appendChild(emoteLabel);
+      container.appendChild(emoteContainer);
+    }
   }
 
   // Load the settings into the menu from local storage.
@@ -838,34 +813,112 @@
             .emoji-button {
                 cursor: pointer;
                 font-size: 24px;
-                margin-left: 20px;
+                position: absolute;
+                bottom: 8px;
+                right: 8px;
+                z-index: 1000;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: transform 0.2s;
+                user-select: none;
+                filter: grayscale(100%);
+            }
+            .emoji-button:hover {
+                transform: scale(1.1);
+                filter: grayscale(0%);
             }
         `;
 
     addStyle(emojiButtonStyler, "emoji-button");
 
-    const emojiButton = document.createElement("span");
-    emojiButton.classList.add("emoji-button");
-    emojiButton.innerHTML = "😂";
-    emojiButton.addEventListener("click", createModal);
+    const emojis = ['😂', '😊', '😎', '🤔', '😴', '😍', '🤣', '😭', '🥳', '😇', '🤪', '😅'];
+    const textInputs = document.querySelectorAll('textarea:not([type="search"]):not([role="searchbox"])');
+    
+    textInputs.forEach(input => {
+        if (input.nextElementSibling && input.nextElementSibling.classList.contains('emoji-button')) {
+            return;
+        }
 
-    if (pageFlags.isChatbox || pageFlags.isForum) {
-      menuSelector.prepend(emojiButton);
-    } else {
-      menuSelector.append(emojiButton);
-    }
+        const emojiButton = document.createElement("span");
+        emojiButton.classList.add("emoji-button");
+        emojiButton.innerHTML = "😂";
+        
+        emojiButton.addEventListener("mouseenter", () => {
+            const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+            emojiButton.innerHTML = randomEmoji;
+            emojiButton.style.filter = 'grayscale(0%)';
+            emojiButton.style.transform = 'scale(1.1)';
+        });
+        
+        emojiButton.addEventListener("mouseleave", () => {
+            emojiButton.innerHTML = "😂";
+            emojiButton.style.filter = 'grayscale(100%)';
+            emojiButton.style.transform = 'scale(1)';
+        });
+
+        emojiButton.addEventListener("click", (e) => {
+            e.stopPropagation();
+            chatForm = input;
+            
+            const existingMenu = document.getElementById("emote-menu");
+            if (existingMenu) {
+                existingMenu.remove();
+            }
+            
+            createModal();
+            
+            const menu = document.getElementById("emote-menu");
+            if (menu) {
+                const buttonRect = e.currentTarget.getBoundingClientRect();
+                const menuHeight = 300;
+                const menuWidth = 300;
+                
+                let top = buttonRect.top - menuHeight - 5;
+                let left = buttonRect.right - menuWidth;
+                
+                if (top < 0) {
+                    top = buttonRect.bottom + 5;
+                }
+                
+                if (left < 0) {
+                    left = 0;
+                }
+                if (left + menuWidth > window.innerWidth) {
+                    left = window.innerWidth - menuWidth;
+                }
+                
+                menu.style.top = `${top}px`;
+                menu.style.left = `${left}px`;
+                menu.style.display = 'block';
+            }
+        });
+
+        const textareaParent = input.parentElement;
+        if (textareaParent) {
+            textareaParent.style.position = 'relative';
+            textareaParent.appendChild(emojiButton);
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        const menu = document.getElementById("emote-menu");
+        const emojiButtons = document.querySelectorAll('.emoji-button');
+        
+        if (menu && !menu.contains(e.target) && !Array.from(emojiButtons).some(btn => btn.contains(e.target))) {
+            menu.remove();
+        }
+    });
 
     chatForm.addEventListener("input", (e) => {
-      // get settings from local storage
-      const autofill = JSON.parse(localStorage.getItem("autofill") || "false");
-      const useImgTag = JSON.parse(
-        localStorage.getItem("useImgTag") || "false"
-      );
+        const autofill = JSON.parse(localStorage.getItem("autofill") || "false");
+        const useImgTag = JSON.parse(localStorage.getItem("useImgTag") || "false");
 
-      // only handle input changes if the user has these settings enabled
-      if (autofill || useImgTag) {
-        handleInputChange(e, autofill, useImgTag);
-      }
+        if (autofill || useImgTag) {
+            handleInputChange(e, autofill, useImgTag);
+        }
     });
   }
 
