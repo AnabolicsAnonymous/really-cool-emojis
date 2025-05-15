@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      7.0.2
+// @version      7.0.3
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
-// @author       dantayy
+// @author       dantayy, anabol
 // @match        https://aither.cc/*
 // @match        https://blutopia.cc/*
 // @match        https://cinematik.net/*
