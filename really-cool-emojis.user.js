@@ -15,6 +15,8 @@
 // @downloadURL  https://github.com/AnabolicsAnonymous/really-cool-emojis/blob/main/really-cool-emojis.user.js
 // @updateURL    https://github.com/AnabolicsAnonymous/really-cool-emojis/blob/main/really-cool-emojis.user.js
 // @grant        GM.xmlHttpRequest
+// @grant        GM_setValue
+// @grant        GM_getValue
 // @license      GPL-3.0-or-later
 // ==/UserScript==
 
@@ -246,24 +248,21 @@
       emotes = await fetchJSON(
         "https://raw.githubusercontent.com/AnabolicsAnonymous/really-cool-emojis/refs/heads/main/emojis.json"
       );
+
       makeMenu();
+      const pinnedEmotes = JSON.parse(GM_getValue("really-cool-emojis-pinned", "[]")) || [];
       orderEmotes();
     } catch (error) {
       console.error(error);
     }
   }
-  /*------------------------PIN HANDLING-------------------- */
-  // koltiscute
+
   function orderEmotes() {
     if (!defaultOrdering || defaultOrdering.length === 0) {
-      console.error(
-        "defaultOrdering is empty. Ensure that emote containers exist in the DOM."
-      );
       return;
     }
 
-    const pinnedEmotes =
-      JSON.parse(localStorage.getItem("pinned-emotes")) || [];
+    const pinnedEmotes = JSON.parse(GM_getValue("really-cool-emojis-pinned", "[]")) || [];
 
     const pinnedElements = [];
     const nonPinnedElements = [];
@@ -277,7 +276,6 @@
     });
 
     const newOrder = [...pinnedElements, ...nonPinnedElements];
-
     const parent = defaultOrdering[0].parentNode;
     if (!parent) {
       return;
@@ -288,13 +286,13 @@
   }
 
   function onPinClick(emoteId) {
-    let pinnedEmotes = JSON.parse(localStorage.getItem("pinned-emotes")) || [];
+    let pinnedEmotes = JSON.parse(GM_getValue("really-cool-emojis-pinned", "[]")) || [];
     if (!pinnedEmotes.includes(emoteId)) {
       pinnedEmotes.push(emoteId);
     } else {
       pinnedEmotes = pinnedEmotes.filter((id) => id !== emoteId);
     }
-    localStorage.setItem("pinned-emotes", JSON.stringify(pinnedEmotes));
+    GM_setValue("really-cool-emojis-pinned", JSON.stringify(pinnedEmotes));
     orderEmotes();
   }
 
