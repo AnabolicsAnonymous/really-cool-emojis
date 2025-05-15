@@ -818,7 +818,7 @@
                 position: absolute;
                 bottom: 8px;
                 right: 8px;
-                z-index: 1000;
+                z-index: 1;
                 width: 32px;
                 height: 32px;
                 display: flex;
@@ -832,6 +832,11 @@
                 transform: scale(1.1);
                 filter: grayscale(0%);
             }
+            .textarea-container {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+            }
         `;
 
     addStyle(emojiButtonStyler, "emoji-button");
@@ -842,6 +847,17 @@
     textInputs.forEach(input => {
         if (input.nextElementSibling && input.nextElementSibling.classList.contains('emoji-button')) {
             return;
+        }
+
+        // Create a container for the textarea and emoji button
+        const container = document.createElement('div');
+        container.className = 'textarea-container';
+        
+        // Move the textarea into the container
+        const textareaParent = input.parentElement;
+        if (textareaParent) {
+            textareaParent.insertBefore(container, input);
+            container.appendChild(input);
         }
 
         const emojiButton = document.createElement("span");
@@ -898,11 +914,7 @@
             }
         });
 
-        const textareaParent = input.parentElement;
-        if (textareaParent) {
-            textareaParent.style.position = 'relative';
-            textareaParent.appendChild(emojiButton);
-        }
+        container.appendChild(emojiButton);
     });
 
     document.addEventListener('click', (e) => {
