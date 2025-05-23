@@ -11,6 +11,7 @@
 // @match        https://lst.gg/*
 // @match        https://reelflix.xyz/*
 // @match        https://upload.cx/*
+// @match        https://oldtoons.world/*
 // @icon         https://ptpimg.me/e44il4.png
 // @downloadURL  https://github.com/AnabolicsAnonymous/really-cool-emojis/blob/main/really-cool-emojis.user.js
 // @updateURL    https://github.com/AnabolicsAnonymous/really-cool-emojis/blob/main/really-cool-emojis.user.js
