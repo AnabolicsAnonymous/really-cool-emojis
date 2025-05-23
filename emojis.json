@@ -2408,6 +2408,17 @@
             "eating"
         ]
     },
+    "porrij": {
+        "url": "https://ptpimg.me/j2oi8s.png",
+        "default_width": 42,
+        "width": 128,
+        "height": 128,
+        "tags": [
+            "eating",
+            "porrij",
+            "poridge"
+        ]
+    },
     "prayge": {
         "url": "https://ptpimg.me/1ar7r1.gif",
         "default_width": 42,
