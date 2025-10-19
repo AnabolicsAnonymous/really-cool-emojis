@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         really-cool-emojis
-// @version      7.0.3
+// @version      7.0.4
 // @namespace    https://github.com/frenchcutgreenbean/
 // @description  emojis and img for UNIT3D trackers
 // @author       dantayy, anabol
@@ -12,6 +12,7 @@
 // @match        https://reelflix.xyz/*
 // @match        https://upload.cx/*
 // @match        https://oldtoons.world/*
+// @match        https://yu-scene.net/*
 // @icon         https://ptpimg.me/e44il4.png
 // @downloadURL  https://github.com/AnabolicsAnonymous/really-cool-emojis/blob/main/really-cool-emojis.user.js
 // @updateURL    https://github.com/AnabolicsAnonymous/really-cool-emojis/blob/main/really-cool-emojis.user.js
